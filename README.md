@@ -17,7 +17,7 @@ Deze repository bevat alles wat nodig is...
 ## Rollen
 
 - Opdrachtgever: [@TheoVNGPeters](https://github.com/TheoVNGPeters)
-- Projectleider: [@wishalg](https://github.com/wishalg)
+- Delivery Manager: [@wishalg](https://github.com/wishalg)
 - Product Owner: [@melsk-r](https://github.com/melsk-r)
 - Scrum Master:  [@TCIMEddy](https://github.com/TCIMEddy)
 
