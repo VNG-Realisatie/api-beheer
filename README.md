@@ -7,8 +7,8 @@ API-Beheer
 Deze repository bevat alles wat nodig is om de GEMMA ZDS 2.0 Open API standaard in beheer te kunnen nemen en om dat beheer goed uit te kunnen voeren.
 
 > _**Nog te beantwoorden vragen:**_
-> - _Is er nog wel sprake van de GEMMA ZDS 2.0 Open API standaard? Theo spreekt liever over de zaakgerichte standaarden wat impliceert dat er meerdere standaarden zijn. Als dat zo is, is het doel van dit project dan de in beheername van al deze standaarden of alleen van een van die standaarden?_
-> - _Indien er inderdaad sprake is van meerdere standaarden dan kun je denk ik stellen dat je standaarden kunt clusteren. Moeten we daarvoor in GEMMA Online voorzieningen treffen?_
+> - _De ZDS 2.0 standaard is het geheel van standaarden voor het zaakgericht werken. Is het doel van dit project nu de in beheername van al deze standaarden of alleen van een van die standaarden?_
+> - _Blijkbaar kun je standaarden clusteren. Moeten we daarvoor in GEMMA Online voorzieningen treffen?_
 
 Het dient daarnaast tevens als aanzet om te komen tot een generieke methode voor het in beheer nemen en uitvoeren van dat beheer van andere (nog te ontwikkelen) Open API standaarden.
 De inhoud van deze repository zal op een later moment mogelijk worden opgenomen in een repositroy waarin het beheer van Open API standaarden of van staandarden in het algemeen worden beschreven.
@@ -38,7 +38,8 @@ Bij het beheer van een Open API standaard onderkennen we 2 fases en elke fase ke
 * Beheerfase.
   Dit is de fase waarin een standaard daadwerkelijk in beheer is genomen
   - aspecten die betrekking hebben op de werkzaamheden van de beheerders.
-    + over welke vaardigheden en kennis dienen beheerders te beschikken?
+    + over welke vaardigheden en kennis dienen beheerders te beschikken? 
+    Dit wordt (mede) bepaald door de taken die de beheerders hebben. Wel/niet zelf aanpassen van de referentie implementatie, genereren van API's uit referentie implementatie en/of een UML model, etc.
     + hoe dienen zij te handelen in de diverse situaties?
     + welke software hebben zij nodig voor het uitvoeren van hun taken?
     + welke afspraken zijn er gemaakt om terug te kunnen vallen op specialistische kennis wanneer de bij de beheerder(s) aanwezige 
