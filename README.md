@@ -16,7 +16,7 @@ De inhoud van deze repository zal op een later moment mogelijk worden opgenomen 
 **Visie API-Beheer** 
 
 Het beheer van Open API standaarden waarborgt de ondersteuning van de standaard nadat deze is ontwikkeld.
-Zo worden er vragen beantwoord, problemen met de standaard vastgelegd, vindt er doorontwikkeling plaats, etc... 
+Voor een Open API standaard die in beheer is worden er vragen beantwoord, problemen met de standaard vastgelegd, vindt er doorontwikkeling plaats, etc... 
 
 Bij het beheer van een Open API standaard onderkennen we 2 fases en elke fase kent een aantal aspecten:
 * In beheername fase.
@@ -27,11 +27,13 @@ Bij het beheer van een Open API standaard onderkennen we 2 fases en elke fase ke
   en houden zij dit aspect ook goed in de gaten. Dit zou dus slechts een formele slag moeten zijn.
 
   Na acceptatie van de standaard volgt de overdracht van de standaard naar de beheerders.
+  
+  De beheerders gaan er daarna zorg voor dragen dat:
+  - de standaard wordt geconfigureerd in de testvoorziening;
+  - de standaard wordt gepubliceerd.
 
 >   _**Nog te beantwoorden vragen:**_ 
->  - _is bij de overdracht een standaard al gepubliceerd?_
 >  - _is bij de overdracht het door de leveranciers en gemeenten te gebruiken kanaal al ingericht?_
->  - _is bij de overdracht de standaard al geconfigureerd in de testvoorziening?_
 >  - _het inrichten van een communicatiekanaal waarop leveranciers en gemeenten hun vragen en problemen kunnen stellen moet voor elke standaard op dezelfde wijze gebeuren. Dus bijv. allemaal op dezelfde locatie, of allemaal binnen de eigen GitHub repository, of nog een andere variant zolang het maar generiek is. Aangezien je n.m.m. niet bij ontwikkeling een ander kanaal wil inrichten dan bij beheer moet dit bij de start van de ontwikkeling van een nieuwe standaard al goed worden gedaan. Dit is dus een beheercriteria dat al speelt bij de aanvang van een ontwikkelproject. Welke criteria kunnen we nog meer onderkennen waarvoor dat geldt?_
 >  - _..._
 
