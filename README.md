@@ -34,7 +34,6 @@ Bij het beheer van een Open API standaard onderkennen we 2 fases en elke fase ke
 
 >   _**Nog te beantwoorden vragen:**_ 
 >  - _is bij de overdracht het door de leveranciers en gemeenten te gebruiken kanaal al ingericht?_
->  - _het inrichten van een communicatiekanaal waarop leveranciers en gemeenten hun vragen en problemen kunnen stellen moet voor elke standaard op dezelfde wijze gebeuren. Dus bijv. allemaal op dezelfde locatie, of allemaal binnen de eigen GitHub repository, of nog een andere variant zolang het maar generiek is. Aangezien je n.m.m. niet bij ontwikkeling een ander kanaal wil inrichten dan bij beheer moet dit bij de start van de ontwikkeling van een nieuwe standaard al goed worden gedaan. Dit is dus een beheercriteria dat al speelt bij de aanvang van een ontwikkelproject. Welke criteria kunnen we nog meer onderkennen waarvoor dat geldt?_
 >  - _..._
 
 * Beheerfase.
@@ -57,6 +56,15 @@ Bij het beheer van een Open API standaard onderkennen we 2 fases en elke fase ke
   - aspecten die betrekking hebben op het configureren van de standaard in de test-voorziening.
     + waar kan informatie voor het configureren van de testvoorziening gevonden worden?
     + ...
+    
+Enkele aspecten die van belang zijn bij het beheer van een standaard spelen ook al een rol bij de ontwikkeling van een standaard.
+Denk daarbij aan:
+* de inrichting van een communicatiekanaal waarop leveranciers en gemeenten hun vragen en problemen kunnen stellen.
+Dit moet voor elke standaard op dezelfde wijze gebeuren. Dus bijv. allemaal op dezelfde locatie, of allemaal binnen de eigen GitHub repository, of nog een andere variant zolang het maar generiek is.
+* een lijst met aan het ontwikkelproject deelnemende partijen en personen.
+Een overzicht van de personen en organisaties die hebben bijgedragen aan de ontwikkeling van een standaard is niet alleen handig tijdens de ontwikkeling van de standaard maar ook bij het beheer van een standaard.
+
+Aangezien je deze aspecten niet bij de in beheername opnieuw wil inrichten moet dit bij de start van de ontwikkeling van een nieuwe standaard al meteen zo worden gedaan dat zowel ontwikkelaars als beheerders er mee uit de voeten kunnen.
 
 ## Vragen en bijdragen
 ...
