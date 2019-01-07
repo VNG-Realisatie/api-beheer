@@ -14,6 +14,7 @@ In dit document worden allerlei procedures en overzichten beschreven die van bel
 
 - [Lijst van deelnemende partijen en personen](#lijst-van-deelnemende-partij-en-personen)
 - [Overdracht van backlog](#overdracht-van-backlog)
+- [Openen Slack kanaal](#openen-slack-kanaal)
 - [Werken met Docker](#werken-met-docker)
 
 ## Lijst van deelnemende partijen en personen
