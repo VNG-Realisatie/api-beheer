@@ -15,6 +15,8 @@ In dit document worden allerlei procedures en overzichten beschreven die van bel
 - [Lijst van deelnemende partijen en personen](#lijst-van-deelnemende-partij-en-personen)
 - [Overdracht van backlog](#overdracht-van-backlog)
 - [Openen Slack kanaal](#openen-slack-kanaal)
+- [Openen OpenAPI standaard pagina op GEMMA Online](#openen-openapi-standaard-pagina-op-gemma-online)
+- [Openen GEMMA Online discussieforum](#openen-gemma-online-discussieforum)
 - [Werken met Docker](#werken-met-docker)
 
 ## Lijst van deelnemende partijen en personen
@@ -24,6 +26,14 @@ Bij de ontwikkeling van Open API standaarden nemen diverse partijen deel. Het is
 Het kunnen communiceren met stakeholders van een Open API standaard is belangrijk voor de kwaliteit van de Open API standaard. Het is tevens een manier om een zo hoog mogelijk draagvlak voor de Open API standaard te creeren. Daarom dient de project manager of scrum master bij de aanvang van een ontwikkelproject direct een Slack kanaal m.b.t. de Open API standaard binnen de VNG API Community workspace te (laten) creeren. Zo'n kanaal moet public zijn zodat geinteresseerden zelf kunnen bepalen of ze bijdragen willen posten in het kanaal.
 
 Op GEMMA Online wordt op de pagina die gerelateerd is aan de Open API standaard een link opgenomen waarmee een geinteresseerde zich kan aanmelden voor de workspace waarna hij/zij zelf het gewenste kanaal aan zijn lijst met channels kan toevoegen.
+
+Het Slack kanaal is overigens geen vervanging van het GEMMA Online discussieforum van de betreffende standaard. In Slack gebeurd het voeren van een discussie op een meer ongestructureerde wijze waardoor het terugvinden van een discussie lastig wordt. Daarnaast bewaard Slack in de standaard versie slechts een x-aantal laatste reacties waardoor historie langzaamaan wordt gewist. 
+
+## Openen OpenAPI standaard pagina op GEMMA Online
+_nog in te vullen_
+
+## Openen GEMMA Online discussieforum
+_nog in te vullen_
 
 ## Overdracht van backlog
 Bij de overdracht van een standaard van ontwikkeling naar beheer moeten ook de nog in de backlog staande issues overgedragen worden. Dit gebeurd mondeling om de beheerders de gelegenheid te geven vragen te stellen over de issues. Zo moet o.a. duidelijk worden of er beloftes gedaan zijn naar de indiener van het issue m.b.t. de invulling van het issue in toekomstige versies van het koppelvlak.
