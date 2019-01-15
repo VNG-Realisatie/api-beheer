@@ -50,7 +50,7 @@ Voor het vervaardigen van Docker images heb je het volgende nodig:
 * een goed werkende Docker installatie;
 * een folder met daarin:
   - een Dockerfile (met de naam 'Dockerfile');
-  - een repository met de applicatie;
+  - een repository met de applicatie (lokaal);
   - evt. een 'docker-compose.yml' file. Deze brengt meerdere Docker containers samen. Typisch voorbeeld is een database en een applicatie, elk hun eigen Docker.
 * een account op 'hub.docker.com'
 
