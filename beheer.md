@@ -27,7 +27,7 @@ Het kunnen communiceren met stakeholders van een Open API standaard is belangrij
 
 Op GEMMA Online wordt op de pagina die gerelateerd is aan de Open API standaard een link opgenomen waarmee een geinteresseerde zich kan aanmelden voor de workspace waarna hij/zij zelf het gewenste kanaal aan zijn lijst met channels kan toevoegen.
 
-Het Slack kanaal is overigens geen vervanging van het GEMMA Online discussieforum van de betreffende standaard. In Slack gebeurd het voeren van een discussie op een meer ongestructureerde wijze waardoor het terugvinden van een discussie lastig wordt. Daarnaast bewaard Slack in de standaard versie slechts een x-aantal laatste reacties waardoor historie langzaamaan wordt gewist. 
+Het Slack kanaal is overigens geen vervanging van het GEMMA Online discussieforum van de betreffende standaard. In Slack gebeurt het voeren van een discussie op een meer ongestructureerde wijze waardoor het terugvinden van een discussie lastig wordt. Daarnaast bewaart Slack in de standaard versie slechts een x-aantal laatste reacties waardoor historie langzaamaan wordt gewist. 
 
 ## Openen OpenAPI standaard pagina op GEMMA Online
 _nog in te vullen_
@@ -51,14 +51,16 @@ Voor het vervaardigen van Docker images heb je het volgende nodig:
 * een folder met daarin:
   - een Dockerfile (met de naam 'Dockerfile');
   - een repository met de applicatie;
-  - evt. een 'docker-compose.yml' file.
+  - evt. een 'docker-compose.yml' file. Deze brengt meerdere Docker containers samen. Typisch voorbeeld is een database en een applicatie, elk hun eigen Docker.
 * een account op 'hub.docker.com'
 
->_Hebben we ook authorisatie nodig op hub.docker.com om de docker files in de juiste repository weg te kunnen schrijven?_
+>_Om de build van de Docker files naar Dockerhub te kunnen pushen hebben we authorisatie nodig. Hetzelfde geldt voor de repository waar het te builden component staat._
 
 In deze procedure is alleen een uitleg m.b.t. het beschikbaar stellen van Docker images en de configuratie daarvan in DocckerHub opgenomen. Het runnen van Docker containers behoort niet tot de scope van deze procedure. Dit betekent niet dat beheerders dat niet moeten kunnen. Dit is zeker van belang ter controle van de Docker image.
-Tevens ga ik er vanut dat de 'Dockerfile' aangeleverd wordt en (voorlopig) niet hoeft te worden gewjzigd. ndien dat wel het geval is moet ook daar vaardigheid in worden opgedaan. Voor de evt. 'docker-compose.yml' geldt hetzelfde.
-In hoeverre Kubernetes nog een rol moet spelen binnen deze procedure is me op dit moment nog niet duidelijk. Vooralsnog heb ik Kubernetes dus buiten beschouwing gelaten.
+
+Als een bouwer een referentie implementatie of wijziging daarop aanlevert, gaat dat gepaard gaan met een Dockerfile. Het is dan aan beheer om daar (al dannietgeautomatiseerd) een built mee te maken. Voor de evt. 'docker-compose.yml' geldt hetzelfde.
+
+>_In hoeverre Kubernetes nog een rol moet spelen binnen deze procedure is me op dit moment nog niet duidelijk. Vooralsnog heb ik Kubernetes dus buiten beschouwing gelaten._
 
 Ga als volgt te werk:
 1. Open een commandprompt menu en ga naar de folder waarin de applicatie staat;
@@ -68,13 +70,13 @@ Ga als volgt te werk:
 5. Type 'docker push [username]/[repo-name]:[tag]' en enter om de image daadwerkelijk op docker hub te plaatsen.
    De image kan nu door andere partijen worden gebruikt.
 
-Indien scalling van belang is doe dan als volgt:
+Indien scaling van belang is doe dan als volgt:
 6. Creeer een 'docker-compose.yml' bestand met de gewenste content waaronder het aantal stacks;
 7. Type 'docker swarm init';
 8. Type 'docker stack deploy -c docker-compose.yml [applicatie-naam]' om de instellingen in de compose file te activeren;
 9. Indien gewenst kan het aantal stacks on the fly gewijzigd worden in 'docker-compose.yml' en meteen geactiveerd worden door het commando in stap 8 weer opnieuw uit te voeren.
 
->_Ik vermoed dat stap 6 t/m 9 net door de beheerders wordt uitgevoerd maar alleen biij het runnen van de Docker containers. indien dat het geval is dan kunnen deze stappen uit deze procedure worden verwijderd._ 
+>_Ik vermoed dat stap 6 t/m 9 net door de beheerders wordt uitgevoerd maar alleen bij het runnen van de Docker containers. Indien dat het geval is dan kunnen deze stappen uit deze procedure worden verwijderd. Deze stappen moeten handmatig uitgevoerd kunnen worden maar zo mogelijk wordt dit geautomatiseerd._ 
 
 **Enkele belangrijke Docker commando's**
 
