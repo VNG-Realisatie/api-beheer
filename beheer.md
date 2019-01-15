@@ -61,7 +61,7 @@ Tevens ga ik er vanut dat de 'Dockerfile' aangeleverd wordt en (voorlopig) niet 
 In hoeverre Kubernetes nog een rol moet spelen binnen deze procedure is me op dit moment nog niet duidelijk. Vooralsnog heb ik Kubernetes dus buiten beschouwing gelaten.
 
 Ga als volgt te werk:
-1. Open een commandprompt menu en ga naar de folder waarin de python applicatie staat;
+1. Open een commandprompt menu en ga naar de folder waarin de applicatie staat;
 2. Type in 'docker build -t [applicatie-naam] .' en enter. Er wordt nu een image gecreeerd;
 3. Login op 'hub.docker.com' d.m.v. 'docker login'. Let op! Waar je in de browser omgeving als usernaam je emailadres gebruikt om in te loggen moet je hier echt je ID gebruiken;
 4. Type 'docker tag [image-naam] [username]/[repo-name]:[tag]' en enter waarmee de image wordt voorbereid om naar de repository op docker hub te worden getransporteerd;
