@@ -50,7 +50,7 @@ Voor het vervaardigen van Docker images heb je het volgende nodig:
 * een goed werkende Docker installatie;
 * een folder met daarin:
   - een Dockerfile (met de naam 'Dockerfile');
-  - een python applicatie;
+  - een repository met de applicatie;
   - evt. een 'docker-compose.yml' file.
 * een account op 'hub.docker.com'
 
