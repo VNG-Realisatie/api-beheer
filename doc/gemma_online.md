@@ -1,4 +1,4 @@
-===GEMMA Online API pagina
+## GEMMA Online API pagina
 Onderstaande tekst zou een basis kunnen vormen voor een inleidende pagina op http://gemmaonline.nl/ over de API standaarden voor de Common ground.
 
 
@@ -12,11 +12,11 @@ Door in korte, heldere taal een wens te beschrijven en deze in te vullen sluit d
 
 Naast gebruik van user stories worden standaarden ook agile ontwikkeld. In plaats van een langdurig ontwikkelproces wordt een onderdeel van een standaard in een korte cyclus uitgewerkt en afgestemd met de gebruikers. 
 
-== Transparantie
+### Transparantie
 De API standaarden worden volledig transparant en openbaar ontwikkeld. Alle user stories, documentatie, broncode, ontwerpen en andere zaken worden in een openbare Github repository vastgelegd. Daar kunnen belanghebbenden ook zelf userstories en bevindingen doorgeven die door het ontwikkelteam besproken, beoordeeld en opgepakt kunnen worden. 
 
 
-== Zaakgericht Werken
+### Zaakgericht Werken
 De eerste standaard die op deze manier wordt ontwikkeld is een groep standaarden ter ondersteuning van het <a href="https://www.gemmaonline.nl/index.php/Thema_Zaakgericht_werken">Zaakgericht Werken</a>. De opvolger van de <a href="https://www.gemmaonline.nl/index.php/Zaak-_en_Documentservices">Zaak- Documentservices</a>, een op <a href="https://www.gemmaonline.nl/index.php/Sectormodel_Zaken:_StUF-ZKN">StUF ZKN</a> gebaseerde koppelvlakstandaard, is opgezet volgens de <a href" https://www.gemmaonline.nl/index.php/GEMMA_Architectuur">GEMMA 2</a> referentie architectuur. 
 
 De Github repository waar deze standaard in ontwikkeld wordt staat hier: <a href="https://github.com/vng-realisatie/gemma-zaken">https://github.com/vng-realisatie/gemma-zaken</a>. De Github repository is dus een ontwikkelomgeving, in software termen zou dit zelfs een nightly build genoemd kunnen worden. De versie van de standaard in ontwikkeling zoals die getoond wordt tijdens een sprint demo staat op een aparte omgeving welke te vinden is op <a href="https://ref.tst.vng.cloud/">https://ref.tst.vng.cloud/</a> en is te vergelijken met een stable build.
