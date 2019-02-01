@@ -11,34 +11,34 @@ Deze repository bevat alles wat nodig is om de GEMMA ZDS 2.0 Open API standaard 
 > - _Blijkbaar kun je standaarden clusteren. Moeten we daarvoor in GEMMA Online voorzieningen treffen?_
 
 Het dient daarnaast tevens als aanzet om te komen tot een generieke methode voor het in beheer nemen en uitvoeren van dat beheer van andere (nog te ontwikkelen) Open API standaarden.
-De inhoud van deze repository zal op een later moment mogelijk worden opgenomen in een repositroy waarin het beheer van Open API standaarden of van staandarden in het algemeen worden beschreven.
+De inhoud van deze repository zal op een later moment mogelijk worden opgenomen in een repositroy waarin het beheer van Open API standaarden of van standaarden in het algemeen worden beschreven.
 
 **Visie API-Beheer** 
 
 Het beheer van Open API standaarden waarborgt de ondersteuning van de standaard nadat deze is ontwikkeld.
-Voor een Open API standaard die in beheer is worden er vragen beantwoord, problemen met de standaard vastgelegd, vindt er doorontwikkeling plaats, etc... 
+Voor een Open API standaard die in beheer is worden er vragen beantwoord, problemen met de standaard vastgelegd, kleine problemen opgelost, opnieuw beschikbaar stellen van alle componenten van de door beheer aangepaste standaard, etc... 
+
+> _**Nog te beantwoorden vragen:**_
+> - _Wat wordt verstaan onder kleine problemen, welke problemen worden in beheer opgelost en welke niet?_
+
+Er kan op een gegeven moment behoefte ontstaan om een API standaard door te ontwikkelen. Die doorontwikkeling dient in projectvorm te worden opgepakt en is geen taak van API-beheer.
 
 Bij het beheer van een Open API standaard onderkennen we 2 fases en elke fase kent een aantal aspecten:
 * In beheername fase.
-  De Open API standaard moet voldoen aan een aantal criteria voordat het in beheer genomen kan worden.
+  De Open API standaard moet voldoen aan een aantal criteria voordat deze in beheer genomen kan worden.
   Deze worden in deze fase gecheckt en aan de hand van die check volgt de in beheername tenzij er niet aan de
   criteria wordt voldaan. Idealiter hebben de ontwikkelaars van een standaard de criteria natuurlijk al tijdens de
   ontwikkeling van de standaard in het oog. Daarnaast zijn de beheerders stakeholders bij de ontwikkeling van een standaard 
   en houden zij dit aspect ook goed in de gaten. Dit zou dus slechts een formele slag moeten zijn.
 
-  Na acceptatie van de standaard volgt de overdracht van de standaard naar de beheerders.
-  
-  De beheerders gaan er daarna zorg voor dragen dat:
-  - de standaard wordt geconfigureerd in de testvoorziening;
-  - de standaard wordt gepubliceerd.
-
 >   _**Nog te beantwoorden vragen:**_ 
->  - _is bij de overdracht het door de leveranciers en gemeenten te gebruiken kanaal al ingericht?_
->  - _..._
+>  - _Is bij de overdracht het door de leveranciers en gemeenten te gebruiken kanaal al ingericht?_
+>  - _Wat zijn de exacte criteria waar een API standaard aan moet voldoen voordat deze in beheer genomen kan worden._
 
 * Beheerfase.
-  Dit is de fase waarin een standaard daadwerkelijk in beheer is genomen
+  Dit is de fase waarin (de componenten van) een standaard daadwerkelijk in beheer is genomen
   - aspecten die betrekking hebben op de werkzaamheden van de beheerders.
+    + Wat is de aard van het beheer van de diverse componenten. Voeren de beheerders de werkzaamheden zelf uit of voeren zij alleen de regie uit.
     + over welke vaardigheden en kennis dienen beheerders te beschikken? 
     Dit wordt (mede) bepaald door de taken die de beheerders hebben. Wel/niet zelf aanpassen van de referentie implementatie, genereren van API's uit referentie implementatie en/of een UML model, etc.
     + hoe dienen zij te handelen in de diverse situaties?
