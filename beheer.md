@@ -31,7 +31,7 @@ Voor die betreffende standaard wordt dat beheerteam daarna verantwoordelijk voor
 Doorontwikkeling van de standaard hoort daar dus niet bij.
 
 *Beantwoorden van vragen*
-Voor het beantwoorden van vragen m.b.t. de betreffende standaard zijn twee kanalen beschikbaar. Ten eerste het specifiek voor de standaard beschikbaar gestelde kanaal in de Slack workspace 'VNG API Community' en ten tweede het eveneens specifiek voor de standaard beschikbaar gestelde discussie forum.
+Voor het beantwoorden van vragen m.b.t. de betreffende standaard zijn twee kanalen beschikbaar. Ten eerste het specifiek voor de standaard beschikbaar gestelde kanaal in de Slack workspace [VNG API Community](https://vngapicommunity.slack.com) en ten tweede het eveneens specifiek voor de standaard beschikbaar gestelde discussie forum.
 
 _Beschouwen we de discussie voorzieningen op GitHub ook als een goed alternatief voor de discussie fora?
 Zo ja dan moeten we n.m.m. een keuze tussen beide maken. Het monitoren van meerdere omgevingen op vragen/wijzigingsverzoeken moet zo veel mogelijk voorkomen worden._
