@@ -30,13 +30,13 @@ Op GEMMA Online wordt op de pagina die gerelateerd is aan de Open API standaard 
 Het Slack kanaal is overigens geen vervanging van het GEMMA Online discussieforum van de betreffende standaard. In Slack gebeurt het voeren van een discussie op een meer ongestructureerde wijze waardoor het terugvinden van een discussie lastig wordt. Daarnaast bewaart Slack in de standaard versie slechts een x-aantal laatste reacties waardoor historie langzaamaan wordt gewist. 
 
 ## Openen OpenAPI standaard pagina op GEMMA Online
-_nog in te vullen_
+Op [deze pagina](https://github.com/VNG-Realisatie/api-beheer/blob/master/doc/gemma_online.md) staat een voorzet van een algemene GEMMA Online API pagina. Wanneer deze voor akkoord bevonden wordt kan deze op GEMMA Online gepubliceerd worden.
 
 ## Openen GEMMA Online discussieforum
 _nog in te vullen_
 
 ## Overdracht van backlog
-Bij de overdracht van een standaard van ontwikkeling naar beheer moeten ook de nog in de backlog staande issues overgedragen worden. Dit gebeurd mondeling om de beheerders de gelegenheid te geven vragen te stellen over de issues. Zo moet o.a. duidelijk worden of er beloftes gedaan zijn naar de indiener van het issue m.b.t. de invulling van het issue in toekomstige versies van het koppelvlak.
+Bij de overdracht van een standaard van ontwikkeling naar beheer moeten ook de nog in de backlog staande issues overgedragen worden. Dit gebeurt mondeling om de beheerders de gelegenheid te geven vragen te stellen over de issues. Zo moet o.a. duidelijk worden of er afspraken gemaakt zijn met de indiener van het issue m.b.t. de invulling van het issue in toekomstige versies van het koppelvlak.
 Aangezien bij overdracht van ontwikkeling naar beheer de GitHub repository as-is wordt overgenomen kan de backlog zelf blijven waar deze is.
 
 Overdracht van de backlog en GitHub repository is een officieel moment en moet plaatsvinden voordat er sprake kan zijn van in beheername van een Open API
