@@ -103,3 +103,14 @@ docker service ls | Haal de gegevens van de service.
 docker service ps getstartedlab_web | Haal de gegevens op van alle tasks die de service draaien.
 docker stack rm getstartedlab | Afsluiten van de applicatie.
 docker swarm leave --force | Afsluiten van de swarm.
+
+**Criteria**
+
+* API specificatie (OAS3) moet beschikbaar zijn en uit de imvertor genereerbaar zijn
+* Documentatie (zowel technisch als functioneel) moet beschikbaar zijn
+* De referentie-implementatie moet gereed en up-to date zijn met dan geldende OAS3
+* Het gebruikte Informatiemodel (minimaal UML)
+* Geautomatiseerde test en buildstraat (CI) moet beschikbaar voor de RI
+* De standaard moet ingebouwd zijn bij leveranciers (3 of meerdere leveranciers)
+* De standaard bevat een tabel waarin wordt aangegeven welke API versies met welke andere API versies compatible zijn.
+
