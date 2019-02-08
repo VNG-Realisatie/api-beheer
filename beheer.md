@@ -31,6 +31,7 @@ Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan 
 * Geautomatiseerde test en buildstraat (CI) moet beschikbaar voor de RI
 * De standaard moet ingebouwd zijn bij leveranciers (3 of meerdere leveranciers)
 * De standaard bevat een tabel waarin wordt aangegeven welke API versies met welke andere API versies compatible zijn.
+* De standaard bevat een tabel met een lijst van deelnemende partijen en personen.
 
 ## Verantwoordelijkheden van Beheer
 API Beheer heeft bij het in beheer nemen en bij het uitvoeren van het beheer een aantal verantwoordelijkheden/taken. Sommige taken worden daadwerkelijk zelf uitgevoerd andere alleen in regie. Hieronder een conceptverse:
