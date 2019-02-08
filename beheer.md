@@ -106,11 +106,11 @@ docker swarm leave --force | Afsluiten van de swarm.
 
 ##Criteria##
 
-- API specificatie (OAS3) moet beschikbaar zijn en uit de imvertor genereerbaar zijn
+- API specificatie (OAS3) moet beschikbaar zijn en uit de imvertor genereerbaar zijn. Dit betekent dat zowel de Semantische Informatiemodellen (SIM), Uitwisselings Gegevensmodellen (UGM) als het Bericht Specificatiemodel (BSM) in UML beschikbaar moeten zijn.
 - Documentatie (zowel technisch als functioneel) moet beschikbaar zijn
 - De referentie-implementatie moet gereed en up-to date zijn met dan geldende OAS3
 - Het gebruikte Informatiemodel (minimaal UML)
 - Geautomatiseerde test en buildstraat (CI) moet beschikbaar voor de RI
-- De standaard moet ingebouwd zijn bij leveranciers (3 of meerdere leveranciers)
-- De standaard bevat een tabel waarin wordt aangegeven welke API versies met welke andere API versies compatible zijn.
+- De standaard moet ingebouwd zijn bij leveranciers (minimaal 1 provider applicatie en 3 of meerdere consumer applicaties). 
+- De standaard bevat een tabel waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
 
