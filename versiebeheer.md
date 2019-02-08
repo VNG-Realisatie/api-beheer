@@ -2,7 +2,7 @@
 
 ## API versies
 
-Versiebeheer is gebaseerd om [Semantic Versioning](https://semver.org) en de
+Versiebeheer is gebaseerd op [Semantic Versioning](https://semver.org) en de
 [API strategie](https://aandeslagmetdeomgevingswet.nl/digitaal-stelsel/technisch-aansluiten/standaarden/api-uri-strategie/).
 Elke  API heeft een eigen versienummer, opgebouwd uit `MAJOR.MINOR.PATCH` 
 element. Bijvoorbeeld versie `2.1.8`:
@@ -14,12 +14,12 @@ Gegeven dit versienummer, elke ophoging van de:
   wijziging,
 * `PATCH` versie betreft het oplossen van *backwards-compatible* issues.
 
-Verder worden een aantal labels gebruikt, achter het versienummer:
+Verder wordt een aantal labels gebruikt, achter het versienummer:
 
 * Als er geen aanduiding bij het versienummer staat, gaat het altijd om de
   meest actuele productie versie van de API.
-* `supported` versies zijn oudere maar ondersteunde versie van de API,
-* `deprecated` versies zijn oudere, niet meer ondersteunde, versies van de API.
+* `supported` versies zijn oudere maar ondersteunde versies van de API,
+* `archived` versies zijn oudere, niet meer ondersteunde versies van de API.
 
 Voor meer interne doeleinden kennen we tenslotte nog de volgende labels achter
 het versienummer:
