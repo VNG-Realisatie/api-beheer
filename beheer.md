@@ -31,28 +31,26 @@ Voor die betreffende standaard wordt dat beheerteam daarna verantwoordelijk voor
 Doorontwikkeling van de standaard hoort daar dus niet bij.
 
 *Beantwoorden van vragen*
-Voor het beantwoorden van vragen m.b.t. de betreffende standaard zijn twee kanalen beschikbaar. Ten eerste het specifiek voor de standaard beschikbaar gestelde kanaal in de Slack workspace [VNG API Community](https://vngapicommunity.slack.com) en ten tweede het eveneens specifiek voor de standaard beschikbaar gestelde discussie forum.
+Voor het beantwoorden van vragen m.b.t. de betreffende standaard zijn twee kanalen beschikbaar. Ten eerste het specifiek voor de standaard beschikbaar gestelde kanaal in de Slack workspace [VNG API Community](https://vngapicommunity.slack.com) en ten tweede het eveneens specifiek voor de standaard beschikbaar gestelde GitHub/GitLab omgeving.
 
-_Beschouwen we de discussie voorzieningen op GitHub ook als een goed alternatief voor de discussie fora?
-Zo ja dan moeten we n.m.m. een keuze tussen beide maken. Het monitoren van meerdere omgevingen op vragen/wijzigingsverzoeken moet zo veel mogelijk voorkomen worden._
+Slack leent zich niet zo goed voor het gestructureerd voeren van een discussie aangezien in het kanaal meerdere onderwerpen door elkaar heen kunnen gaan lopen en (in de basis variant) historie slechts tot een x aantal reacties beperkt blijft. Slack is vooral geschikt voor het snel stellen en beantwoorden van enkelvoudige vragen. Laagdrempelig contact dus.
 
-Slack leent zich niet zo goed voor het gestructureerd voeren van een discussie aangezien in het kanaal meerdere onderwerpen door elkaar heen kunnen gaan lopen en (in de basis variant) historie slechts tot een x aantal reacties beperkt blijft. Slack is vooral geschikt voor het snel stellen en beantwoorden van enkelvoudige vragen.
+Voor het diepgaand bediscusieren van issues en ter sprake stellen van problemen in de standaard waarbij de discussies een lange(re) tijd beschikbaar moeten blijven kan beter gebruik gemaakt worden van GitHub/GitLab.
 
-Voor het diepgaand bediscusieren van issues en ter sprake stellen van problemen in de standaard waarbij de discussies een lange(re) tijd beschikbaar moeten blijven kan beter het discussieforum worden gebruikt.
-
-Zodra het van belang is om een in Slack gevoerde discussie toch voor langere tijd te bewaren kunnen de beheerders de betreffende discussie alsnog onderbrengen op het discussie platform. Indien de discussie vragen over het gebruik en toepassing van de standaard betreft dienen de beheerders zich steeds af te vragen of het niet beter is de documentatie van de standaard zo aan te passen dat eenzelfde vraag in de toekomst voorkomen wordt.
+Zodra het van belang is om een in Slack gevoerde discussie toch voor langere tijd te bewaren kunnen de beheerders de betreffende discussie alsnog onderbrengen in GitHub/GitLab waarna het evt. meteen aan de juiste persoon assigned kan worden. Indien de discussie vragen over het gebruik en toepassing van de standaard betreft dienen de beheerders zich steeds af te vragen of het niet beter is de documentatie van de standaard zo aan te passen dat eenzelfde vraag in de toekomst voorkomen wordt.
 
 Vragen in beide kanalen moeten binnen xx dagen beantwoord zijn.
 
 *Probleemoplossing*
-De initiator voor probleemoplossing van een standaard is altijd een in GitHub ingebracht issue. 
-Indien het wijzigingsverzoek via Slack binnenkomt maakt de beheerder een issue aan in GitHub. 
+De initiator voor probleemoplossing van een standaard is altijd een in GitHub/GitLab ingebracht issue. 
+Indien het wijzigingsverzoek via Slack binnenkomt verzoekt de beheerder de persoon die het probleem heeft ingediend alsnog in GitHub/GitLab in te dienen. 
 
 Na opvoering van het issue beoordeelt de beheerder of het een valide issue is. Indien dat niet het geval is wordt dat gemeld in het issue met de reden daarvoor waarna de melder enkele weken (_hoeveel?_) de tijd krijgt om de reden te weerleggen en zijn verzoek nog nader toe te lichten.
 
 Indien het wel een valide issue is wordt gekeken of het een bug dan wel een feature betreft (_nog kijken naar de termen_).
 
 Features worden niet door de beheerders opgepakt maar blijven staan totdat er een nieuw project wordt opgestart voor de doorontwikkeling van de standaard. Daar wordt besloten of het feature wordt meegenomen in de nieuwe versie van de standaard.
+Beheerders geven in het feature wel aan hoe hoog naar hun mening de prioriteit is.
 
 _Een feature is gebaseerd op een behoefte. In het geval van een probleem is er geen sprake van een gewijzigde behoefte maar slechts van een fout in de behoeftevoorziening of documentatie. Een feature kan dus nooit de basis zijn voor een patch. Patches zijn dus altijd gebasseerd op issues._
 
