@@ -22,6 +22,38 @@ In dit document worden allerlei procedures en overzichten beschreven die van bel
 ## Lijst van deelnemende partijen en personen
 Bij de ontwikkeling van Open API standaarden nemen diverse partijen deel. Het is handig voor ontwikkelaars maar ook voor beheerders om daar een overzicht van te hebben. Daarom dient de project manager of scrum master bij de aanvang van een ontwikkelproject maar ook tijdens het project als de teamsamenstelling wijzigt de [lijst met Deelnemende partijen](https://github.com/VNG-Realisatie/api-beheer/blob/master/Deelnemende%20partijen.md) in te vullen. Ook de beheerder of beheerders van de standaard moeten na in beheername van een standaard of bij wijziging van de beheerder op deze lijst worden vermeldt.
 
+## Beheerproces
+Zodra een Open API standaard is ontwikkeld en goedgekeurd moet het worden overgedragen aan een beheerteam.
+Voor die betreffende standaard wordt dat beheerteam daarna verantwoordelijk voor:
+1. beantwoorden van vragen;
+2. het oplossen van problemen.
+
+Doorontwikkeling van de standaard hoort daar dus niet bij.
+
+*Beantwoorden van vragen*
+Voor het beantwoorden van vragen m.b.t. de betreffende standaard zijn twee kanalen beschikbaar. Ten eerste het specifiek voor de standaard beschikbaar gestelde kanaal in de Slack workspace [VNG API Community](https://vngapicommunity.slack.com) en ten tweede het eveneens specifiek voor de standaard beschikbaar gestelde GitHub/GitLab omgeving.
+
+Slack leent zich niet zo goed voor het gestructureerd voeren van een discussie aangezien in het kanaal meerdere onderwerpen door elkaar heen kunnen gaan lopen en (in de basis variant) historie slechts tot een x aantal reacties beperkt blijft. Slack is vooral geschikt voor het snel stellen en beantwoorden van enkelvoudige vragen. Laagdrempelig contact dus.
+
+Voor het diepgaand bediscusieren van issues en ter sprake stellen van problemen in de standaard waarbij de discussies een lange(re) tijd beschikbaar moeten blijven kan beter gebruik gemaakt worden van GitHub/GitLab.
+
+Zodra het van belang is om een in Slack gevoerde discussie toch voor langere tijd te bewaren kunnen de beheerders de betreffende discussie alsnog onderbrengen in GitHub/GitLab waarna het evt. meteen aan de juiste persoon assigned kan worden. Indien de discussie vragen over het gebruik en toepassing van de standaard betreft dienen de beheerders zich steeds af te vragen of het niet beter is de documentatie van de standaard zo aan te passen dat eenzelfde vraag in de toekomst voorkomen wordt.
+
+Vragen in beide kanalen moeten binnen xx dagen beantwoord zijn.
+
+*Probleemoplossing*
+De initiator voor probleemoplossing van een standaard is altijd een in GitHub/GitLab ingebracht issue. 
+Indien het wijzigingsverzoek via Slack binnenkomt verzoekt de beheerder de persoon die het probleem heeft ingediend alsnog in GitHub/GitLab in te dienen. 
+
+Na opvoering van het issue beoordeelt de beheerder of het een valide issue is. Indien dat niet het geval is wordt dat gemeld in het issue met de reden daarvoor waarna de melder enkele weken (_hoeveel?_) de tijd krijgt om de reden te weerleggen en zijn verzoek nog nader toe te lichten.
+
+Indien het wel een valide issue is wordt gekeken of het een bug dan wel een feature betreft (_nog kijken naar de termen_).
+
+Features worden niet door de beheerders opgepakt maar blijven staan totdat er een nieuw project wordt opgestart voor de doorontwikkeling van de standaard. Daar wordt besloten of het feature wordt meegenomen in de nieuwe versie van de standaard.
+Beheerders geven in het feature wel aan hoe hoog naar hun mening de prioriteit is.
+
+_Een feature is gebaseerd op een behoefte. In het geval van een probleem is er geen sprake van een gewijzigde behoefte maar slechts van een fout in de behoeftevoorziening of documentatie. Een feature kan dus nooit de basis zijn voor een patch. Patches zijn dus altijd gebasseerd op issues._
+
 ## Openen Slack kanaal
 Het kunnen communiceren met stakeholders van een Open API standaard is belangrijk voor de kwaliteit van de Open API standaard. Het is tevens een manier om een zo hoog mogelijk draagvlak voor de Open API standaard te creeren. Daarom dient de project manager of scrum master bij de aanvang van een ontwikkelproject direct een Slack kanaal m.b.t. de Open API standaard binnen de VNG API Community workspace te (laten) creeren. Zo'n kanaal moet public zijn zodat geinteresseerden zelf kunnen bepalen of ze bijdragen willen posten in het kanaal.
 
