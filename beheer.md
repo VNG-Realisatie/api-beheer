@@ -12,12 +12,45 @@ In dit document worden allerlei procedures en overzichten beschreven die van bel
 
 ## Inhoudsopgave
 
+- [Criteria voor in beheername](#criteria-voor-in-beheername)
+- [Verantwoordelijkheden van Beheer](#verantwoordelijkheden-van-beheer)
 - [Lijst van deelnemende partijen en personen](#lijst-van-deelnemende-partij-en-personen)
 - [Overdracht van backlog](#overdracht-van-backlog)
 - [Openen Slack kanaal](#openen-slack-kanaal)
 - [Openen OpenAPI standaard pagina op GEMMA Online](#openen-openapi-standaard-pagina-op-gemma-online)
 - [Openen GEMMA Online discussieforum](#openen-gemma-online-discussieforum)
 - [Werken met Docker](#werken-met-docker)
+
+## Criteria voor in beheername
+Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan een aantal eisen. Hieronder staat een eerste aanzet daartoe:
+
+* API specificatie (OAS3) moet beschikbaar zijn en uit de imvertor genereerbaar zijn
+* Documentatie (zowel technisch als functioneel) moet beschikbaar zijn
+* De referentie-implementatie moet gereed en up-to date zijn met de dan geldende OAS3
+* Het gebruikte Informatiemodel (minimaal UML)
+* Geautomatiseerde test en buildstraat (CI) moet beschikbaar voor de RI
+* De standaard moet ingebouwd zijn bij leveranciers (3 of meerdere leveranciers)
+* De standaard bevat een tabel waarin wordt aangegeven welke API versies met welke andere API versies compatible zijn.
+* De standaard bevat een tabel met een lijst van deelnemende partijen en personen.
+
+## Verantwoordelijkheden van Beheer
+API Beheer heeft bij het in beheer nemen en bij het uitvoeren van het beheer een aantal verantwoordelijkheden/taken. Sommige taken worden daadwerkelijk zelf uitgevoerd andere alleen in regie. Hieronder een conceptverse:
+
+Taak | Aard van beheer
+--- | ---
+Beheren Slack VNG API Community | Zelf
+Beheren onderhoudsverzoeken per API standaard | Zelf
+Beheren GitHub omgevingen | Zelf
+Aanpassen functionele documentatie | Zelf
+Aanpassen technische documentatie | ?
+Aanpassen Referentie Implementaties | Regie
+Wijzigingen UML informatiemodellen/berichtmodellen | Zelf
+Genereren OAS3 m.b.v. Imvertor | Zelf
+Beheren tabel met compatible API's | Zelf
+Beheren testscenario's | ?
+Publceren nieuwe versie van een API standaard (incl. RI) | Zelf
+... | ...
+
 
 ## Lijst van deelnemende partijen en personen
 Bij de ontwikkeling van Open API standaarden nemen diverse partijen deel. Het is handig voor ontwikkelaars maar ook voor beheerders om daar een overzicht van te hebben. Daarom dient de project manager of scrum master bij de aanvang van een ontwikkelproject maar ook tijdens het project als de teamsamenstelling wijzigt de [lijst met Deelnemende partijen](https://github.com/VNG-Realisatie/api-beheer/blob/master/Deelnemende%20partijen.md) in te vullen. Ook de beheerder of beheerders van de standaard moeten na in beheername van een standaard of bij wijziging van de beheerder op deze lijst worden vermeldt.
@@ -135,14 +168,4 @@ docker service ls | Haal de gegevens van de service.
 docker service ps getstartedlab_web | Haal de gegevens op van alle tasks die de service draaien.
 docker stack rm getstartedlab | Afsluiten van de applicatie.
 docker swarm leave --force | Afsluiten van de swarm.
-
-**Criteria**
-
-* API specificatie (OAS3) moet beschikbaar zijn en uit de imvertor genereerbaar zijn
-* Documentatie (zowel technisch als functioneel) moet beschikbaar zijn
-* De referentie-implementatie moet gereed en up-to date zijn met dan geldende OAS3
-* Het gebruikte Informatiemodel (minimaal UML)
-* Geautomatiseerde test en buildstraat (CI) moet beschikbaar voor de RI
-* De standaard moet ingebouwd zijn bij leveranciers (3 of meerdere leveranciers)
-* De standaard bevat een tabel waarin wordt aangegeven welke API versies met welke andere API versies compatible zijn.
 
