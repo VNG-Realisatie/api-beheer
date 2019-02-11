@@ -104,12 +104,15 @@ docker service ps getstartedlab_web | Haal de gegevens op van alle tasks die de 
 docker stack rm getstartedlab | Afsluiten van de applicatie.
 docker swarm leave --force | Afsluiten van de swarm.
 
-##Criteria##
+##Criteria voor in beheername van API standaarden
+API standaarden dienen aan de hieronder genoemde criteria te voldoen voordat ze door beheer in beheer genomen kunnen worden.
 
+- De standaard moet formeel goedgekeurd zijn.
+>_Ik ga er vanuit dat er nog een governance document komt waarin staat hoe en door wie een API standaard wordt goedgekeurd._
 - API specificatie (OAS3) moet beschikbaar zijn en uit de imvertor genereerbaar zijn. Dit betekent dat zowel de Semantische Informatiemodellen (SIM), Uitwisselings Gegevensmodellen (UGM) als het Bericht Specificatiemodel (BSM) in UML beschikbaar moeten zijn.
 - Documentatie (zowel technisch als functioneel) moet beschikbaar zijn
 - De referentie-implementatie moet gereed en up-to date zijn met dan geldende OAS3
-- Het gebruikte Informatiemodel (minimaal UML)
+- Het gebruikte Informatiemodel (minimaal UML) moet beschikbaar zijn
 - Geautomatiseerde test en buildstraat (CI) moet beschikbaar voor de RI
 - De standaard moet ingebouwd zijn bij leveranciers (minimaal 1 provider applicatie en 3 of meerdere consumer applicaties). 
 - De standaard bevat een tabel waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
