@@ -36,6 +36,9 @@ het versienummer:
 
 * Wijzigingen in de URL of fundamentale wijzigingen in de request/response
   schema's die bij een resource horen,
+* Er is een data migratie nodig om van de vorige naar de nieuwe versie te komen.
+  Bijvoorbeeld omdat een attribuut wordt opgesplitst in meerdere attributen, of
+  juist worden samengevoegd,
 * Verwijderen, hernoemen of type-wijziging van een attribuut, query parameter
   of header,
 * Verwijderen of hernoemen van een resource of API als geheel,
@@ -79,9 +82,20 @@ API-version 2.1.8
 ```
 
 Als consumers geen versie meegeven in de header wordt de laatste versie 
-gebruikt binnen de `MAJOR` versie die is opgegeven in de URL. Consumers kunnen
-wel een oudere versie afdwingen door deze versie mee te geven als header in het
-request.
+gebruikt binnen de `MAJOR` versie die is opgegeven in de URL, zoals deze 
+beschikbaar is bij de provider. Consumers kunnen wel een oudere versie afdwingen 
+door deze versie mee te geven als header in het request.
+
+#### Voorbeeld: Provider versie `2.1.8` die geen `1.x` ondersteund.
+
+Consumer versie | Provider antwoord
+--- | --- 
+1.0.0 | Verzoek geweigerd, versie wordt niet ondersteund
+2.0.0 | Verzoek geaccepteerd, waarschuwing oude versie via header
+2.1.0 | Verzoek geaccepteerd
+2.1.8 | Verzoek geaccepteerd
+2.2.0 | Verzoek geweigerd, versie wordt niet ondersteund
+
 
 ## Release management 
 
@@ -90,9 +104,15 @@ belangrijk hoe met deze verandering wordt omgegaan. Goed gedocumenteerde en
 tijdig gecommuniceerde uitfaseringsplanningen zijn in het algemeen voor veel 
 API gebruikers werkbaar.
 
+TODO
+
 ### Standaard release schema
 
+TODO
+
 ### Uitfaseren van een major API versie
+
+TODO
 
 ### Ondersteuningsperiode
 
