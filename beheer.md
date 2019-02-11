@@ -36,19 +36,22 @@ Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan 
 ## Verantwoordelijkheden van Beheer
 API Beheer heeft bij het in beheer nemen en bij het uitvoeren van het beheer een aantal verantwoordelijkheden/taken. Sommige taken worden daadwerkelijk zelf uitgevoerd andere alleen in regie. Hieronder een conceptverse:
 
-Taak | Aard van beheer
---- | ---
-Beheren Slack VNG API Community | Zelf
-Beheren onderhoudsverzoeken per API standaard | Zelf
-Beheren GitHub omgevingen | Zelf
-Aanpassen functionele documentatie | Zelf
-Aanpassen technische documentatie | ?
-Aanpassen Referentie Implementaties | Regie
-Wijzigingen UML informatiemodellen/berichtmodellen | Zelf
-Genereren OAS3 m.b.v. Imvertor | Zelf
-Beheren tabel met compatible API's | Zelf
-Beheren testscenario's | ?
-Publceren nieuwe versie van een API standaard (incl. RI) | Zelf
+Taak | Beheer ja/nee |Aard van beheer
+--- | --- | ---
+Beheren Slack VNG API Community | Ja | Zelf
+Beheren onderhoudsverzoeken per API standaard | Ja | Zelf
+Beheren GitHub omgevingen | Ja | Zelf
+Aanpassen functionele documentatie | Ja| Zelf
+Aanpassen technische documentatie | ? | ?
+Aanpassen Referentie Implementaties | Ja | Regie
+Wijzigingen UML informatiemodellen/berichtmodellen | Ja | Zelf
+Genereren OAS3 m.b.v. Imvertor | Ja | Zelf
+Beheren tabel met compatible API's | Ja |Zelf
+Beheren testscenario's | ? | ?
+Publiceren nieuwe versie van een API standaard (incl. RI) | Ja |Zelf
+Oplossen Bug's | ? | ?
+Toevoegen nieuwe functionaliteiten | ? | ?
+Beheren backlog | ? | ?
 ... | ...
 
 
