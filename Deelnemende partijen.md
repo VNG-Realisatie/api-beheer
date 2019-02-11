@@ -15,7 +15,7 @@ Gemeente Amsterdam | ZGW 2.0 | Marcel Moermans | Stakeholder
 Gemeente Rotterdam | ZGW 2.0 | Ruub van der Klip | Stakeholder
 
 Rol kan de volgende waarden hebben:
-* Product owner
+* Product Owner
 * Scrum master
 * Project manager
 * Teamlid
