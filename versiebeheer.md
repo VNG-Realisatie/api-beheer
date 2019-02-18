@@ -54,7 +54,8 @@ communiceren met een API op versie `2.1.8`.**
 
 * Toevoegen van attributen die optioneel zijn, `null` mogen zijn of een andere
   standaard waarde hebben.
-* Toevoegen van een element aan een enumeratie,
+* Toevoegen van een element aan een enumeratie, 
+_(we twijfelen er nog aan of dit wel een voorbeeld is  van een backwards-compatible wijziging. Daar moeten we dus nog naar kijken)_
 * Een niet functionele wijziging in de documentatie,
 * Wijzigingen in de volgorde van attributen.
 
