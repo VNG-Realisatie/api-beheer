@@ -16,7 +16,7 @@ Gemeente Rotterdam | ZGW 2.0 | Ruub van der Klip | Stakeholder
 
 Rol kan de volgende waarden hebben:
 * Product Owner
-* Scrum master
+* Scrum Master
 * Project manager
 * Teamlid
 * Ontwikkelaar
