@@ -117,4 +117,4 @@ API standaarden dienen aan de hieronder genoemde criteria te voldoen voordat ze 
 - De standaard moet ingebouwd zijn bij leveranciers (minimaal 1 provider applicatie en 3 of meerdere consumer applicaties). 
 - De standaard bevat een tabel waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
 - van elke functionaliteit dient een functionele test aanwezig te zijn.
-
+- De openapi.yaml file heeft semantic versioning.
