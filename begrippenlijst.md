@@ -36,5 +36,4 @@ Implementatie van een API standaard waarmee aangetoond wordt dat deze te impleme
 Cloud-gebaseerde groupware dat als communicatiehulpmiddel ingezet kan worden en waarmee middels chatgesprekken de samenwerking in groepen en teams wordt bevorderd.
 
 **UML**
-Modelmatige taal om objectgeoriënteerde analyses en ontwerpen voor een informatiesysteem te kunnen maken.
-
+Een algemeen toepasbare modelleertaal in het werkgebied van software ontwikkeling, bedoeld om een standaard manier te bieden om het ontwerp van een systeem in beeld te brengen.
