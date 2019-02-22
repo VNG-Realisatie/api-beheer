@@ -11,15 +11,12 @@ Deze repository bevat alles wat nodig is om de GEMMA ZDS 2.0 Open API standaard 
 > - _Blijkbaar kun je standaarden clusteren. Moeten we daarvoor in GEMMA Online voorzieningen treffen?_
 
 Het dient daarnaast tevens als aanzet om te komen tot een generieke methode voor het in beheer nemen en uitvoeren van dat beheer van andere (nog te ontwikkelen) Open API standaarden.
-De inhoud van deze repository zal op een later moment mogelijk worden opgenomen in een repositroy waarin het beheer van Open API standaarden of van standaarden in het algemeen worden beschreven.
+De inhoud van deze repository zal op een later moment mogelijk worden opgenomen in een repository waarin het beheer van Open API standaarden of van standaarden in het algemeen worden beschreven.
 
 **Visie API-Beheer** 
 
 Het beheer van Open API standaarden waarborgt de ondersteuning van de standaard nadat deze is ontwikkeld.
-Voor een Open API standaard die in beheer is worden er vragen beantwoord, problemen met de standaard vastgelegd, kleine problemen opgelost, opnieuw beschikbaar stellen van alle componenten van de door beheer aangepaste standaard, etc... 
-
-> _**Nog te beantwoorden vragen:**_
-> - _Wat wordt verstaan onder kleine problemen, welke problemen worden in beheer opgelost en welke niet?_
+Voor een Open API standaard die in beheer is betreft dat het beantwoorden van vragen, het vastleggen van problemen met de standaard, het oplossen van kleine problemen, het opnieuw beschikbaar stellen van alle componenten van de door beheer aangepaste standaard, etc... 
 
 Er kan op een gegeven moment behoefte ontstaan om een API standaard door te ontwikkelen. Die doorontwikkeling dient in projectvorm te worden opgepakt en is geen taak van API-beheer.
 
@@ -33,7 +30,6 @@ Bij het beheer van een Open API standaard onderkennen we 2 fases en elke fase ke
 
 >   _**Nog te beantwoorden vragen:**_ 
 >  - _Is bij de overdracht het door de leveranciers en gemeenten te gebruiken kanaal al ingericht?_
->  - _Wat zijn de exacte criteria waar een API standaard aan moet voldoen voordat deze in beheer genomen kan worden._
 
 * Beheerfase.
   Dit is de fase waarin (de componenten van) een standaard daadwerkelijk in beheer is genomen
@@ -65,6 +61,21 @@ Dit moet voor elke standaard op dezelfde wijze gebeuren. Dus bijv. allemaal op d
 Een overzicht van de personen en organisaties die hebben bijgedragen aan de ontwikkeling van een standaard is niet alleen handig tijdens de ontwikkeling van de standaard maar ook bij het beheer van een standaard.
 
 Aangezien je deze aspecten niet bij de in beheername opnieuw wil inrichten moet dit bij de start van de ontwikkeling van een nieuwe standaard al meteen zo worden gedaan dat zowel ontwikkelaars als beheerders er mee uit de voeten kunnen.
+
+**Beheer en standaard creatie methodiek**
+
+Er zijn 2 methodieken die in projecten gebruikt kunnen worden bij het vervaardigen van API standaarden.
+
+De eerste methode gaat uit van een (nagenoeg) blanco domeinmodel. Het domeinmodel (het model waarin duidelijkheid wordt geschept over de te gebruiken entiteiten, de daarbinnen benodigde attributen en de relaties tussen de entiteiten) moet dus nog helemaal opgebouwd worden.
+Aangezien we in snel op elkaar volgende sprints de nieuwe standaard willen ontwikkelen wordt er niet voor gekozen eerst een informatiemodel te ontwikkelen en daarna pas de andere benodigde componenten. Alle componenten worden tegelijkertijd ontwikkelt waardoor de mate van volwassenheid van de componenten en dus de standaard in de tijd langzamerhand toeneemt. Het OAS3 bestand wordt in dit geval gegenereerd uit de Referentie Implementatie waardoor beide in sync blijven.
+
+Bij de tweede methode wordt op basis van een of meer bestaande informatiemodellen een Bericht Structuurmodel vervaardigd en wordt het OAS3 bestand van daaruit gegenereerd m.b.v. specialistische tooling. Het gegenereerde OAS3 bestand is de basis voor code generatie waardoor ook in dit geval geldt dat de code in sync is met het OAS3 bestand. Ook in dit geval wordt echter niet gewacht totdat de het Bericht Structuurmodel helemaal gereed is. Nee, tussentijdse resultaten van dit proces kunnen al heel goed dienen als basis voor codegeneratie.
+
+Welke methode door een project wordt gehanteerd wordt binnen het project beslist en hangt bijv. af van de vraag of er al een (domein)model aanwezig is. Beide methodieken kennen elk hun eigen voordelen.
+
+Het bestaan van 2 verschillende methodieken voor het vervaardigen van API standaarden betekent natuurlijk wat voor het beheer van deze standaarden. Als beheer hebben we er belang bij om het beheerproces zo uniform mogelijk in te richten.
+
+>   _**Nog aan te vullen**_ 
 
 ## Vragen en bijdragen
 ...
