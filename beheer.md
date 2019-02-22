@@ -119,3 +119,4 @@ API standaarden dienen aan de hieronder genoemde criteria te voldoen voordat ze 
 - van elke functionaliteit dient een functionele test aanwezig te zijn.
 - De openapi.yaml file heeft semantic versioning.
 - Er moet een lijst zijn waarin alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn, zijn opgenomen.
+- Er moet een beschrijving van de devstraat zijn.
