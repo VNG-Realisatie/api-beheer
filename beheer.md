@@ -118,3 +118,4 @@ API standaarden dienen aan de hieronder genoemde criteria te voldoen voordat ze 
 - De standaard bevat een tabel waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
 - van elke functionaliteit dient een functionele test aanwezig te zijn.
 - De openapi.yaml file heeft semantic versioning.
+- Er moet een lijst zijn waarin alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn, zijn opgenomen.
