@@ -8,7 +8,8 @@ Een application programming interface (API) is een verzameling definities op bas
 Voorziening waarop leveranciers hun implementatie van de API standaard kunnen testen.
 
 **Docker**
-Open-source raamwerk waarmee het mogelijk wordt een applicatie in een lichtgewicht, verplaatsbare container (docker container) te verpakken. Daarmee wordt het installeren van een applicatie op een serverdanwel lokaal sterk vereenvoudgd.
+Docker is een software pakket wat aan applicatie en zijn afhankelijkheden zoals tooling, libraries en instellingen, in een virtuele container verpakt die op elke (Linux, Windows, ?) server gedraaid kan worden. Dit vergroot de flexibiliteit en portabiliteit van de omgeving waar een applicatie gedraaid kan worden, ongeacht of dit on premise, in een public of private cloud etc. gebeurt.
+[bron: https://en.wikipedia.org/wiki/Docker_%28software%29]
 
 **GEMMA Online**
 De publicatie-omgeving van GEMMA, de Gemeentelijke Modelarchitectuur.
