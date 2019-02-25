@@ -22,11 +22,12 @@ Er kan op een gegeven moment behoefte ontstaan om een API standaard door te ontw
 
 Bij het beheer van een Open API standaard onderkennen we 2 fases en elke fase kent een aantal aspecten:
 * In beheername fase.
-  De Open API standaard moet voldoen aan een aantal criteria voordat deze in beheer genomen kan worden.
-  Deze worden in deze fase gecheckt en aan de hand van die check volgt de in beheername tenzij er niet aan de
-  criteria wordt voldaan. Idealiter hebben de ontwikkelaars van een standaard de criteria natuurlijk al tijdens de
-  ontwikkeling van de standaard in het oog. Daarnaast zijn de beheerders stakeholders bij de ontwikkeling van een standaard 
-  en houden zij dit aspect ook goed in de gaten. Dit zou dus slechts een formele slag moeten zijn.
+  + De Open API standaard moet voldoen aan een aantal criteria voordat deze in beheer genomen kan worden.
+    Deze worden in deze fase gecheckt en aan de hand van die check volgt de in beheername tenzij er niet aan de
+    criteria wordt voldaan. Idealiter hebben de ontwikkelaars van een standaard de criteria natuurlijk al tijdens de
+    ontwikkeling van de standaard in het oog. Daarnaast zijn de beheerders stakeholders bij de ontwikkeling van een standaard 
+    en houden zij dit aspect ook goed in de gaten. Dit zou dus slechts een formele slag moeten zijn.
+  + Al het materiaal, documentatie en omgevingen die bij de ontwikkeling van de API standaard zijn aangemaakt wordt in deze fase overgedragen. Het gaat om een officieel moment waarop de beheerders aangeven dat de standaard officieel onder hun beheer valt maar mzo nodig betreft het ook het regelen van de juiste rechten.
 
 >   _**Nog te beantwoorden vragen:**_ 
 >  - _Is bij de overdracht het door de leveranciers en gemeenten te gebruiken kanaal al ingericht?_
@@ -69,7 +70,7 @@ Er zijn 2 methodieken die in projecten gebruikt kunnen worden bij het vervaardig
 De eerste methode gaat uit van een (nagenoeg) blanco domeinmodel. Het domeinmodel (het model waarin duidelijkheid wordt geschept over de te gebruiken entiteiten, de daarbinnen benodigde attributen en de relaties tussen de entiteiten) moet dus nog helemaal opgebouwd worden.
 Aangezien we in snel op elkaar volgende sprints de nieuwe standaard willen ontwikkelen wordt er niet voor gekozen eerst een informatiemodel te ontwikkelen en daarna pas de andere benodigde componenten. Alle componenten worden tegelijkertijd ontwikkelt waardoor de mate van volwassenheid van de componenten en dus de standaard in de tijd langzamerhand toeneemt. Het OAS3 bestand wordt in dit geval gegenereerd uit de Referentie Implementatie waardoor beide in sync blijven.
 
-Bij de tweede methode gaat uit van een MDD aanpak. Op basis van een of meer bestaande informatiemodellen wordt een Bericht Structuurmodel vervaardigd en wordt van daaruit het OAS3 bestand gegenereerd m.b.v. specialistische tooling. Het gegenereerde OAS3 bestand is de basis voor code generatie waardoor ook in dit geval geldt dat de code in sync is met het OAS3 bestand. Ook in dit geval wordt echter niet gewacht totdat de het Bericht Structuurmodel helemaal gereed is. Nee, tussentijdse resultaten van dit proces kunnen al heel goed dienen als basis voor codegeneratie.
+De tweede methode gaat uit van een MDD aanpak. Op basis van een of meer bestaande informatiemodellen wordt een Bericht Structuurmodel vervaardigd en wordt van daaruit het OAS3 bestand gegenereerd m.b.v. specialistische tooling. Het gegenereerde OAS3 bestand is de basis voor code generatie waardoor ook in dit geval geldt dat de code in sync is met het OAS3 bestand. Ook in dit geval wordt echter niet gewacht totdat de het Bericht Structuurmodel helemaal gereed is. Nee, tussentijdse resultaten van dit proces kunnen al heel goed dienen als basis voor codegeneratie.
 
 Welke methode door een project wordt gehanteerd wordt binnen het project beslist en hangt bijv. af van de vraag of er al een (domein)model aanwezig is. Beide methodieken kennen elk hun eigen voordelen.
 
