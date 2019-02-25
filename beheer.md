@@ -12,6 +12,8 @@ In dit document worden allerlei procedures en overzichten beschreven die van bel
 
 ## Inhoudsopgave
 
+- [Criteria voor in beheername](#criteria-voor-in-beheername)
+- [Verantwoordelijkheden van Beheer](#verantwoordelijkheden-van-beheer)
 - [Lijst van deelnemende partijen en personen](#lijst-van-deelnemende-partij-en-personen)
 - [Overdracht van backlog](#overdracht-van-backlog)
 - [Openen Slack kanaal](#openen-slack-kanaal)
@@ -19,8 +21,77 @@ In dit document worden allerlei procedures en overzichten beschreven die van bel
 - [Openen GEMMA Online discussieforum](#openen-gemma-online-discussieforum)
 - [Werken met Docker](#werken-met-docker)
 
+## Criteria voor in beheername
+Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan een aantal eisen. Hieronder staat een eerste aanzet daartoe:
+
+* De standaard moet formeel goedgekeurd zijn.
+* API specificatie (OAS3) moet beschikbaar zijn en uit de referentie implementatie of uit de imvertor genereerbaar zijn (afhankelijk van de keuze van het project).
+* Documentatie (zowel technisch als functioneel) moet beschikbaar zijn
+* De referentie-implementatie moet gereed en up-to date zijn met de dan geldende OAS3
+* Het gebruikte Informatiemodel (minimaal UML) moet beschikbaar zijn.
+* Geautomatiseerde test en buildstraat (CI) moet beschikbaar voor de RI
+* De API moet in de praktijk beproeft zijn er er moeten succesvolle calls tussen de provider en consumer plaatsgevonden hebben. 
+* De standaard bevat een tabel waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
+* De openapi.yaml file heeft semantic versioning.
+* Er moet een lijst zijn waarin alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn, zijn opgenomen.
+* Er moet een beschrijving van de devstraat zijn.
+
+## Verantwoordelijkheden van Beheer
+API Beheer heeft bij het in beheer nemen en bij het uitvoeren van het beheer een aantal verantwoordelijkheden/taken. Sommige taken worden daadwerkelijk zelf uitgevoerd andere alleen in regie. Hieronder een conceptverse:
+
+Taak | Beheer ja/nee |Aard van beheer
+--- | --- | ---
+Beheren Slack VNG API Community | Ja | Zelf
+Beheren onderhoudsverzoeken per API standaard | Ja | Zelf
+Beheren GitHub omgevingen | Ja | Zelf
+Aanpassen functionele documentatie | Ja| Zelf
+Aanpassen technische documentatie | ? | ?
+Aanpassen Referentie Implementaties | Ja | Regie
+Wijzigingen UML informatiemodellen/berichtmodellen | Ja | Zelf
+Genereren OAS3 m.b.v. Imvertor | Ja | Zelf
+Beheren tabel met compatible API's | Ja |Zelf
+Beheren testscenario's | ? | ?
+Publiceren nieuwe versie van een API standaard (incl. RI) | Ja |Zelf
+Oplossen Bug's | ? | ?
+Toevoegen nieuwe functionaliteiten | ? | ?
+Beheren backlog | ? | ?
+... | ...
+
+
 ## Lijst van deelnemende partijen en personen
 Bij de ontwikkeling van Open API standaarden nemen diverse partijen deel. Het is handig voor ontwikkelaars maar ook voor beheerders om daar een overzicht van te hebben. Daarom dient de project manager of scrum master bij de aanvang van een ontwikkelproject maar ook tijdens het project als de teamsamenstelling wijzigt de [lijst met Deelnemende partijen](https://github.com/VNG-Realisatie/api-beheer/blob/master/Deelnemende%20partijen.md) in te vullen. Ook de beheerder of beheerders van de standaard moeten na in beheername van een standaard of bij wijziging van de beheerder op deze lijst worden vermeldt.
+
+## Beheerproces
+Zodra een Open API standaard is ontwikkeld en goedgekeurd moet het worden overgedragen aan een beheerteam.
+Voor die betreffende standaard wordt dat beheerteam daarna verantwoordelijk voor:
+1. beantwoorden van vragen;
+2. het oplossen van problemen.
+
+Doorontwikkeling van de standaard hoort daar dus niet bij.
+
+*Beantwoorden van vragen*
+Voor het beantwoorden van vragen m.b.t. de betreffende standaard zijn twee kanalen beschikbaar. Ten eerste het specifiek voor de standaard beschikbaar gestelde kanaal in de Slack workspace [VNG API Community](https://vngapicommunity.slack.com) en ten tweede het eveneens specifiek voor de standaard beschikbaar gestelde GitHub/GitLab omgeving.
+
+Slack leent zich niet zo goed voor het gestructureerd voeren van een discussie aangezien in het kanaal meerdere onderwerpen door elkaar heen kunnen gaan lopen en (in de basis variant) historie slechts tot een x aantal reacties beperkt blijft. Slack is vooral geschikt voor het snel stellen en beantwoorden van enkelvoudige vragen. Laagdrempelig contact dus.
+
+Voor het diepgaand bediscusieren van issues en ter sprake stellen van problemen in de standaard waarbij de discussies een lange(re) tijd beschikbaar moeten blijven kan beter gebruik gemaakt worden van GitHub/GitLab.
+
+Zodra het van belang is om een in Slack gevoerde discussie toch voor langere tijd te bewaren kunnen de beheerders de betreffende discussie alsnog onderbrengen in GitHub/GitLab waarna het evt. meteen aan de juiste persoon assigned kan worden. Indien de discussie vragen over het gebruik en toepassing van de standaard betreft dienen de beheerders zich steeds af te vragen of het niet beter is de documentatie van de standaard zo aan te passen dat eenzelfde vraag in de toekomst voorkomen wordt.
+
+Vragen in beide kanalen moeten binnen xx dagen beantwoord zijn.
+
+*Probleemoplossing*
+De initiator voor probleemoplossing van een standaard is altijd een in GitHub/GitLab ingebracht issue. 
+Indien het wijzigingsverzoek via Slack binnenkomt verzoekt de beheerder de persoon die het probleem heeft ingediend alsnog in GitHub/GitLab in te dienen. 
+
+Na opvoering van het issue beoordeelt de beheerder of het een valide issue is. Indien dat niet het geval is wordt dat gemeld in het issue met de reden daarvoor waarna de melder enkele weken (_hoeveel?_) de tijd krijgt om de reden te weerleggen en zijn verzoek nog nader toe te lichten.
+
+Indien het wel een valide issue is wordt gekeken of het een bug dan wel een feature betreft (_nog kijken naar de termen_).
+
+Features worden niet door de beheerders opgepakt maar blijven staan totdat er een nieuw project wordt opgestart voor de doorontwikkeling van de standaard. Daar wordt besloten of het feature wordt meegenomen in de nieuwe versie van de standaard.
+Beheerders geven in het feature wel aan hoe hoog naar hun mening de prioriteit is.
+
+_Een feature is gebaseerd op een behoefte. In het geval van een probleem is er geen sprake van een gewijzigde behoefte maar slechts van een fout in de behoeftevoorziening of documentatie. Een feature kan dus nooit de basis zijn voor een patch. Patches zijn dus altijd gebasseerd op issues._
 
 ## Openen Slack kanaal
 Het kunnen communiceren met stakeholders van een Open API standaard is belangrijk voor de kwaliteit van de Open API standaard. Het is tevens een manier om een zo hoog mogelijk draagvlak voor de Open API standaard te creeren. Daarom dient de project manager of scrum master bij de aanvang van een ontwikkelproject direct een Slack kanaal m.b.t. de Open API standaard binnen de VNG API Community workspace te (laten) creeren. Zo'n kanaal moet public zijn zodat geinteresseerden zelf kunnen bepalen of ze bijdragen willen posten in het kanaal.
@@ -103,20 +174,3 @@ docker service ls | Haal de gegevens van de service.
 docker service ps getstartedlab_web | Haal de gegevens op van alle tasks die de service draaien.
 docker stack rm getstartedlab | Afsluiten van de applicatie.
 docker swarm leave --force | Afsluiten van de swarm.
-
-##Criteria voor in beheername van API standaarden
-API standaarden dienen aan de hieronder genoemde criteria te voldoen voordat ze door beheer in beheer genomen kunnen worden.
-
-- De standaard moet formeel goedgekeurd zijn.
->_Ik ga er vanuit dat er nog een governance document komt waarin staat hoe en door wie een API standaard wordt goedgekeurd._
-- API specificatie (OAS3) moet beschikbaar zijn en uit de referentie implementatie of uit de imvertor genereerbaar zijn (afhankelijk van de keuze van het project).
-- Documentatie (zowel technisch als functioneel) moet beschikbaar zijn.
-- De referentie-implementatie moet gereed en up-to date zijn met dan geldende OAS3.
-- Het gebruikte Informatiemodel (minimaal UML) moet beschikbaar zijn.
-- Geautomatiseerde test en buildstraat (CI) moet beschikbaar voor de RI.
-- De API moet in de praktijk beproeft zijn er er moeten succesvolle calls tussen de provider en consumer plaatsgevonden hebben. 
-- De standaard bevat een tabel waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
-- van elke functionaliteit dient een functionele test aanwezig te zijn.
-- De openapi.yaml file heeft semantic versioning.
-- Er moet een lijst zijn waarin alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn, zijn opgenomen.
-- Er moet een beschrijving van de devstraat zijn.
