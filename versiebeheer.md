@@ -87,15 +87,36 @@ gebruikt binnen de `MAJOR` versie die is opgegeven in de URL, zoals deze
 beschikbaar is bij de provider. Consumers kunnen wel een oudere versie afdwingen 
 door deze versie mee te geven als header in het request.
 
-#### Voorbeeld: Provider versie `2.1.8` die geen `1.x` ondersteund.
+*Voorbeeld*
+
+Provider versie `2.1.8` die geen `1.x` ondersteund.
 
 Consumer versie | Provider antwoord
 --- | --- 
-1.0.0 | Verzoek geweigerd, versie wordt niet ondersteund
+1.0.0 | Verzoek geweigerd, versie `1.x` wordt niet ondersteund
 2.0.0 | Verzoek geaccepteerd, waarschuwing oude versie via header
 2.1.0 | Verzoek geaccepteerd
 2.1.8 | Verzoek geaccepteerd
-2.2.0 | Verzoek geweigerd, versie wordt niet ondersteund
+2.2.0 | Verzoek geweigerd, versies hoger dan `2.1.x` worden niet ondersteund
+
+### Versie van de referentie implementatie vs versie van de API
+
+De versie van de API loopt niet persé gelijk aan de versie van de referentie 
+implementatie. Het is noodzakelijk dat de referentie implementatie aangeeft welke versie(s)
+van de API (OAS) is geïmplementeerd.
+
+*Voorbeeld*
+
+* Zaken API referentie implementatie 1.0.0 (Zaken API 1.0.0)
+* Zaken API referentie implementatie 1.0.1 (Zaken API 1.0.0)
+  _Bugfix in de implementatie, geen effect op OAS, **de versies verschillen dus!**_
+* Zaken API referentie implementatie 1.1.0 (Zaken API 1.1.0)
+  _OAS minor update verwerkt in implementatie_
+* Zaken API referentie implementatie 1.1.1 (Zaken API 1.1.1)
+  _Patch in de OAS die ook in de referentie implementatie is verwerkt._
+
+Het kan prima een patroon worden dat alleen de minor versie gaat verschillen 
+tussen API en referentie implementatie.
 
 
 ## Release management 
