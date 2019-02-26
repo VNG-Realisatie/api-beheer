@@ -24,14 +24,17 @@ In dit document worden allerlei procedures en overzichten beschreven die van bel
 ## Criteria voor in beheername
 Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan een aantal eisen. Hieronder staat een eerste aanzet daartoe:
 
-* API specificatie (OAS3) moet beschikbaar zijn en uit de imvertor genereerbaar zijn
+* De standaard moet formeel goedgekeurd zijn.
+* API specificatie (OAS3) moet beschikbaar zijn en uit de referentie implementatie of uit de imvertor genereerbaar zijn (afhankelijk van de keuze van het project).
 * Documentatie (zowel technisch als functioneel) moet beschikbaar zijn
 * De referentie-implementatie moet gereed en up-to date zijn met de dan geldende OAS3
-* Het gebruikte Informatiemodel (minimaal UML)
+* Het gebruikte Informatiemodel (minimaal UML) moet beschikbaar zijn.
 * Geautomatiseerde test en buildstraat (CI) moet beschikbaar voor de RI
-* De standaard moet ingebouwd zijn bij leveranciers (3 of meerdere leveranciers)
-* De standaard bevat een tabel waarin wordt aangegeven welke API versies met welke andere API versies compatible zijn.
-* De standaard bevat een tabel met een lijst van deelnemende partijen en personen.
+* De API moet in de praktijk beproeft zijn er er moeten succesvolle calls tussen de provider en consumer plaatsgevonden hebben. 
+* De standaard bevat een tabel waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
+* De openapi.yaml file heeft semantic versioning.
+* Er moet een lijst zijn waarin alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn, zijn opgenomen.
+* Er moet een beschrijving van de devstraat zijn.
 
 ## Verantwoordelijkheden van Beheer
 API Beheer heeft bij het in beheer nemen en bij het uitvoeren van het beheer een aantal verantwoordelijkheden/taken. Sommige taken worden daadwerkelijk zelf uitgevoerd andere alleen in regie. Hieronder een conceptverse:
@@ -171,4 +174,3 @@ docker service ls | Haal de gegevens van de service.
 docker service ps getstartedlab_web | Haal de gegevens op van alle tasks die de service draaien.
 docker stack rm getstartedlab | Afsluiten van de applicatie.
 docker swarm leave --force | Afsluiten van de swarm.
-
