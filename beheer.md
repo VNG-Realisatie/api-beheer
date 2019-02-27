@@ -30,10 +30,10 @@ Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan 
 * De referentie-implementatie moet gereed en up-to date zijn met de dan geldende OAS3
 * Het gebruikte Informatiemodel (minimaal UML) moet beschikbaar zijn.
 * Geautomatiseerde test en buildstraat (CI) moet beschikbaar voor de RI
-* De API moet in de praktijk beproeft zijn er er moeten succesvolle calls tussen de provider en consumer plaatsgevonden hebben. 
+* De API moet in de praktijk beproefd zijn er er moeten succesvolle calls tussen de provider en consumer plaatsgevonden hebben. 
 * De standaard bevat een tabel waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
-* De openapi.yaml file heeft semantic versioning.
-* Er moet een lijst zijn waarin alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn, zijn opgenomen.
+* De openapi.yaml file heeft [semantic versioning](https://semver.org/).
+* Er moet een lijst zijn waarin alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn (geweest), zijn opgenomen.
 * Er moet een beschrijving van de devstraat zijn.
 
 ## Verantwoordelijkheden van Beheer
