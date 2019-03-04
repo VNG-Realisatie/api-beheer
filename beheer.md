@@ -15,6 +15,7 @@ In dit document worden allerlei procedures en overzichten beschreven die van bel
 - [Overdragen van API-development naar API-beheer](#overdragen-van-api-development-naar-api-beheer)
 - [Starten van API ontwerp en ontwikkeling](#starten-van-api-ontwerp-en-ontwikkeling)
 - [Criteria voor in beheername](#criteria-voor-in-beheername)
+- [Resultaat criteria check](#resultaat-criteria-check)
 - [Verantwoordelijkheden van Beheer](#verantwoordelijkheden-van-beheer)
 - [Lijst van deelnemende partijen en personen](#lijst-van-deelnemende-partijen-en-personen)
 - [Overdracht van backlog](#overdracht-van-backlog)
@@ -60,6 +61,9 @@ Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan 
 * De docker container met de referentie-implementatie moet beschikbaar zijn op DockerHub in de VNG namespace.
 * De standaard bevat een tabel waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
 * Er moet een lijst zijn waarin alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn (geweest), zijn opgenomen.
+
+## Resultaat criteria check
+Het resultaat wordt terug gemaild, met een lijst van verbeteringen door te voeren OF dat de API in beheer wordt genomen.
 
 ## Verantwoordelijkheden van Beheer
 API Beheer heeft bij het in beheer nemen en bij het uitvoeren van het beheer een aantal verantwoordelijkheden/taken. Sommige taken worden daadwerkelijk zelf uitgevoerd andere alleen in regie. Hieronder een conceptverse:
