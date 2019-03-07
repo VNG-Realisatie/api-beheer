@@ -42,25 +42,25 @@ Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan 
 
 * Er moet een testomgeving draaien van de implementatie.
 *  Is de standaard (deze bestaat uit de OAS, referentieimplementatie, documentatie) formeel goedgekeurd, concreet gemaakt:
-  * Is er een API-lab geweest van deze API?
-  * Zijn er sprint demo's geweest van deze API?
-  * Hij moet beschikbaar zijn in test platform
-* Is standaard publiekelijk beschikbaar?
-  * Is de OAS zonder restricties op te vragen in de browser?
-* Kwaliteitscheck op OAS
-  * Voldoet hij aan de landelijke API strategie, of is er gedocumenteerd afgeweken
+  * Er moet een API-lab gehouden zijn van deze API
+  * Er moeten één of meer tussetijdse (sprint) demo's zijn geweest van deze API
+  * De API moet beschikbaar zijn in test platform
+* De standaard moet publiekelijk beschikbaar zijn:
+  * De OAS moet zonder restricties op te vragen zijn in de browser
+* Kwaliteitscheck op OAS:
+  * De standaard moet voldoen aan de landelijke API strategie, of er is gedocumenteerd en beargumenteerd afgeweken.
   * Openen in Swaggerhub ter dubbelcheck
-* Documentatie heeft minimaal:
-  * UML model van het informatiemodel (de objecttypen en onderlinge relaties) zoals deze in de API gebruikt wordt.
-  * Welke gegevens worden er ontsloten: Tabel van de resource + bijzonderheden. 
+* Documentatie omvat minimaal:
+  * Een UML model van het informatiemodel (de objecttypen en onderlinge relaties) zoals deze in de API gebruikt wordt.
+  * Een overzicht van welke gegevens worden ontsloten in de vorm van een tabel van de resource + bijzonderheden. 
   * INSTALL.rst van de ref. impl.
-  * Is er een beschrijving van de Business logica?
-  * Changelog er in waar per versie staat wat is toegevoegd, gewijzigd en hoe te migreren.
+  * Een beschrijving van de business logica die in de standaard van toepassing is.
+  * Een overzicht van wijzigingen (changelog) met daarin per versie wat is toegevoegd, gewijzigd en hoe te migreren van de voorgaande naar deze versie.
+  * De standaard bevat een overzicht waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
+ * De standaard bevat een overzicht waarin alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn (geweest), zijn opgenomen.
 * De referentie-implementatie moet gereed en up-to date zijn met de dan geldende OAS3
   * Steekproefsgewijs testen van Openapi.yaml vs test omgeving, vergelijk de resource
 * De docker container met de referentie-implementatie moet beschikbaar zijn op DockerHub in de VNG namespace.
-* De standaard bevat een tabel waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
-* Er moet een lijst zijn waarin alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn (geweest), zijn opgenomen.
 
 ## Resultaat criteria check
 Het resultaat wordt terug gemaild, met een lijst van verbeteringen door te voeren OF dat de API in beheer wordt genomen.
