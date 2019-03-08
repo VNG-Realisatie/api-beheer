@@ -44,7 +44,7 @@ Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan 
 *  Is de standaard (deze bestaat uit de OAS, referentieimplementatie, documentatie) formeel goedgekeurd, concreet gemaakt:
   * Er moet een API-lab gehouden zijn van deze API
   * Er moeten één of meer tussetijdse (sprint) demo's zijn geweest van deze API
-  * De API moet beschikbaar zijn in test platform
+  * De API moet beschikbaar zijn in het VNG test platform
 * De standaard moet publiekelijk beschikbaar zijn:
   * De OAS moet zonder restricties op te vragen zijn in de browser
 * Kwaliteitscheck op OAS:
