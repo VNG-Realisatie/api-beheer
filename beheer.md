@@ -57,7 +57,7 @@ Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan 
   * Een beschrijving van de business logica die in de standaard van toepassing is.
   * Een overzicht van wijzigingen (bijv. CHANGELOG.rst in de repository) met daarin per versie wat is toegevoegd, gewijzigd en hoe te migreren van de voorgaande naar deze versie.
   * De standaard bevat een overzicht waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
- * De standaard bevat een overzicht waarin alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn (geweest), zijn opgenomen.
+ * De standaard bevat een overzicht van alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn (geweest).
 * De referentie-implementatie moet gereed en up-to date zijn met de dan geldende OAS3
   * Steekproefsgewijs testen van Openapi.yaml vs test omgeving, vergelijk de resource
 * De docker container met de referentie-implementatie moet beschikbaar zijn op DockerHub in de VNG namespace.
