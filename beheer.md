@@ -53,7 +53,7 @@ Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan 
 * Documentatie omvat minimaal:
   * Een UML model van het informatiemodel (de objecttypen en onderlinge relaties) zoals deze in de API gebruikt wordt.
   * Een overzicht van welke gegevens worden ontsloten in de vorm van een tabel van de resource + bijzonderheden. 
-  * INSTALL.rst van de ref. impl.
+  * Installatie instructies van de referentie implementatie (bijv. INSTALL.rst in de repository).
   * Een beschrijving van de business logica die in de standaard van toepassing is.
   * Een overzicht van wijzigingen (changelog) met daarin per versie wat is toegevoegd, gewijzigd en hoe te migreren van de voorgaande naar deze versie.
   * De standaard bevat een overzicht waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
