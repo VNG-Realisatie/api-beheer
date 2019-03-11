@@ -12,29 +12,58 @@ In dit document worden allerlei procedures en overzichten beschreven die van bel
 
 ## Inhoudsopgave
 
+- [Overdragen van API-development naar API-beheer](#overdragen-van-api-development-naar-api-beheer)
+- [Starten van API ontwerp en ontwikkeling](#starten-van-api-ontwerp-en-ontwikkeling)
 - [Criteria voor in beheername](#criteria-voor-in-beheername)
+- [Resultaat criteria check](#resultaat-criteria-check)
 - [Verantwoordelijkheden van Beheer](#verantwoordelijkheden-van-beheer)
-- [Lijst van deelnemende partijen en personen](#lijst-van-deelnemende-partij-en-personen)
+- [Lijst van deelnemende partijen en personen](#lijst-van-deelnemende-partijen-en-personen)
 - [Overdracht van backlog](#overdracht-van-backlog)
 - [Openen Slack kanaal](#openen-slack-kanaal)
 - [Openen OpenAPI standaard pagina op GEMMA Online](#openen-openapi-standaard-pagina-op-gemma-online)
 - [Openen GEMMA Online discussieforum](#openen-gemma-online-discussieforum)
 - [Werken met Docker](#werken-met-docker)
 
+
+
+## Overdragen van API-development naar API-beheer
+* Er moet een template komen van hoe een API standaard wordt overgedragen! Nu ontbraken bijvoorbeeld linkjes naar documentatie.
+* Criteria (checklist) moet ook naar API-developers
+
+## Starten van API ontwerp en ontwikkeling
+Beheer helpt API developers/designers door:
+* Beheer geeft toegang tot Dockerhub voor pushen van images aan devs
+* Beheer vraagt aan devs: Voordat je oplevert, hang in test platform met deze credentials
+* Documenteer altijd bepaalde onderwerpen; als het n.v.t. is, moet dat er ook staan (bijv. afhankelijkheden van andere APIs)
+* Geef via email naar "..." aan dat de standaard in beheer genomen moet worden.
+
 ## Criteria voor in beheername
 Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan een aantal eisen. Hieronder staat een eerste aanzet daartoe:
 
-* De standaard moet formeel goedgekeurd zijn.
-* API specificatie (OAS3) moet beschikbaar zijn en uit de referentie implementatie of uit de imvertor genereerbaar zijn (afhankelijk van de keuze van het project).
-* Documentatie (zowel technisch als functioneel) moet beschikbaar zijn
+* Er moet een testomgeving draaien van de implementatie.
+*  Is de standaard (deze bestaat uit de OAS, referentieimplementatie, documentatie) formeel goedgekeurd, concreet gemaakt:
+  * Er moet een API-lab gehouden zijn van deze API
+  * Er moeten één of meer tussentijdse (sprint) demo's zijn geweest van deze API
+  * De API moet beschikbaar zijn in het VNG test platform
+* De standaard moet publiekelijk beschikbaar zijn:
+  * De OAS moet zonder restricties op te vragen zijn in de browser
+* Kwaliteitscheck op OAS:
+  * De standaard moet voldoen aan de landelijke API strategie, of er is gedocumenteerd en beargumenteerd afgeweken.
+  * Openen in Swaggerhub ter dubbelcheck
+* Documentatie omvat minimaal:
+  * Een UML model van het informatiemodel (de objecttypen en onderlinge relaties) zoals deze in de API gebruikt wordt.
+  * Een overzicht van welke gegevens worden ontsloten in de vorm van een tabel van de resource + bijzonderheden. 
+  * Installatie instructies van de referentie implementatie (bijv. INSTALL.rst in de repository).
+  * Een beschrijving van de business logica die in de standaard van toepassing is.
+  * Een overzicht van wijzigingen (bijv. CHANGELOG.rst in de repository) met daarin per versie wat is toegevoegd, gewijzigd en hoe te migreren van de voorgaande naar deze versie.
+  * De standaard bevat een overzicht waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
+ * De standaard bevat een overzicht van alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn (geweest).
 * De referentie-implementatie moet gereed en up-to date zijn met de dan geldende OAS3
-* Het gebruikte Informatiemodel (minimaal UML) moet beschikbaar zijn.
-* Geautomatiseerde test en buildstraat (CI) moet beschikbaar voor de RI
-* De API moet in de praktijk beproefd zijn er er moeten succesvolle calls tussen de provider en consumer plaatsgevonden hebben. 
-* De standaard bevat een tabel waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
-* De openapi.yaml file heeft [semantic versioning](https://semver.org/).
-* Er moet een lijst zijn waarin alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn (geweest), zijn opgenomen.
-* Er moet een beschrijving van de devstraat zijn.
+  * Steekproefsgewijs testen van Openapi.yaml vs test omgeving, vergelijk de resource
+* De docker container met de referentie-implementatie moet beschikbaar zijn op DockerHub in de VNG namespace.
+
+## Resultaat criteria check
+Het resultaat wordt terug gemaild, met een lijst van verbeteringen door te voeren OF dat de API in beheer wordt genomen.
 
 ## Verantwoordelijkheden van Beheer
 API Beheer heeft bij het in beheer nemen en bij het uitvoeren van het beheer een aantal verantwoordelijkheden/taken. Sommige taken worden daadwerkelijk zelf uitgevoerd andere alleen in regie. Hieronder een conceptverse:
