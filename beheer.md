@@ -40,7 +40,8 @@ Beheer helpt API developers/designers door:
 ## Criteria voor in beheername
 Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan een aantal eisen. Hieronder staat een eerste aanzet daartoe:
 
-* Er moet een testomgeving draaien van de implementatie.
+* Er moet een testomgeving draaien van de implementatie. Dit betekent ook dat:
+  * De testscripts voor de referentie-implementaties waarmee we al het gewenst gedrag zoals beschreven in standaard ook beschikbaar worden gesteld. Beheer zal dit bij doorontwikkeling weer nodig hebben en tevens zullen zij deze beschikbaar stellen aan de leveranciers/gemeenten. 
 *  Is de standaard (deze bestaat uit de OAS, referentieimplementatie, documentatie) formeel goedgekeurd, concreet gemaakt:
   * Er moet een API-lab gehouden zijn van deze API
   * Er moeten één of meer tussentijdse (sprint) demo's zijn geweest van deze API
