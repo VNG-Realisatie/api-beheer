@@ -1,6 +1,6 @@
 # Contributing
 
-We – [VNG realisatie](https://www.vngrealisatie.nl/) and the maintainers of this project – acknowledge we can only reach a high quality of managing the API standards together with you. Thus we appreciate your input, enjoy feedback and welcome improvements to this project and are very open to collaboration.
+We – [VNG realisatie](https://www.vngrealisatie.nl/) and the maintainers of this project – acknowledge we can only reach a high quality of managing the API standards together with you. Managing standards isn't only concerning us (API-Beheer), it also concerns suppliers en local government too. How would you like to have the standards published, what would help you use or implement the standards, how would you like to be able to submit new requirements or report problems etc... You see, we appreciate your input, enjoy feedback and welcome improvements to this project and are very open to collaboration. 
 
 We love issues and pull requests from everyone.
 
@@ -20,7 +20,7 @@ Add your changes in commits [with a message that explains them](https://robots.t
 
 ### 2. Pull Request
 
-When submitting the pull request, please accompany it with a description of the problem you are trying to address and the issue numbers that this Pull Request fixes/addresses.
+When submitting the pull request, please accompany it with a description of the problem you are trying to address and if applicable the issue numbers that this Pull Request fixes/addresses.
 
 ### 3. Improve
 
