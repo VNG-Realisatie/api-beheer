@@ -16,9 +16,7 @@ De inhoud van deze repository zal op een later moment mogelijk worden opgenomen 
 **Visie API-Beheer** 
 
 Het beheer van Open API standaarden waarborgt de ondersteuning van de standaard nadat deze is ontwikkeld.
-Voor een Open API standaard die in beheer is betreft dat het beantwoorden van vragen, het vastleggen van problemen met de standaard, het oplossen van kleine problemen, het opnieuw beschikbaar stellen van alle componenten van de door beheer aangepaste standaard, etc... 
-
-Er kan op een gegeven moment behoefte ontstaan om een API standaard door te ontwikkelen. Die doorontwikkeling dient in projectvorm te worden opgepakt en is geen taak van API-beheer.
+Voor een Open API standaard die in beheer is betreft dat het beantwoorden van vragen, het vastleggen van problemen met de standaard, het oplossen van kleine problemen, het opnieuw beschikbaar stellen van alle componenten van de door beheer aangepaste standaard, het doorontwikkelen van de standaard, etc... 
 
 Bij het beheer van een Open API standaard onderkennen we 2 fases en elke fase kent een aantal aspecten:
 * In beheername fase.
@@ -27,15 +25,18 @@ Bij het beheer van een Open API standaard onderkennen we 2 fases en elke fase ke
     criteria wordt voldaan. Idealiter hebben de ontwikkelaars van een standaard de criteria natuurlijk al tijdens de
     ontwikkeling van de standaard in het oog. Daarnaast zijn de beheerders stakeholders bij de ontwikkeling van een standaard 
     en houden zij dit aspect ook goed in de gaten. Dit zou dus slechts een formele slag moeten zijn.
-  + Al het materiaal, documentatie en omgevingen die bij de ontwikkeling van de API standaard zijn aangemaakt wordt in deze fase overgedragen. Het gaat om een officieel moment waarop de beheerders aangeven dat de standaard officieel onder hun beheer valt maar mzo nodig betreft het ook het regelen van de juiste rechten.
+  + Al het materiaal, documentatie en omgevingen die bij de ontwikkeling van de API standaard zijn aangemaakt wordt in deze fase overgedragen. Het gaat daarbij om een officieel 'moment' waarop de beheerders aangeven dat de standaard officieel onder hun beheer valt maar zo nodig betreft het ook het regelen van de juiste rechten.
+  
+De overdracht van een API standaard aan beheer is weliswaar een (officieel) 'moment' maar de in beheername fase zelf betreft een periode waarin beheer steeds nadrukkelijker deel gaat nemen aan een project voor de ontwikkeling van de standaard met als eindresultaat dat de overdracht geregeld is. De reden dat het een periode betreft is dat het een zachte overdracht mogelijk maakt waardoor wordt voorkomen dat de standaard na overdracht omvalt. In deze periode wordt aandacht besteedt aan facetten waar men bij elke over te dragen standaard tegenaan loopt maar ook om het zich eigen maken van de inhoudelijke aspecten van de standaard. Een beheerder moet immers weten waar een standaard precies om draait om later in staat te zijn functioneel en technish beheer in te kunnen vullen. 
 
 >   _**Nog te beantwoorden vragen:**_ 
 >  - _Is bij de overdracht het door de leveranciers en gemeenten te gebruiken kanaal al ingericht?_
 
 * Beheerfase.
-  Dit is de fase waarin (de componenten van) een standaard daadwerkelijk in beheer is genomen
+  Dit is de fase waarin (de componenten van) een standaard daadwerkelijk in beheer zijn genomen
   - aspecten die betrekking hebben op de werkzaamheden van de beheerders.
-    + Wat is de aard van het beheer van de diverse componenten. Voeren de beheerders de werkzaamheden zelf uit of voeren zij alleen de regie uit.
+    + wat is de aard van het beheer van de diverse componenten? Voeren de beheerders de werkzaamheden zelf uit of voeren zij alleen de regie uit.
+    + hoe wordt functioneel beheer uitgevoerd en hoe technisch beheer?
     + over welke vaardigheden en kennis dienen beheerders te beschikken? 
     Dit wordt (mede) bepaald door de taken die de beheerders hebben. Wel/niet zelf aanpassen van de referentie implementatie, genereren van API's uit referentie implementatie en/of een UML model, etc.
     + hoe dienen zij te handelen in de diverse situaties?
@@ -52,7 +53,12 @@ Bij het beheer van een Open API standaard onderkennen we 2 fases en elke fase ke
     + etc...
   - aspecten die betrekking hebben op het configureren van de standaard in de test-voorziening.
     + waar kan informatie voor het configureren van de testvoorziening gevonden worden?
+    + welke kennis is daarvoor vereist?
     + ...
+  - aspecten die betrekking hebben op de doorontwikkeling van de standaard
+    + wanneer is doorontwikkeling aan de orde?
+    + wanneer moet voor doorontwikkeling een nieuw ontwikkelproject worden opgetuigd en wanneer is dat niet nodig?
+    + ... 
     
 Enkele aspecten die van belang zijn bij het beheer van een standaard spelen ook al een rol bij de ontwikkeling van een standaard.
 Denk daarbij aan:
@@ -79,7 +85,7 @@ Het bestaan van 2 verschillende methodieken voor het vervaardigen van API standa
 >   _**Nog aan te vullen**_ 
 
 ## Vragen en bijdragen
-...
+Lees meer over hoe je vragen kunt stellen, bugs kunt melden en bij kunt dragen (met code of documentatie) in [`CONTRIBUTING.md`](CONTRIBUTING.md) (EN).
 
 ## Documentatie
 ...
