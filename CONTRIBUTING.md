@@ -1,6 +1,6 @@
 # Contributing
 
-We – [VNG realisatie](https://www.vngrealisatie.nl/) and the maintainers of this project – acknowledge we can only create high quality of service together with you. Thus we appreciate your input, enjoy feedback and welcome improvements to this project and are very open to collaboration.
+We – [VNG realisatie](https://www.vngrealisatie.nl/) and the maintainers of this project – acknowledge we can only reach a high quality of managing the API standards together with you. Thus we appreciate your input, enjoy feedback and welcome improvements to this project and are very open to collaboration.
 
 We love issues and pull requests from everyone.
 
