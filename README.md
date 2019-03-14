@@ -20,6 +20,7 @@ Voor een Open API standaard die in beheer is betreft dat het beantwoorden van vr
 
 Bij het beheer van een Open API standaard onderkennen we 2 fases en elke fase kent een aantal aspecten:
 * In beheername fase.
+  + De overdracht van een API standaard aan beheer is weliswaar een (officieel) 'moment' maar de in beheername fase zelf betreft een periode waarin beheer steeds nadrukkelijker deel gaat nemen aan een project voor de ontwikkeling van de standaard met als eindresultaat dat de overdracht geregeld is. De reden dat het een periode betreft is dat het een zachte overdracht mogelijk maakt waardoor wordt voorkomen dat de standaard na overdracht omvalt. In deze periode wordt aandacht besteedt aan facetten waar men bij elke over te dragen standaard tegenaan loopt maar ook om het zich eigen maken van de inhoudelijke aspecten van de standaard. Een beheerder moet immers weten waar een standaard precies om draait om later in staat te zijn functioneel en technish beheer in te kunnen vullen.
   + De Open API standaard moet voldoen aan een aantal criteria voordat deze in beheer genomen kan worden.
     Deze worden in deze fase gecheckt en aan de hand van die check volgt de in beheername tenzij er niet aan de
     criteria wordt voldaan. Idealiter hebben de ontwikkelaars van een standaard de criteria natuurlijk al tijdens de
@@ -27,7 +28,7 @@ Bij het beheer van een Open API standaard onderkennen we 2 fases en elke fase ke
     en houden zij dit aspect ook goed in de gaten. Dit zou dus slechts een formele slag moeten zijn.
   + Al het materiaal, documentatie en omgevingen die bij de ontwikkeling van de API standaard zijn aangemaakt wordt in deze fase overgedragen. Het gaat daarbij om een officieel 'moment' waarop de beheerders aangeven dat de standaard officieel onder hun beheer valt maar zo nodig betreft het ook het regelen van de juiste rechten.
   
-De overdracht van een API standaard aan beheer is weliswaar een (officieel) 'moment' maar de in beheername fase zelf betreft een periode waarin beheer steeds nadrukkelijker deel gaat nemen aan een project voor de ontwikkeling van de standaard met als eindresultaat dat de overdracht geregeld is. De reden dat het een periode betreft is dat het een zachte overdracht mogelijk maakt waardoor wordt voorkomen dat de standaard na overdracht omvalt. In deze periode wordt aandacht besteedt aan facetten waar men bij elke over te dragen standaard tegenaan loopt maar ook om het zich eigen maken van de inhoudelijke aspecten van de standaard. Een beheerder moet immers weten waar een standaard precies om draait om later in staat te zijn functioneel en technish beheer in te kunnen vullen. 
+ 
 
 >   _**Nog te beantwoorden vragen:**_ 
 >  - _Is bij de overdracht het door de leveranciers en gemeenten te gebruiken kanaal al ingericht?_
