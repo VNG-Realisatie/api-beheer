@@ -12,7 +12,7 @@ In dit document worden allerlei procedures en overzichten beschreven die van bel
 
 ## Inhoudsopgave
 
-- [Overdragen van API-development naar API-beheer](#overdragen-van-api-development-naar-api-beheer)
+- [Overdracht van API-development naar API-beheer](#overdracht-van-api-development-naar-api-beheer)
 - [Starten van API ontwerp en ontwikkeling](#starten-van-api-ontwerp-en-ontwikkeling)
 - [Criteria voor in beheername](#criteria-voor-in-beheername)
 - [Resultaat criteria check](#resultaat-criteria-check)
@@ -25,10 +25,9 @@ In dit document worden allerlei procedures en overzichten beschreven die van bel
 - [Werken met Docker](#werken-met-docker)
 
 
-
-## Overdragen van API-development naar API-beheer
-* Er moet een template komen van hoe een API standaard wordt overgedragen! Nu ontbraken bijvoorbeeld linkjes naar documentatie.
-* Criteria (checklist) moet ook naar API-developers
+## Overdracht van API-development naar API-beheer
+* _Er moet een template komen van hoe een API standaard wordt overgedragen! Nu ontbraken bijvoorbeeld linkjes naar documentatie._
+* _Er moet een checklist met criteria komen die de API-developers kunnen nalopen._
 
 ## Starten van API ontwerp en ontwikkeling
 Beheer helpt API developers/designers door:
@@ -37,15 +36,18 @@ Beheer helpt API developers/designers door:
 * Documenteer altijd bepaalde onderwerpen; als het n.v.t. is, moet dat er ook staan (bijv. afhankelijkheden van andere APIs)
 * Geef via email naar "..." aan dat de standaard in beheer genomen moet worden.
 
+_Ik begrijp deze sectie niet. Wat is hiervan de bedoeling?_
+
 ## Criteria voor in beheername
 Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan een aantal eisen. Hieronder staat een eerste aanzet daartoe:
 
 * Er moet een testomgeving draaien van de implementatie. Dit betekent ook dat:
   * De testscripts voor de referentie-implementaties waarmee we al het gewenst gedrag zoals beschreven in standaard ook beschikbaar worden gesteld. Beheer zal dit bij doorontwikkeling weer nodig hebben en tevens zullen zij deze beschikbaar stellen aan de leveranciers/gemeenten. 
-*  Is de standaard (deze bestaat uit de OAS, referentieimplementatie, documentatie) formeel goedgekeurd, concreet gemaakt:
+* Is de standaard (deze bestaat uit de OAS, referentieimplementatie, documentatie) formeel goedgekeurd, concreet gemaakt:
   * Er moet een API-lab gehouden zijn van deze API
   * Er moeten één of meer tussentijdse (sprint) demo's zijn geweest van deze API
   * De API moet beschikbaar zijn in het VNG test platform
+  * _Ik mis in bovenstaande nog steeds het formele moment waarop de API in gezamenlijkheid als standaard wordt uitgeroepen. Je kunt wel een API-lab en demo's houden maar dat betekent nog niet dat iedereen vindt dat de API van voldoende kwaliteit is._
 * De standaard moet publiekelijk beschikbaar zijn:
   * De OAS moet zonder restricties op te vragen zijn in de browser
 * Kwaliteitscheck op OAS:
@@ -132,9 +134,6 @@ Het Slack kanaal is overigens geen vervanging van het GEMMA Online discussieforu
 
 ## Openen OpenAPI standaard pagina op GEMMA Online
 Op [deze pagina](https://github.com/VNG-Realisatie/api-beheer/blob/master/doc/gemma_online.md) staat een voorzet van een algemene GEMMA Online API pagina. Wanneer deze voor akkoord bevonden wordt kan deze op GEMMA Online gepubliceerd worden.
-
-## Openen GEMMA Online discussieforum
-_nog in te vullen_
 
 ## Overdracht van backlog
 Bij de overdracht van een standaard van ontwikkeling naar beheer moeten ook de nog in de backlog staande issues overgedragen worden. Dit gebeurt mondeling om de beheerders de gelegenheid te geven vragen te stellen over de issues. Zo moet o.a. duidelijk worden of er afspraken gemaakt zijn met de indiener van het issue m.b.t. de invulling van het issue in toekomstige versies van het koppelvlak.
