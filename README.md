@@ -33,7 +33,7 @@ Bij het beheer van een Open API standaard onderkennen we 2 fases en elke fase ke
 >   _**Nog te beantwoorden vragen:**_ 
 >  - _Is bij de overdracht het door de leveranciers en gemeenten te gebruiken kanaal al ingericht?_
 
-* Beheerfase.
+* Beheerfase.<br/>
   Dit is de fase waarin (de componenten van) een standaard daadwerkelijk in beheer zijn genomen
   - aspecten die betrekking hebben op de werkzaamheden van de beheerders.
     + wat is de aard van het beheer van de diverse componenten? Voeren de beheerders de werkzaamheden zelf uit of voeren zij alleen de regie uit.
