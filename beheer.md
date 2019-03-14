@@ -77,17 +77,22 @@ Beheren Slack VNG API Community | Ja | Zelf
 Beheren onderhoudsverzoeken per API standaard | Ja | Zelf
 Beheren GitHub omgevingen | Ja | Zelf
 Aanpassen functionele documentatie | Ja| Zelf
-Aanpassen technische documentatie | ? | ?
+Aanpassen technische documentatie | Ja | ?
 Aanpassen Referentie Implementaties | Ja | Regie
 Wijzigingen UML informatiemodellen/berichtmodellen | Ja | Zelf
 Genereren OAS3 m.b.v. Imvertor | Ja | Zelf
+Genereren OAS3 vanuit Referentie Implementatie | Ja | Regie
+Kwaliteitscheck OAS3 | Ja | ?
 Beheren tabel met compatible API's | Ja |Zelf
-Beheren testscenario's | ? | ?
+Beheren testscenario's | Ja | ?
 Publiceren nieuwe versie van een API standaard (incl. RI) | Ja |Zelf
-Oplossen Bug's | ? | ?
-Toevoegen nieuwe functionaliteiten | ? | ?
-Beheren backlog | ? | ?
-... | ...
+Oplossen Bug's | Ja | Regie
+Toevoegen nieuwe functionaliteiten | Ja | Regie
+Beheren backlog | Ja | Zelf
+Beheren DockerHub omgeving | Ja | Zelf
+Beheren publicatie op developer.overheid.nl | Ja | Zelf
+Beheren publicatie op GEMMA Online | Ja | Zelf
+
 
 
 ## Lijst van deelnemende partijen en personen
