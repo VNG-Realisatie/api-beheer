@@ -48,6 +48,7 @@ Bij het beheer van een Open API standaard onderkennen we 2 fases en elke fase ke
   - aspecten die betrekking hebben op leveranciers en gemeenten.
     Welke voorzieningen moeten er ingericht worden, of in geval dat al gebeurd is welke voorzieningen moeten
     beheerd worden, voor de leveranciers en gemeenten zodat zij:
+    + weten dat er een standaard is?
     + de standaard kunnen gebruiken?
     + de standaard kunnen testen? 
     + zij vragen en problemen kunnen melden?
