@@ -89,7 +89,8 @@ Publiceren nieuwe versie van een API standaard (incl. RI) | Ja |Zelf
 Oplossen Bug's | Ja | Regie
 Toevoegen nieuwe functionaliteiten | Ja | Regie
 Beheren backlog | Ja | Zelf
-Beheren DockerHub omgeving | Ja | Zelf
+Beheren DockerHub omgeving | Ja | Regie
+Beheren Docker containers in DockerHub omgeving | Ja | Zelf
 Beheren publicatie op developer.overheid.nl | Ja | Zelf
 Beheren publicatie op GEMMA Online | Ja | Zelf
 
