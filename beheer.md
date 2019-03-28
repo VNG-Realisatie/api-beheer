@@ -12,7 +12,7 @@ In dit document worden allerlei procedures en overzichten beschreven die van bel
 
 ## Inhoudsopgave
 
-- [Overdragen van API-development naar API-beheer](#overdragen-van-api-development-naar-api-beheer)
+- [Overdracht van API-development naar API-beheer](#overdracht-van-api-development-naar-api-beheer)
 - [Starten van API ontwerp en ontwikkeling](#starten-van-api-ontwerp-en-ontwikkeling)
 - [Criteria voor in beheername](#criteria-voor-in-beheername)
 - [Resultaat criteria check](#resultaat-criteria-check)
@@ -25,10 +25,9 @@ In dit document worden allerlei procedures en overzichten beschreven die van bel
 - [Werken met Docker](#werken-met-docker)
 
 
-
-## Overdragen van API-development naar API-beheer
-* Er moet een template komen van hoe een API standaard wordt overgedragen! Nu ontbraken bijvoorbeeld linkjes naar documentatie.
-* Criteria (checklist) moet ook naar API-developers
+## Overdracht van API-development naar API-beheer
+* _Er moet een template komen van hoe een API standaard wordt overgedragen! Nu ontbraken bijvoorbeeld linkjes naar documentatie._
+* _Er moet een checklist met criteria komen die de API-developers kunnen nalopen._
 
 ## Starten van API ontwerp en ontwikkeling
 Beheer helpt API developers/designers door:
@@ -37,20 +36,35 @@ Beheer helpt API developers/designers door:
 * Documenteer altijd bepaalde onderwerpen; als het n.v.t. is, moet dat er ook staan (bijv. afhankelijkheden van andere APIs)
 * Geef via email naar "..." aan dat de standaard in beheer genomen moet worden.
 
-## Criteria voor in beheername
-Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan een aantal eisen. Hieronder staat een eerste aanzet daartoe:
+_Ik begrijp deze sectie niet. Wat is hiervan de bedoeling?_
 
-* Er moet een testomgeving draaien van de implementatie. Dit betekent ook dat:
-  * De testscripts voor de referentie-implementaties waarmee we al het gewenst gedrag zoals beschreven in standaard ook beschikbaar worden gesteld. Beheer zal dit bij doorontwikkeling weer nodig hebben en tevens zullen zij deze beschikbaar stellen aan de leveranciers/gemeenten. 
-*  Is de standaard (deze bestaat uit de OAS, referentieimplementatie, documentatie) formeel goedgekeurd, concreet gemaakt:
-  * Er moet een API-lab gehouden zijn van deze API
+## Criteria voor in beheername
+Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan een aantal eisen:
+
+**Over te dragen onderdelen**
+* OAS3 (yaml bestand);
+* De Github repositories, inclusief de backlog;
+* Referentie Implementatie (RI) als docker container;
+* Documentatie, functioneel en technisch, geschikt voor verschillende soorten gebruikers;
+* Overzicht van de business logica;
+* Overzicht compatibiliteit met welke versies van andere standaarden;
+* Wijzigingenoverzicht per versie;
+* Overzicht van de betrokken partijen en personen;
+* Testomgeving met testscripts.
+
+**Eisen aan de onderdelen**
+* De OAS moet voldoen aan de landelijke API strategie, of er is gedocumenteerd en beargumenteerd afgeweken;
+* De OAS moet foutloos te raadplegen zijn in tools als Swaggerhub of Redoc
+* De standaard is formeel goedgekeurd, concreet gemaakt.
+_Het forum voor standaardisatie stelt als eis dat er een openbare consiltatie is geweest. De vraag is alleen hoe die openbare consulatatie moet worden ingericht. Volgende acties zouden i.i.g. moeten zijn genomen:_
+  * Er moet minstens één API-lab gehouden zijn van deze API om de ervaringen van de gebruikers te verzamelen.
   * Er moeten één of meer tussentijdse (sprint) demo's zijn geweest van deze API
-  * De API moet beschikbaar zijn in het VNG test platform
-* De standaard moet publiekelijk beschikbaar zijn:
-  * De OAS moet zonder restricties op te vragen zijn in de browser
-* Kwaliteitscheck op OAS:
-  * De standaard moet voldoen aan de landelijke API strategie, of er is gedocumenteerd en beargumenteerd afgeweken.
-  * Openen in Swaggerhub ter dubbelcheck
+  * ...
+* De OAS3 en de RI sluiten naadloos op elkaar aan.
+  * Dit kan door het steekproefsgewijs testen van Openapi.yaml vs test omgeving, vergelijk de resource
+* De testomgeving met een implementatie van de RI moet draaien. Dit betekent ook dat:
+  * De testscripts voor de RI waarmee we al het gewenst gedrag zoals beschreven in standaard testen ook beschikbaar zijn gesteld. Beheer zal dit bij doorontwikkeling weer nodig hebben en tevens zullen zij deze beschikbaar stellen aan de leveranciers/gemeenten. 
+* De docker container met de RI moet beschikbaar zijn op DockerHub in de VNG namespace.
 * Documentatie omvat minimaal:
   * Een UML model van het informatiemodel (de objecttypen en onderlinge relaties) zoals deze in de API gebruikt wordt.
   * Een overzicht van welke gegevens worden ontsloten in de vorm van een tabel van de resource + bijzonderheden. 
@@ -59,9 +73,14 @@ Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan 
   * Een overzicht van wijzigingen (bijv. CHANGELOG.rst in de repository) met daarin per versie wat is toegevoegd, gewijzigd en hoe te migreren van de voorgaande naar deze versie.
   * De standaard bevat een overzicht waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
  * De standaard bevat een overzicht van alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn (geweest).
-* De referentie-implementatie moet gereed en up-to date zijn met de dan geldende OAS3
-  * Steekproefsgewijs testen van Openapi.yaml vs test omgeving, vergelijk de resource
-* De docker container met de referentie-implementatie moet beschikbaar zijn op DockerHub in de VNG namespace.
+
+**Informatievoorziening**
+* De Github repositories behorende bij de standaard moet publiekelijk beschikbaar zijn;
+* De OAS moet zonder restricties op te vragen zijn;
+* Er is een mechanisme om vragen te kunnen stellen aan beheer, (bijvoorbeeld via Slack);
+* De website http://ref.tst.vng.cloud/ bevat een pagina over de standaard;
+* Gemma Online http://www.gemmaonline.nl/ bevat een pagina over de standaard;
+* In de toekomst bevat de website http://developer.overheid.nl/ een pagina over de standaard.
 
 ## Resultaat criteria check
 Het resultaat wordt terug gemaild, met een lijst van verbeteringen door te voeren OF dat de API in beheer wordt genomen.
@@ -75,17 +94,23 @@ Beheren Slack VNG API Community | Ja | Zelf
 Beheren onderhoudsverzoeken per API standaard | Ja | Zelf
 Beheren GitHub omgevingen | Ja | Zelf
 Aanpassen functionele documentatie | Ja| Zelf
-Aanpassen technische documentatie | ? | ?
+Aanpassen technische documentatie | Ja | ?
 Aanpassen Referentie Implementaties | Ja | Regie
 Wijzigingen UML informatiemodellen/berichtmodellen | Ja | Zelf
 Genereren OAS3 m.b.v. Imvertor | Ja | Zelf
+Genereren OAS3 vanuit Referentie Implementatie | Ja | Regie
+Kwaliteitscheck OAS3 | Ja | ?
 Beheren tabel met compatible API's | Ja |Zelf
-Beheren testscenario's | ? | ?
+Beheren testscenario's | Ja | ?
 Publiceren nieuwe versie van een API standaard (incl. RI) | Ja |Zelf
-Oplossen Bug's | ? | ?
-Toevoegen nieuwe functionaliteiten | ? | ?
-Beheren backlog | ? | ?
-... | ...
+Oplossen Bug's | Ja | Regie
+Toevoegen nieuwe functionaliteiten | Ja | Regie
+Beheren backlog | Ja | Zelf
+Beheren DockerHub omgeving | Ja | Regie
+Beheren Docker containers in DockerHub omgeving | Ja | Zelf
+Beheren publicatie op developer.overheid.nl | Ja | Zelf
+Beheren publicatie op GEMMA Online | Ja | Zelf
+
 
 
 ## Lijst van deelnemende partijen en personen
@@ -132,9 +157,6 @@ Het Slack kanaal is overigens geen vervanging van het GEMMA Online discussieforu
 
 ## Openen OpenAPI standaard pagina op GEMMA Online
 Op [deze pagina](https://github.com/VNG-Realisatie/api-beheer/blob/master/doc/gemma_online.md) staat een voorzet van een algemene GEMMA Online API pagina. Wanneer deze voor akkoord bevonden wordt kan deze op GEMMA Online gepubliceerd worden.
-
-## Openen GEMMA Online discussieforum
-_nog in te vullen_
 
 ## Overdracht van backlog
 Bij de overdracht van een standaard van ontwikkeling naar beheer moeten ook de nog in de backlog staande issues overgedragen worden. Dit gebeurt mondeling om de beheerders de gelegenheid te geven vragen te stellen over de issues. Zo moet o.a. duidelijk worden of er afspraken gemaakt zijn met de indiener van het issue m.b.t. de invulling van het issue in toekomstige versies van het koppelvlak.
