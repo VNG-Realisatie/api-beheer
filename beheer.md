@@ -22,7 +22,7 @@ In dit document worden allerlei procedures en overzichten beschreven die van bel
 - [Openen Slack kanaal](#openen-slack-kanaal)
 - [Openen OpenAPI standaard pagina op GEMMA Online](#openen-openapi-standaard-pagina-op-gemma-online)
 - [Openen GEMMA Online discussieforum](#openen-gemma-online-discussieforum)
-- [Publicatie op developer.overheid.nl] (#publicatie-op-developer.overheid.nl)
+- [Publicatie op developer.overheid.nl](#publicatie-op-developer.overheid.nl)
 - [Werken met Docker](#werken-met-docker)
 
 
@@ -127,7 +127,8 @@ Voor die betreffende standaard wordt dat beheerteam daarna verantwoordelijk voor
 2. het oplossen van problemen;
 3. doorontwikkeling van de standaard.
 
-*Beantwoorden van vragen*
+**Beantwoorden van vragen**
+
 Voor het beantwoorden van vragen m.b.t. de betreffende standaard zijn twee kanalen beschikbaar. Ten eerste het specifiek voor de standaard beschikbaar gestelde kanaal in de Slack workspace [VNG API Community](https://vngapicommunity.slack.com) en ten tweede het eveneens specifiek voor de standaard beschikbaar gestelde GitHub/GitLab omgeving.
 
 Slack leent zich niet zo goed voor het gestructureerd voeren van een discussie aangezien in het kanaal meerdere onderwerpen door elkaar heen kunnen gaan lopen en (in de basis variant) historie slechts tot een x aantal reacties beperkt blijft. Slack is vooral geschikt voor het snel stellen en beantwoorden van enkelvoudige vragen. Laagdrempelig contact dus.
@@ -138,7 +139,8 @@ Zodra het van belang is om een in Slack gevoerde discussie toch voor langere tij
 
 Vragen in beide kanalen moeten binnen xx dagen beantwoord zijn.
 
-*Probleemoplossing/Doorontwikkeling*
+**Probleemoplossing/Doorontwikkeling**
+
 De initiator voor probleemoplossing en doorontwikkeling van een standaard zijn altijd een of meer in GitHub/GitLab ingebrachte issues. 
 Indien het wijzigingsverzoek via Slack binnenkomt verzoekt de beheerder de persoon die het probleem heeft ingediend deze alsnog in GitHub/GitLab in te dienen. Het is immers beter om het probleem of wens uit de eerste hand vastgelegd te hebben.
 
@@ -151,14 +153,16 @@ Er is dus een bepaalde behoefte.
 In het geval van een bug is er dus geen sprake van een gewijzigde behoefte maar slechts van een fout in de behoeftevoorziening of documentatie.
 
 Het proces om bugs danwel features in de standaard of een van de deliverables te verwerken verschilt eigenlijk niet zo veel van elkaar.
-In beide gevallen kent de Product Owner een prioriteit toe. Daarna wordt i.s.m. met de ontwikkelaars bepaald hoeveel tijd het kost een bug danwel feature te verwerken. Op basis daarvan en de beschikbare financiele ruimte kan de Product Owner nu de roadmap gaan aanpassen.
-Vooralsnog is het uitgangspunt dat er 2 x per jaar een nieuwe versie van de API standaard wordt gepubliceerd.
+In beide gevallen kent de Product Owner een prioriteit toe. Daarna wordt i.s.m. met de ontwikkelaars bepaald hoeveel tijd het kost een bug danwel feature te verwerken. In geval van een bug wordt tevens nog gekeken of deze backwards compatible opgelost kan wordenof niet. Op basis daarvan en de beschikbare financiele ruimte kan de Product Owner nu de roadmap gaan aanpassen.
+Vooralsnog is daarbij uitgangspunt dat er 2 x per jaar een nieuwe versie van de API standaard wordt gepubliceerd.
 Als de roadmap gereed is wordt eigenlijk ook pas duidelijk of het bij de geplande versies gaat om een nieuwe PATCH, MINOR of MAJOR.  
 
-Indien volgens de roadmap op 1 moment in het jaar zowel bugs als features in de API standaard moeten worden verwerkt worden eerst de bugs opgelost in de huidige versie (dat wordt de PATCH). Op basis van die versie wordt dan weer een MAJOR/MINOR vervaardigd.
-Dit voorkomt dat een leverancier verplicht wordt de nieuwe functionaliteit te implementeren terwijl voor hem op dat moment alleen het oplossen van de bug van belang is.
+>Indien volgens de roadmap op 1 moment in het jaar zowel backwards compatible bugs als features in de API standaard moeten worden verwerkt worden eerst de bugs opgelost in de huidige versie (wat leidt tot een PATCH op die versie). Op basis van die versie wordt dan weer een MAJOR/MINOR vervaardigd. (_<-- Misschien opnemen in het versie-beheer verhaal._)
+Dit voorkomt dat een leverancier verplicht wordt de nieuwe functionaliteit te implementeren terwijl voor hem op dat moment wellicht alleen het oplossen van de bug van belang is.
 
 _Op dit moment is versiebeheer zo omschreven dat zowel een bug als een feature incompatible en compatible kan zijn. Een bug kan nu opgelost worden met een PATCH maar ook met een MAJOR. In dat laatste geval kun je heel goed zien aan het versienummer dat het niet compatible is met een voorgaande versie. Dat voelt voor mij echter erg vreemd. Het is een geheel andere definitie van MAJOR dan gebruikelijk in de SW wereld._
+
+
 
 _Hoe gaan we om met pull-requests van derden? Stel dat we die willen honoreren, nemen we die 1 op 1 over, gaan we die reengineeren of doen we nog iets anders?_
 
@@ -167,7 +171,7 @@ Het kunnen communiceren met stakeholders van een Open API standaard is belangrij
 
 Op GEMMA Online wordt op de pagina die gerelateerd is aan de Open API standaard een link opgenomen waarmee een geinteresseerde zich kan aanmelden voor de workspace waarna hij/zij zelf het gewenste kanaal aan zijn lijst met channels kan toevoegen.
 
-Het Slack kanaal is overigens geen vervanging van het GEMMA Online discussieforum van de betreffende standaard. In Slack gebeurt het voeren van een discussie op een meer ongestructureerde wijze waardoor het terugvinden van een discussie lastig wordt. Daarnaast bewaart Slack in de standaard versie slechts een x-aantal laatste reacties waardoor historie langzaamaan wordt gewist. 
+Het Slack kanaal is overigens geen vervanging van de forum-functionaliteit op de GitHub/GitLab repository van de betreffende standaard. In Slack gebeurt het voeren van een discussie op een meer ongestructureerde wijze waardoor het terugvinden van een discussie lastig wordt. Daarnaast bewaart Slack in de standaard versie slechts een x-aantal laatste reacties waardoor historie langzaamaan wordt gewist. 
 
 ## Openen OpenAPI standaard pagina op GEMMA Online
 Op [deze pagina](https://github.com/VNG-Realisatie/api-beheer/blob/master/doc/gemma_online.md) staat een voorzet van een algemene GEMMA Online API pagina. Wanneer deze voor akkoord bevonden wordt kan deze op GEMMA Online gepubliceerd worden.
