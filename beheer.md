@@ -76,14 +76,14 @@ _Het forum voor standaardisatie stelt als eis dat er een openbare consultatie is
   * Een overzicht van welke gegevens worden ontsloten in de vorm van een tabel van de resource + bijzonderheden. 
   * Installatie instructies van de RI (bijv. INSTALL.rst in de repository).
 * De testomgeving met een implementatie van de RI moet probleemloos draaien. Dit betekent ook dat:
-  * De testscripts voor de RI waarmee we al het gewenst gedrag zoals beschreven in standaard testen ook beschikbaar zijn gesteld. Beheer zal dit bij doorontwikkeling weer nodig hebben en tevens zullen zij deze beschikbaar stellen aan de leveranciers/gemeenten. 
+  * De testscripts voor de RI, waarmee we al het gewenst gedrag zoals beschreven in standaard testen, ook beschikbaar zijn gesteld. Beheer zal dit bij doorontwikkeling weer nodig hebben en tevens zullen zij deze beschikbaar stellen aan de leveranciers/gemeenten. 
 
 **Informatievoorziening**
 
 Daarnaast worden er ook eisen gesteld aan de informatievoorziening over de API standaard. Zo moet:
 * de Github repositories behorende bij de standaard publiekelijk beschikbaar zijn;
 * de OAS zonder restricties op te vragen zijn;
-* er is een mechanisme zijn om vragen te kunnen stellen aan beheer, (bijvoorbeeld via Slack);
+* er een mechanisme zijn om vragen te kunnen stellen aan beheer, (bijvoorbeeld via Slack);
 * de website http://ref.tst.vng.cloud/ een pagina over de standaard bevatten;
 * gemma Online http://www.gemmaonline.nl/ een pagina over de standaard bevatten;
 * de website http://developer.overheid.nl/ een pagina over de standaard bevatten.
