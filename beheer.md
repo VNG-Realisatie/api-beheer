@@ -42,7 +42,6 @@ _Ik begrijp deze sectie niet. Wat is hiervan de bedoeling?_
 Voordat API standaarden in beheer genomen kunnen worden, worden deze gecheckt a.d.h.v. de checklist [`checklist_inbeheer_nemen.md`](checklist_inbeheer_nemen.md). De checklist bevat acties die door API Beheer moeten worden uitgevoerd maar het bevat ook een aantal eisen waaraan de standaard moet voldoen. De volgende standaarden gelden:
 
 **Over te dragen onderdelen**
-
 De volgende onderdelen moeten aanwezig zijn:
 * Het OAS3 bestand (yaml bestand);
 * De Github repositories, inclusief de backlog;
@@ -59,7 +58,6 @@ De volgende onderdelen moeten aanwezig zijn:
 * Een testomgeving voor de API standaard met testscripts.
 
 **Eisen aan de onderdelen**
-
 De onderdelen moeten aan de volgende eisen voldoen:
 * De OAS3 moet voldoen aan de landelijke API strategie, of er is gedocumenteerd en beargumenteerd afgeweken;
 * De OAS3 moet foutloos te raadplegen zijn in tools als Swaggerhub of Redoc;
@@ -79,7 +77,6 @@ _Het forum voor standaardisatie stelt als eis dat er een openbare consultatie is
   * De testscripts voor de RI, waarmee we al het gewenst gedrag zoals beschreven in standaard testen, ook beschikbaar zijn gesteld. Beheer zal dit bij doorontwikkeling weer nodig hebben en tevens zullen zij deze beschikbaar stellen aan de leveranciers/gemeenten. 
 
 **Informatievoorziening**
-
 Daarnaast worden er ook eisen gesteld aan de informatievoorziening over de API standaard. Zo moet:
 * de Github repositories behorende bij de standaard publiekelijk beschikbaar zijn;
 * de OAS zonder restricties op te vragen zijn;
@@ -130,21 +127,19 @@ Vanuit en samen met die community wordt dat beheerteam daarna voor die betreffen
 **Beantwoorden van vragen**
 Vragen mbt. de betreffende standaard kunnen beheer op verschillende manieren bereiken:
 * Mail/telefoon
-* Discussieforum _(NB doen we nog iets met een discussieforum of verlaten we dat pad?)_
 * Slack
 * Issue in Github/Gitlab
-* Pullrequest in Github/Gitlab
 
-Vragen via mail of telefoon hebben niet de voorkeur maar dit gaat ongetwijfeld voorkomen. Bij kleinere vragen hoeft dit geen probleem te zijn maar omwille van de openheid en de herbruikbaarheid van antwoorden kan het nuttig zijn deze alsnog via een discussieforum, Github/Gitlab of Slack te delen. Een andere optie om de vragen en antwoorden langdurig te delen is een veelgestelde vragenlijst samenstellen die in de loop van de tijd groeit. Zo'n lijst moet ergens goed vindbaar gepubliceerd worden, bijvoorbeeld op GEMMA Online of in de repository van de betreffende standaard. 
+Vragen via mail of telefoon hebben niet de voorkeur maar dit gaat ongetwijfeld voorkomen. Bij kleinere vragen hoeft dit geen probleem te zijn maar omwille van de openheid en de herbruikbaarheid van antwoorden kan het nuttig zijn deze alsnog via Github/Gitlab of Slack te delen. Een andere optie om de vragen en antwoorden langdurig te delen is een veelgestelde vragenlijst samenstellen die in de loop van de tijd groeit. Zo'n lijst moet ergens goed vindbaar gepubliceerd worden, bijvoorbeeld op GEMMA Online of in de repository van de betreffende standaard. 
 
-Voor het beantwoorden van vragen m.b.t. de betreffende standaard zijn meerdere kanalen beschikbaar:
+Voor het beantwoorden van vragen m.b.t. de betreffende standaard zijn twee kanalen beschikbaar:
 1. Het specifiek voor de standaard beschikbaar gestelde kanaal in de Slack workspace [VNG API Community](https://vngapicommunity.slack.com) 
 2. Een eveneens specifiek voor (deze versie van) de standaard beschikbaar gestelde GitHub/GitLab omgeving.
-3. Een specifiek discussieforum voor de betreffende standaard.
+
 
 Slack leent zich niet zo goed voor het gestructureerd voeren van een discussie aangezien in het kanaal meerdere onderwerpen door elkaar heen kunnen gaan lopen en (in de basis variant) historie slechts tot een x aantal reacties beperkt blijft. Slack is vooral geschikt voor het snel stellen en beantwoorden van enkelvoudige vragen. Laagdrempelig contact dus.
 
-Voor het diepgaand bediscusieren van issues en ter sprake stellen van problemen in de standaard waarbij de discussies een lange(re) tijd beschikbaar moeten blijven kan beter gebruik gemaakt worden van GitHub/GitLab. _NB er is nog geen strategie voor repositories en versies van de standaard, waar komen vragen, issues en discussies terecht?_
+Voor het diepgaand bediscusieren van issues en ter sprake stellen van problemen in de standaard waarbij de discussies een lange(re) tijd beschikbaar moeten blijven kan beter gebruik gemaakt worden van GitHub/GitLab. De meeste vragen en opmerkingen zullen een specifieke versie van een standaard betreffen maar soms ook generiek van aard zijn. Deze vragen, opmerkingen, issues en pull requests moeten vastgelegd worden in de master repository van de standaard, niet in een publicatie repository voor een specifieke versie van de standaard.
 
 Zodra het van belang is om een in Slack gevoerde discussie toch voor langere tijd te bewaren kunnen de beheerders de betreffende discussie alsnog onderbrengen in GitHub/GitLab waarna het evt. meteen aan de juiste persoon toegewezen kan worden. Indien de discussie vragen over het gebruik en toepassing van de standaard betreft dienen de beheerders zich steeds af te vragen of het niet beter is de documentatie van de standaard zo aan te passen dat eenzelfde vraag in de toekomst voorkomen wordt.
 
@@ -163,20 +158,19 @@ Er is dus een bepaalde behoefte.
 In het geval van een bug is er dus geen sprake van een gewijzigde behoefte maar slechts van een fout in de behoeftevoorziening of documentatie.
 
 Het proces om bugs danwel features in de standaard of een van de deliverables te verwerken verschilt eigenlijk niet zo veel van elkaar.
-In beide gevallen kent de Product Owner een prioriteit toe. Daarna wordt i.s.m. met de ontwikkelaars bepaald hoeveel tijd het kost een bug danwel feature te verwerken. In geval van een bug wordt tevens nog gekeken of deze backwards compatible opgelost kan worden of niet. Op basis daarvan en de beschikbare financiele ruimte kan de Product Owner nu de roadmap gaan aanpassen.
+In beide gevallen kent de Product Owner een prioriteit toe. Daarna wordt in samenwerking met de ontwikkelaars bepaald hoeveel tijd het kost een bug danwel feature te verwerken. Wanneer bij het issue een Pull request met daarin een uitgewerkte oplossing voor het issue ingediend wordt moeten ontwikkelaars deze uitwerking in het PR beoordelen. In geval van een bug wordt tevens nog gekeken of deze backwards compatible opgelost kan worden of niet. Op basis daarvan en de beschikbare financiele ruimte kan de Product Owner nu de roadmap gaan aanpassen.
 Vooralsnog is daarbij uitgangspunt dat er 2 x per jaar een nieuwe versie van de API standaard wordt gepubliceerd.
 Als de roadmap gereed is wordt eigenlijk ook pas duidelijk of het bij de geplande versies gaat om een nieuwe PATCH, MINOR of MAJOR.  
 
-Indien volgens de roadmap op 1 moment in het jaar zowel backwards compatible bugs als features in de API standaard moeten worden verwerkt worden eerst de bugs opgelost in de huidige versie (wat leidt tot een PATCH op die versie). Op basis van die versie wordt dan weer een MAJOR/MINOR vervaardigd. (_<-- Misschien opnemen in het versie-beheer verhaal._)
+>Indien volgens de roadmap op 1 moment in het jaar zowel backwards compatible bugs als features in de API standaard moeten worden verwerkt worden eerst de bugs opgelost in de huidige versie (wat leidt tot een PATCH op die versie). Op basis van die versie wordt dan weer een MAJOR/MINOR vervaardigd. (_<-- Misschien opnemen in het versie-beheer verhaal._)
 Dit voorkomt dat een leverancier verplicht wordt de nieuwe functionaliteit te implementeren terwijl voor hem op dat moment wellicht alleen het oplossen van de bug van belang is.
 
 _Op dit moment is versiebeheer zo omschreven dat zowel een bug als een feature incompatible en compatible kan zijn. Een bug kan nu opgelost worden met een PATCH maar ook met een MAJOR. In dat laatste geval kun je heel goed zien aan het versienummer dat het niet compatible is met een voorgaande versie. Dat voelt voor mij echter erg vreemd. Het is een geheel andere definitie van MAJOR dan gebruikelijk in de SW wereld._
 
-Wanneer tezamen met een issue een pullrequest (PR) wordt ingediend wordt niet alleen bevinding of wens maar ook een uitwerking ingediend. Dan is het van belang naast de inhoud van het issue ook te kijken naar:
-* Past de PR in de roadmap? Was dit al iets wat voorzien was maar naar voren is gehaald vanuit de praktijk?
-* Is de PR een breaking change, met andere woorden, past de wijziging in het bestaande schema van releases?
-* Wat is de urgentie van de wijziging? Meestal zal een PR een zekere urgentie hebben omdat het een oplossing is voor iets wat bij een gemeente opgelost moest worden wat niet kon wachten tot een volgende release van de standaard.
+Wanneer tezamen met een issue een pullrequest (PR) wordt ingediend wordt niet alleen bevinding of wens maar ook een uitwerking ingediend. Dan is het van belang naast de inhoud en urgentie van het issue (zie boven) ook te kijken naar:
 * Wat is de kwaliteit van de PR? Om de RI niet te vervuilen moet de PR in ieder geval beoordeeld worden op kwaliteit en duurzaamheid. Mogelijk moet de PR alleen dienen als voorbeeld en moet het issue gere-engineered worden door de ontwikkelaars van de RI.
+
+Overigens is een PR niet altijd een urgent issue. Het kan zijn dat een minder urgent issue al in de praktijk opgelost is en de PR gewoon in de bestaande roadmap opgenomen kan worden en de wijziging te zijner tijd doorgevoerd kan worden.
 
 ## Openen Slack kanaal
 Het kunnen communiceren met stakeholders van een Open API standaard is belangrijk voor de kwaliteit van de Open API standaard. Het is tevens een manier om een zo hoog mogelijk draagvlak voor de Open API standaard te creeren. Daarom dient de project manager of scrum master bij de aanvang van een ontwikkelproject direct een Slack kanaal m.b.t. de Open API standaard binnen de VNG API Community workspace te (laten) creeren. Zo'n kanaal moet public zijn zodat geinteresseerden zelf kunnen bepalen of ze bijdragen willen posten in het kanaal.
@@ -200,3 +194,8 @@ De API standaard moet op developer.overheid.nl (voorlopig https://test.developer
 ## Klankbordgroepen
 Voor de afstemming met stakeholders is het noodzakelijk klankbordgroepen te vormen. Zowel gemeenten/klanten als leveranciers moeten hier zitting in hebben. Om te voorkomen dat net als met de huidige werkgroepen voornamelijk leveranciers deelnemen moet hier speciaal aandacht voor zijn. Een mogelijkheid kan zijn aparte klankbordgroepen voor zowel gemeenten als leveranciers.
 
+De leden van de klankbordgroepen hebben als taken in ieder geval:
+* Het monitoren van ingebrachte issues en PRs.
+* Het zo mogelijk beantwoorden  en/of verduidelijken van vragen.
+* Het mede bepalen van de prioriteiten van de ingebrachte issues en dientengevolge ook de roadmap.
+* Communicatie met en vanuit de achterban. Voor het snel en grootscheeps adopteren van de API standaarden is het van belang dat ideeën en plannen verspreid worden. Andersom is het goed om ook "vertegenwoordigers dichtbij" te hebben die feedback opvangen die niet direct als issue ingediend wordt.
