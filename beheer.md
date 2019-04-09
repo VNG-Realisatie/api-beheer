@@ -22,12 +22,12 @@ In dit document worden allerlei procedures en overzichten beschreven die van bel
 - [Openen Slack kanaal](#openen-slack-kanaal)
 - [Openen OpenAPI standaard pagina op GEMMA Online](#openen-openapi-standaard-pagina-op-gemma-online)
 - [Openen GEMMA Online discussieforum](#openen-gemma-online-discussieforum)
+- [Publicatie op developer.overheid.nl](#publicatie-op-developer.overheid.nl)
 - [Werken met Docker](#werken-met-docker)
 
 
 ## Overdracht van API-development naar API-beheer
 * _Er moet een template komen van hoe een API standaard wordt overgedragen! Nu ontbraken bijvoorbeeld linkjes naar documentatie._
-* _Er moet een checklist met criteria komen die de API-developers kunnen nalopen._
 
 ## Starten van API ontwerp en ontwikkeling
 Beheer helpt API developers/designers door:
@@ -39,48 +39,54 @@ Beheer helpt API developers/designers door:
 _Ik begrijp deze sectie niet. Wat is hiervan de bedoeling?_
 
 ## Criteria voor in beheername
-Voordat API standaarden in beheer genomen kunnen worden moeten deze voldoen aan een aantal eisen:
+Voordat API standaarden in beheer genomen kunnen worden, worden deze gecheckt a.d.h.v. de checklist [`checklist_inbeheer_nemen.md`](checklist_inbeheer_nemen.md). De checklist bevat acties die door API Beheer moeten worden uitgevoerd maar het bevat ook een aantal eisen waaraan de standaard moet voldoen. De volgende standaarden gelden:
 
 **Over te dragen onderdelen**
-* OAS3 (yaml bestand);
+
+De volgende onderdelen moeten aanwezig zijn:
+* Het OAS3 bestand (yaml bestand);
 * De Github repositories, inclusief de backlog;
-* Referentie Implementatie (RI) als docker container;
-* Documentatie, functioneel en technisch, geschikt voor verschillende soorten gebruikers;
-* Overzicht van de business logica;
-* Overzicht compatibiliteit met welke versies van andere standaarden;
-* Wijzigingenoverzicht per versie;
-* Overzicht van de betrokken partijen en personen;
-* Testomgeving met testscripts.
+* De Referentie Implementatie (RI) als docker container;
+* Documentatie, zowel functioneel als technisch. Daarbij is aandacht voor verschillende doelgroepen/doeleinden.
+  - ontwikkelaars van provider en consumer applicaties
+  - informatiemanagers
+  - evt. transitie management (bijv. mapping documentatie)
+  - ...
+* Een beschrijving van de business logica die in de standaard van toepassing is.
+* Een overzicht van wijzigingen (bijv. CHANGELOG.rst in de repository) met daarin per versie wat is toegevoegd, gewijzigd en hoe te migreren van de voorgaande naar deze versie.
+* Een overzicht waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
+* Een overzicht van alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn (geweest).
+* Een testomgeving voor de API standaard met testscripts.
 
 **Eisen aan de onderdelen**
-* De OAS moet voldoen aan de landelijke API strategie, of er is gedocumenteerd en beargumenteerd afgeweken;
-* De OAS moet foutloos te raadplegen zijn in tools als Swaggerhub of Redoc
-* De standaard is formeel goedgekeurd, concreet gemaakt.
-_Het forum voor standaardisatie stelt als eis dat er een openbare consiltatie is geweest. De vraag is alleen hoe die openbare consulatatie moet worden ingericht. Volgende acties zouden i.i.g. moeten zijn genomen:_
-  * Er moet minstens één API-lab gehouden zijn van deze API om de ervaringen van de gebruikers te verzamelen.
-  * Er moeten één of meer tussentijdse (sprint) demo's zijn geweest van deze API
-  * ...
+
+De onderdelen moeten aan de volgende eisen voldoen:
+* De OAS3 moet voldoen aan de landelijke API strategie, of er is gedocumenteerd en beargumenteerd afgeweken;
+* De OAS3 moet foutloos te raadplegen zijn in tools als Swaggerhub of Redoc;
 * De OAS3 en de RI sluiten naadloos op elkaar aan.
-  * Dit kan door het steekproefsgewijs testen van Openapi.yaml vs test omgeving, vergelijk de resource
-* De testomgeving met een implementatie van de RI moet draaien. Dit betekent ook dat:
-  * De testscripts voor de RI waarmee we al het gewenst gedrag zoals beschreven in standaard testen ook beschikbaar zijn gesteld. Beheer zal dit bij doorontwikkeling weer nodig hebben en tevens zullen zij deze beschikbaar stellen aan de leveranciers/gemeenten. 
-* De docker container met de RI moet beschikbaar zijn op DockerHub in de VNG namespace.
-* Documentatie omvat minimaal:
+  * Dit kan door het steekproefsgewijs testen van Openapi.yaml vs test omgeving, vergelijk de resource.
+* De standaard is formeel goedgekeurd, concreet gemaakt.
+_Het forum voor standaardisatie stelt als eis dat er een openbare consultatie is geweest. De vraag is alleen hoe die openbare consultatie moet worden ingericht. Volgende acties zouden i.i.g. moeten zijn genomen:_
+  * Er moet minstens één API-lab gehouden zijn van deze API om de ervaringen van de gebruikers te verzamelen.
+  * Er moeten één of meer tussentijdse (sprint) demo's zijn geweest van deze API.
+  * ...
+* De docker container met de RI moet beschikbaar zijn op DockerHub in de VNG namespace;
+* De documentatie omvat minimaal:
   * Een UML model van het informatiemodel (de objecttypen en onderlinge relaties) zoals deze in de API gebruikt wordt.
   * Een overzicht van welke gegevens worden ontsloten in de vorm van een tabel van de resource + bijzonderheden. 
-  * Installatie instructies van de referentie implementatie (bijv. INSTALL.rst in de repository).
-  * Een beschrijving van de business logica die in de standaard van toepassing is.
-  * Een overzicht van wijzigingen (bijv. CHANGELOG.rst in de repository) met daarin per versie wat is toegevoegd, gewijzigd en hoe te migreren van de voorgaande naar deze versie.
-  * De standaard bevat een overzicht waarin wordt aangegeven welke versies van de betreffende API standaard met welke versies van andere API standaarden compatible zijn.
- * De standaard bevat een overzicht van alle partijen en personen die bij de ontwikkeling van de standaard betrokken zijn (geweest).
+  * Installatie instructies van de RI (bijv. INSTALL.rst in de repository).
+* De testomgeving met een implementatie van de RI moet probleemloos draaien. Dit betekent ook dat:
+  * De testscripts voor de RI, waarmee we al het gewenst gedrag zoals beschreven in standaard testen, ook beschikbaar zijn gesteld. Beheer zal dit bij doorontwikkeling weer nodig hebben en tevens zullen zij deze beschikbaar stellen aan de leveranciers/gemeenten. 
 
 **Informatievoorziening**
-* De Github repositories behorende bij de standaard moet publiekelijk beschikbaar zijn;
-* De OAS moet zonder restricties op te vragen zijn;
-* Er is een mechanisme om vragen te kunnen stellen aan beheer, (bijvoorbeeld via Slack);
-* De website http://ref.tst.vng.cloud/ bevat een pagina over de standaard;
-* Gemma Online http://www.gemmaonline.nl/ bevat een pagina over de standaard;
-* In de toekomst bevat de website http://developer.overheid.nl/ een pagina over de standaard.
+
+Daarnaast worden er ook eisen gesteld aan de informatievoorziening over de API standaard. Zo moet:
+* de Github repositories behorende bij de standaard publiekelijk beschikbaar zijn;
+* de OAS zonder restricties op te vragen zijn;
+* er een mechanisme zijn om vragen te kunnen stellen aan beheer, (bijvoorbeeld via Slack);
+* de website http://ref.tst.vng.cloud/ een pagina over de standaard bevatten;
+* gemma Online http://www.gemmaonline.nl/ een pagina over de standaard bevatten;
+* de website http://developer.overheid.nl/ een pagina over de standaard bevatten.
 
 ## Resultaat criteria check
 Het resultaat wordt terug gemaild, met een lijst van verbeteringen door te voeren OF dat de API in beheer wordt genomen.
@@ -111,8 +117,6 @@ Beheren Docker containers in DockerHub omgeving | Ja | Zelf
 Beheren publicatie op developer.overheid.nl | Ja | Zelf
 Beheren publicatie op GEMMA Online | Ja | Zelf
 
-
-
 ## Lijst van deelnemende partijen en personen
 Bij de ontwikkeling van Open API standaarden nemen diverse partijen deel. Het is handig voor ontwikkelaars maar ook voor beheerders om daar een overzicht van te hebben. Daarom dient de project manager of scrum master bij de aanvang van een ontwikkelproject maar ook tijdens het project als de teamsamenstelling wijzigt de [lijst met Deelnemende partijen](https://github.com/VNG-Realisatie/api-beheer/blob/master/Deelnemende%20partijen.md) in te vullen. Ook de beheerder of beheerders van de standaard moeten na in beheername van een standaard of bij wijziging van de beheerder op deze lijst worden vermeldt.
 
@@ -120,11 +124,11 @@ Bij de ontwikkeling van Open API standaarden nemen diverse partijen deel. Het is
 Zodra een Open API standaard is ontwikkeld en goedgekeurd moet het worden overgedragen aan een beheerteam.
 Voor die betreffende standaard wordt dat beheerteam daarna verantwoordelijk voor:
 1. beantwoorden van vragen;
-2. het oplossen van problemen.
+2. het oplossen van problemen;
+3. doorontwikkeling van de standaard.
 
-Doorontwikkeling van de standaard hoort daar dus niet bij.
+**Beantwoorden van vragen**
 
-*Beantwoorden van vragen*
 Voor het beantwoorden van vragen m.b.t. de betreffende standaard zijn twee kanalen beschikbaar. Ten eerste het specifiek voor de standaard beschikbaar gestelde kanaal in de Slack workspace [VNG API Community](https://vngapicommunity.slack.com) en ten tweede het eveneens specifiek voor de standaard beschikbaar gestelde GitHub/GitLab omgeving.
 
 Slack leent zich niet zo goed voor het gestructureerd voeren van een discussie aangezien in het kanaal meerdere onderwerpen door elkaar heen kunnen gaan lopen en (in de basis variant) historie slechts tot een x aantal reacties beperkt blijft. Slack is vooral geschikt voor het snel stellen en beantwoorden van enkelvoudige vragen. Laagdrempelig contact dus.
@@ -135,25 +139,39 @@ Zodra het van belang is om een in Slack gevoerde discussie toch voor langere tij
 
 Vragen in beide kanalen moeten binnen xx dagen beantwoord zijn.
 
-*Probleemoplossing*
-De initiator voor probleemoplossing van een standaard is altijd een in GitHub/GitLab ingebracht issue. 
-Indien het wijzigingsverzoek via Slack binnenkomt verzoekt de beheerder de persoon die het probleem heeft ingediend alsnog in GitHub/GitLab in te dienen. 
+**Probleemoplossing/Doorontwikkeling**
+
+De initiator voor probleemoplossing en doorontwikkeling van een standaard zijn altijd een of meer in GitHub/GitLab ingebrachte issues. 
+Indien het wijzigingsverzoek via Slack binnenkomt verzoekt de beheerder de persoon die het probleem heeft ingediend deze alsnog in GitHub/GitLab in te dienen. Het is immers beter om het probleem of wens uit de eerste hand vastgelegd te hebben.
 
 Na opvoering van het issue beoordeelt de beheerder of het een valide issue is. Indien dat niet het geval is wordt dat gemeld in het issue met de reden daarvoor waarna de melder enkele weken (_hoeveel?_) de tijd krijgt om de reden te weerleggen en zijn verzoek nog nader toe te lichten.
 
 Indien het wel een valide issue is wordt gekeken of het een bug dan wel een feature betreft (_nog kijken naar de termen_).
+* Een feature is een wens tot nieuwe functionaliteit binnen een standaard.
+Er is dus een bepaalde behoefte.
+* Een bug is een foutje in de bestaande functionaliteit van een standaard.
+In het geval van een bug is er dus geen sprake van een gewijzigde behoefte maar slechts van een fout in de behoeftevoorziening of documentatie.
 
-Features worden niet door de beheerders opgepakt maar blijven staan totdat er een nieuw project wordt opgestart voor de doorontwikkeling van de standaard. Daar wordt besloten of het feature wordt meegenomen in de nieuwe versie van de standaard.
-Beheerders geven in het feature wel aan hoe hoog naar hun mening de prioriteit is.
+Het proces om bugs danwel features in de standaard of een van de deliverables te verwerken verschilt eigenlijk niet zo veel van elkaar.
+In beide gevallen kent de Product Owner een prioriteit toe. Daarna wordt i.s.m. met de ontwikkelaars bepaald hoeveel tijd het kost een bug danwel feature te verwerken. In geval van een bug wordt tevens nog gekeken of deze backwards compatible opgelost kan wordenof niet. Op basis daarvan en de beschikbare financiele ruimte kan de Product Owner nu de roadmap gaan aanpassen.
+Vooralsnog is daarbij uitgangspunt dat er 2 x per jaar een nieuwe versie van de API standaard wordt gepubliceerd.
+Als de roadmap gereed is wordt eigenlijk ook pas duidelijk of het bij de geplande versies gaat om een nieuwe PATCH, MINOR of MAJOR.  
 
-_Een feature is gebaseerd op een behoefte. In het geval van een probleem is er geen sprake van een gewijzigde behoefte maar slechts van een fout in de behoeftevoorziening of documentatie. Een feature kan dus nooit de basis zijn voor een patch. Patches zijn dus altijd gebasseerd op issues._
+>Indien volgens de roadmap op 1 moment in het jaar zowel backwards compatible bugs als features in de API standaard moeten worden verwerkt worden eerst de bugs opgelost in de huidige versie (wat leidt tot een PATCH op die versie). Op basis van die versie wordt dan weer een MAJOR/MINOR vervaardigd. (_<-- Misschien opnemen in het versie-beheer verhaal._)
+Dit voorkomt dat een leverancier verplicht wordt de nieuwe functionaliteit te implementeren terwijl voor hem op dat moment wellicht alleen het oplossen van de bug van belang is.
+
+_Op dit moment is versiebeheer zo omschreven dat zowel een bug als een feature incompatible en compatible kan zijn. Een bug kan nu opgelost worden met een PATCH maar ook met een MAJOR. In dat laatste geval kun je heel goed zien aan het versienummer dat het niet compatible is met een voorgaande versie. Dat voelt voor mij echter erg vreemd. Het is een geheel andere definitie van MAJOR dan gebruikelijk in de SW wereld._
+
+
+
+_Hoe gaan we om met pull-requests van derden? Stel dat we die willen honoreren, nemen we die 1 op 1 over, gaan we die reengineeren of doen we nog iets anders?_
 
 ## Openen Slack kanaal
 Het kunnen communiceren met stakeholders van een Open API standaard is belangrijk voor de kwaliteit van de Open API standaard. Het is tevens een manier om een zo hoog mogelijk draagvlak voor de Open API standaard te creeren. Daarom dient de project manager of scrum master bij de aanvang van een ontwikkelproject direct een Slack kanaal m.b.t. de Open API standaard binnen de VNG API Community workspace te (laten) creeren. Zo'n kanaal moet public zijn zodat geinteresseerden zelf kunnen bepalen of ze bijdragen willen posten in het kanaal.
 
 Op GEMMA Online wordt op de pagina die gerelateerd is aan de Open API standaard een link opgenomen waarmee een geinteresseerde zich kan aanmelden voor de workspace waarna hij/zij zelf het gewenste kanaal aan zijn lijst met channels kan toevoegen.
 
-Het Slack kanaal is overigens geen vervanging van het GEMMA Online discussieforum van de betreffende standaard. In Slack gebeurt het voeren van een discussie op een meer ongestructureerde wijze waardoor het terugvinden van een discussie lastig wordt. Daarnaast bewaart Slack in de standaard versie slechts een x-aantal laatste reacties waardoor historie langzaamaan wordt gewist. 
+Het Slack kanaal is overigens geen vervanging van de forum-functionaliteit op de GitHub/GitLab repository van de betreffende standaard. In Slack gebeurt het voeren van een discussie op een meer ongestructureerde wijze waardoor het terugvinden van een discussie lastig wordt. Daarnaast bewaart Slack in de standaard versie slechts een x-aantal laatste reacties waardoor historie langzaamaan wordt gewist. 
 
 ## Openen OpenAPI standaard pagina op GEMMA Online
 Op [deze pagina](https://github.com/VNG-Realisatie/api-beheer/blob/master/doc/gemma_online.md) staat een voorzet van een algemene GEMMA Online API pagina. Wanneer deze voor akkoord bevonden wordt kan deze op GEMMA Online gepubliceerd worden.
@@ -163,6 +181,9 @@ Bij de overdracht van een standaard van ontwikkeling naar beheer moeten ook de n
 Aangezien bij overdracht van ontwikkeling naar beheer de GitHub repository as-is wordt overgenomen kan de backlog zelf blijven waar deze is.
 
 Overdracht van de backlog en GitHub repository is een officieel moment en moet plaatsvinden voordat er sprake kan zijn van in beheername van een Open API
+
+## Publicatie op developer.overheid.nl
+De API standaard moet op developer.overheid.nl (voorlopig https://test.developer.overheid.nl) worden gepubliceerd. Daartoe moet deze daar worden aangemeld. Dit kan op 2 manieren. Beide manieren staan beschreven op https://test.developer.overheid.nl/api-toevoegen. 
 
 ## Werken met Docker
 
