@@ -1,4 +1,4 @@
-**API** -- _Application Programming Interface_ Service om informatie van een bron te ontsluiten. Typische voorbeelden: Zaken API, Documenten API, Autorisatie API, etc.
+**API** -- _Application Programming Interface_ Service om informatie van een bron of functionaliteit van een systeem te ontsluiten. Typische voorbeelden: Zaken API, Documenten API, Autorisatie API, etc.
 
 **OAS** -- _Open API Specificatie_ Contract tussen een consumer en provider, dat de API aanhoudt om zijn informatie te ontsluiten.
 
