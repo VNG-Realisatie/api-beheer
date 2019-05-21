@@ -18,7 +18,7 @@ Het beheren van de API standaarden van VNG Realisatie behelst meer dan alleen he
 
 De relatie tussen deze omgevingen is gevisualiseerd in de onderstaande image:
 
-![API Beheerlandschap](https://github.com/VNG-Realisatie/api-beheer/blob/master/API Beheerlandschap.jpg)
+![API Beheerlandschap](https://github.com/VNG-Realisatie/api-beheer/blob/master/API%20Beheerlandschap.jpg)
 
 In GitHub bestaat voor elke API een repository maar ook voor enkele andere componenten. Zo hebben we nog een repository voor 'Zaken volgens GEMMA 2.0' dat dient als portaal naar alle gerelateerde GitHub repositories.
 Daarnaast bestaan er ook nog repositories voor de API testvoorziening, voor een tutorial over het werken met GitHub en voor API Beheer (waar dit document deel van uitmaakt).
