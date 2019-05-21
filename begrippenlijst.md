@@ -15,7 +15,7 @@ Voorziening waarop leveranciers hun implementatie van de API standaard kunnen te
 Docker is een software pakket wat een applicatie en zijn afhankelijkheden zoals tooling, libraries en instellingen, in een virtuele container verpakt die op elke (Linux, Windows, ?) server gedraaid kan worden. Dit vergroot de flexibiliteit, schaalbaarheid en portabiliteit van de omgeving waar een applicatie gedraaid kan worden, ongeacht of dit on premise, in een public of private cloud etc. gebeurt.
 [bron: https://en.wikipedia.org/wiki/Docker_%28software%29]
 
-**GEMMA Online
+**GEMMA Online**
 De publicatie-omgeving van GEMMA, de Gemeentelijke Modelarchitectuur.
 
 **Git**
