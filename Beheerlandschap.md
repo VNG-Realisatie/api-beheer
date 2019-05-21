@@ -31,7 +31,7 @@ https://ref.tst.vng.cloud/zrc/api/v1/schema/ bevat bijvoorbeeld informatie over 
 _TODO: beschrijven hoe deze omgeving precies technisch samenhangt met de GitHub omgeving. Wordt deze automatisch gegenereerd (bijv. middels een nightly build) en/of behoeft de creatie handmatige slagen._
 
 Voor elke Referentie Implementatie die in GitHub is vervaardigd bestaat in hub.docker.com een docker file. Aangezien er voor elke API een Referentie component is, is er ook voor elke API een docker file.
-Er zijn echter ook docker files voor enkele andere componenten. Bijv. voor de vng-referentielijsten, demo-api en  gemma-zaken-docs.
+Er zijn echter ook docker files voor de volgende componenten: voor de vng-referentielijsten, demo-api en  gemma-zaken-docs.
 Op korte termijn zal de hub.docker.com omgeving worden vervangen door de Haven omgeving. T.z.t. zal een uitleg daarvan en van de (technische) relatie met de andere omgeving hier worden geplaatst.
 _TODO: beschrijven hoe deze omgeving precies technisch samenhangt met de GitHub omgeving. Wordt deze automatisch gegenereerd (bijv. middels een nightly build) en/of behoeft de creatie handmatige slagen._
 
