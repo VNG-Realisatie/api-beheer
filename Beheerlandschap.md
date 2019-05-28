@@ -13,7 +13,8 @@ Het beheren van de API standaarden van VNG Realisatie behelst meer dan alleen he
 - ref.tst.vng.cloud
 - hub.docker.com
 - API testvoorziening
-- test.developer.overheid.nl
+- developer.overheid.nl
+- www.gemmaonline.nl
 - www.softwarecatalogus.nl
 
 De relatie tussen deze omgevingen is gevisualiseerd in de onderstaande image:
