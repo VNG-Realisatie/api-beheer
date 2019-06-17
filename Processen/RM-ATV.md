@@ -8,4 +8,4 @@ weight: 100
 
 ## Release Management API-Testvoorziening
 
-![Release Management API-Testvoorziening](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/RM-API-Testvoorziening.jpg)
+![Release Management API-Testvoorziening](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/RM-ATV.jpg)
