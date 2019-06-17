@@ -14,6 +14,6 @@ Het onderstaande diagram beschrijft hoe er wordt om gegaan met issues die in het
 
 De stappen in het Change- en Problem Management proces van API-Beheer zijn genummerd met een uniek nummer en hieronder in meer detail beschreven.
 
-**1.1** <br/>
-**1.2** <br/>
+**2.1** <br/>
+**2.2** <br/>
 ...
