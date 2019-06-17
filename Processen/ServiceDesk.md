@@ -20,7 +20,7 @@ Het kent de volgende subprocessen die in de documenten in de onderliggende links
 * [Release Management API Testvoorziening](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/RM-ATV.md)
 * [Change- en Problem Management Haven](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/CR-PR-Haven.md)
 
-De stappen in het Service Desk proces zijn genummerd met een uniek nummer en deze zijn hieronder in meer detail beschreven.
+De stappen in het Service Desk proces zijn genummerd met een uniek nummer en hieronder in meer detail beschreven.
 
 **1.1** <br/>
 **1.2** <br/>
