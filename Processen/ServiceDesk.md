@@ -29,7 +29,7 @@ De stappen in het Service Desk proces zijn genummerd met een uniek nummer en hie
 **1.5** API-Beheer beoordeelt of de melding een implementatie vraag (ga naar 1.7) is of juist een bug//wens (ga naar 1.18).<br/>
 **1.6** Bij een vraag wordt gekeken of discretie gewenst is.<br/>
 **1.7** Indien discretie gewenst is wordt de vraag in een afgesloten, niet-publieke omgeving (nu: Redmine) vastgelegd. Daarmee verzekeren we dat er een vervolgactie op de vraag wordt genomen zonder dat dit voor iedereen zichtbaar is.<br/>
-**1.8** Een vraag waarop discretie gewenst is wordt offline beantwoord. Dit kan telefonisch maar ook via e-Mail. Deze stap bestaat niet per definitie alleen uit het geven van een antwoord. Hij kan ook uitmonden in een correspondentie met de vraagsteller die pas eindigd als de vraag is beantwoord.<br/>
+**1.8** Een vraag waarop discretie gewenst is wordt offline beantwoord. Dit kan telefonisch maar ook via e-Mail. Deze stap bestaat niet per definitie alleen uit het geven van een antwoord. Hij kan ook uitmonden in een correspondentie met de vraagsteller die pas eindigt als de vraag is beantwoord.<br/>
 **1.9** Betreft het een vraag die al vaker gesteld is en nog niet in een FAQ is opgenomen?<br/>
 **1.10** Zo ja, dan wordt de vraag en het antwoord aan de FAQ toegevoegd.<br/>
 **1.11** Het issue wordt in de niet-publieke omgeving (nu: Redmine) gesloten.<br/>
