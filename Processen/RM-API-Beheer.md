@@ -22,7 +22,7 @@ De stappen in het Release Management proces van API-Beheer zijn genummerd met ee
 | **3.4** | API-Beheer test of de Docker containers inderdaad vervangen zijn en of deze correct werken. |
 | **3.5** | API-Beheer checkt of de documentatie daar waar dat n.a.v. de aangebrachte wijzigingen ook is aangepast. |
 | **3.6** | API-Beheer voert indien nodig aanpassingen uit op de gegevens van de betreffende API op developer.overheid.nl |
-| **3.7** | API-Beheer pas indien nodig GEMMA Online aan. |
+| **3.7** | API-Beheer past indien nodig GEMMA Online aan. |
 | **3.8** | Voor elke opgeloste bug geeft API-Beheer een terugkoppeling naar de melder van het probleem. Ook iedereen die een wens heeft aangebracht die in de release is opgenomen ontvangt een terugkoppeling. |
 | **3.9** | De GitHub repository of repositories worden opgeschoond. Dit houdt in: |
 |  | * ... |
