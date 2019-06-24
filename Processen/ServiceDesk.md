@@ -46,6 +46,6 @@ De stappen in het Service Desk proces zijn genummerd met een uniek nummer en hie
 | **1.20** | Bij een melding van een bug of wens wordt gekeken of deze al in Github is vastgelegd (ga naar 1.22) of nog niet (ga nar 1.21). |
 | **1.21** | Zo niet dan wordt de indiener van de bug of wens gevraagd dit alsnog te doen. Dit verdient altijd de voorkeur zodat interpretatieverschillen worden voorkomen. Alleen als het echt niet anders kan zal het GitHub issue door API Beheer worden ingebracht. |
 | **1.22** | Is het onderwerp van de bug of wens een API standaard of Referentie Implementatie (ga naar 1.23), de API Testvoorziening (ga naar 1.24) of is het Haven (ga naar 1.25)? |
-| **1.23** | Indien het een API standaard of Referentie Implementatie betreft ga dan naar het subproces 'Change en Problem management API standaarden' [1]. |
-| **1.24** | Indien het de API Testvoorziening betreft ga dan naar 'Change en Problem management API Testvoorziening' [2]. |
-| **1.25** | In'dien het Haven betreft ga dan naar 'Change en Problem management Haven' [3]. |
+| **1.23** | Indien het een API standaard of Referentie Implementatie betreft ga dan naar het subproces 'Change en Problem management API standaarden' [1](CR-PR-API-Beheer.md). |
+| **1.24** | Indien het de API Testvoorziening betreft ga dan naar 'Change en Problem management API Testvoorziening' [2](CR-PR-ATV.md). |
+| **1.25** | In'dien het Haven betreft ga dan naar 'Change en Problem management Haven' [3](CR-PR-Haven.md). |
