@@ -28,6 +28,6 @@ De stappen in het Release Management proces van API-Beheer zijn genummerd met ee
 |  | * ... |
 |  | * ... |
 | **3.10** | De beschikbaarheid van de nieuwe release wordt bekend gemaakt door middel van: |
-|  | * Een nieuwsbericht in de VNG Realisatie Niieuwsbrief. |
+|  | * Een nieuwsbericht in de VNG Realisatie Nieuwsbrief. |
 |  | * De Slack community. |
 |  | * ... |
