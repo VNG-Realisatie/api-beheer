@@ -42,4 +42,4 @@ De stappen in het Change- en Problem Management proces van API-Beheer zijn genum
 | **2.24** | Indien het issue nog niet Ready is maakt de PO hem ready. |
 | **2.25** | Het issue wordt geplaatst in de Release Backlog zodat er een overzicht is van alles wat mee moet in de komende release. |  
 | **2.26** | De issues in de Release backlog worden meegenomen in het Scrum proces voor de nieuwe release. Dat betekent dat voor elke sprint in de backlog refinement wordt bepaald welke issues worden meegenomen. Het aantal sprints duurt in principe net zo lang als er nog issues in de Release backlog staan. |
-| **2.27** | Er is een nieuwe API standaard release (ga naar [**4**]) en/of er zijn aangepaste testscripts (ga naar [**6**]) | vervaardigd.
+| **2.27** | Er is een nieuwe API standaard release (ga naar [**4**](RM-API-Beheer.md)) en/of er zijn aangepaste testscripts (ga naar [**6**](RM-ATV.md)) | vervaardigd.
