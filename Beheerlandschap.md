@@ -22,7 +22,7 @@ De relatie tussen deze omgevingen is gevisualiseerd in de onderstaande image:
 
 ![API Beheerlandschap](https://github.com/VNG-Realisatie/api-beheer/blob/master/API%20Beheerlandschap.jpg)
 
-In GitHub bestaat voor elke API een repository maar ook voor enkele andere componenten. Zo hebben we nog een repository voor 'Zaken volgens GEMMA 2.0' dat dient als portaal naar alle gerelateerde GitHub repositories.
+Voor elke API bestaat in GitHub een repository (soms bevat een repository zelfs meerdere API's). Ook voor enkele andere componenten bestaan echter repositories. Zo hebben we nog een repository voor 'Zaken volgens GEMMA 2.0' dat dient als portaal naar alle gerelateerde GitHub repositories.
 Daarnaast bestaan er ook nog repositories voor de API testvoorziening, voor een tutorial over het werken met GitHub en voor API Beheer (waar dit document deel van uitmaakt).
 
 Het daadwerkelijk vervaardigen van de API standaarden en realiseren van de Referentie Implementaties gebeurt in de GitHub repositories van de API's. De andere omgevingen spelen een andere rol. Hieronder beschrijven we die rol en de relatie tussen die omgevingen.
