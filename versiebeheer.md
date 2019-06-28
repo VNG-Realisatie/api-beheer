@@ -99,7 +99,7 @@ Consumer versie | Provider antwoord
 2.1.8 | Verzoek geaccepteerd
 2.2.0 | Verzoek geweigerd, versies hoger dan `2.1.x` worden niet ondersteund
 
-### Versie van de referentie implementatie vs versie van de API
+### [WIP] Versie van de referentie implementatie vs versie van de API
 
 De versie van de API loopt niet persé gelijk aan de versie van de referentie 
 implementatie. Het is noodzakelijk dat de referentie implementatie aangeeft welke versie(s)
@@ -118,6 +118,16 @@ van de API (OAS) is geïmplementeerd.
 Het kan prima een patroon worden dat alleen de minor versie gaat verschillen 
 tussen API en referentie implementatie.
 
+TODO: Wellicht krijgen de referentie implementaties alleen het API-versienummer 
+plus een buildnummer of commit hash. Zoiets als: 1.0.1-a6c319
+
+### Voorbeeld van wijzigingen overzicht
+
+Bij elke versie kunnen de wijzigingen worden opgenomen, als volgt:
+
+1. Je kan de semantische wijzigingen bekijken in de [Changelog](https://github.com/maykinmedia/demo-api/blob/master/CHANGELOG.rst)
+2. Je kan van elke versie apart de specificaties bekijken, zoals van [versie 1.0.0](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/maykinmedia/demo-api/1.0.0/openapi.yaml) en [versie 1.0.1](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/maykinmedia/demo-api/1.0.1/openapi.yaml)
+3. Je kan versies van de specificatie echt met elkaar vergelijken ([bijvoorbeeld 1.0.0 vs 1.0.1](https://github.com/maykinmedia/demo-api/compare/1.0.0..1.0.1#diff-fe030a7c1568b3decf599edf399be7f4)): 
 
 ## Release management 
 
