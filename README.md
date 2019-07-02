@@ -7,7 +7,6 @@ API-Beheer
 Deze repository bevat alles wat nodig is om de GEMMA ZDS 2.0 Open API standaard in beheer te kunnen nemen en om dat beheer goed uit te kunnen voeren.
 
 > _**Nog te beantwoorden vragen:**_
-> - _De ZDS 2.0 standaard is het geheel van standaarden voor het zaakgericht werken. Is het doel van dit project nu de in beheername van al deze standaarden of alleen van een van die standaarden?_
 > - _Blijkbaar kun je standaarden clusteren. Moeten we daarvoor in GEMMA Online voorzieningen treffen?_
 
 Het dient daarnaast tevens als aanzet om te komen tot een generieke methode voor het in beheer nemen en uitvoeren van dat beheer van andere (nog te ontwikkelen) Open API standaarden.
