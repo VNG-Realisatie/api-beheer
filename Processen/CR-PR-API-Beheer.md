@@ -28,8 +28,8 @@ De stappen in het Change- en Problem Management proces van API-Beheer zijn genum
 | **2.10** | API-Beheer laat het probleem z.s.m. oplossen door een ontwikkelaar. |
 | **2.11** | Het issue wordt in de product backlog geplaatst. |
 | **2.12** | De issues in de Product backlog worden meegenomen in het Scrum proces voor de nieuwe release. Dat betekent dat voor elke sprint in de backlog refinement wordt bepaald welke issues worden meegenomen. Het scrum-team bepaalt in overleg met de PO en API-Beheer welke issues mee moeten gaan in de volgende release en hoeveel sprints nodig zijn om die release te vervaardigen. Indien een issue niet wordt meegenomen in de komende release dan wordt dat teruggekoppeld naar de melder. |
-| **2.13* | Er is een nieuwe API standaard release (ga naar [**4**](RM-API-Beheer.md)) en/of er zijn aangepaste testscripts (ga naar [**6**](RM-ATV.md)) |
+| **2.13** | Er is een nieuwe API standaard release (ga naar [**4** Release Management API Beheer](RM-API-Beheer.md)) en/of er zijn aangepaste testscripts (ga naar [**6** Release Management API Testplatform](RM-ATV.md)) |
 | **2.14** | Aan de melder wordt teruggekoppeld dat zijn issue wordt afgevoerd met de reden daarvan. |
 | **2.15** | Is de melder akkoord (ga naar 2.16) of juist niet (ga naar 2.17)? |
 | **2.16** | Het issue wordt afgesloten in GitHub. |
-| **2.17** | Er volgt een escalatie naar .... [**7**] |
+| **2.17** | Er volgt een escalatie naar .... [**7**] (nog in te vullen). |
