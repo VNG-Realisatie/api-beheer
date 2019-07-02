@@ -154,15 +154,18 @@ Dit betekent dat een versie maximaal 2 jaar ondersteund wordt tenzij er in 2 jaa
 
 In de onderstaande tabel is een voorbeeld uitgewerkt waarin de bovenstaande regels zijn toegepast:
 
-| 1.0 | 1.1 | 1.2 | 1.3 | 2.0 | 2.1 | 2.2 |
-| --- | --- | --- | --- | --- | --- | --- |
-| x  |  |  |  |  |  |  |
-| x  | x |  |  |  |  |  |
-|  | x | x |  |  |  |  |
-|  |  | x | x  |  |  |  |
-|  |  |  | x | x |  |  |
-|  |  |  | x | x | x |  |
-|  |  |  | x |  | x | x |
+| 1.0 | 1.1 | 1.2 | 1.3 | 2.0 | 2.1 | 2.2 | 3.0 | 3.1 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| x  |  |  |  |  |  |  |  |  |
+| x  | x |  |  |  |  |  |  |  |
+|  | x | x |  |  |  |  |  |  |
+|  |  | x | x  |  |  |  |  |  |
+|  |  |  | x | x |  |  |  |  |
+|  |  |  | x | x | x |  |  |  |
+|  |  |  | x |  | x | x |  |  |
+|  |  |  |  |  |  | x | x |  |
+|  |  |  |  |  |  | x | x | x |
+
 
 ### Uitfaseren van een major/minor API versie
 
