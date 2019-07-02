@@ -131,24 +131,43 @@ Bij elke versie kunnen de wijzigingen worden opgenomen, als volgt:
 
 ## Release management 
 
-Een API zal nooit helemaal stabiel zijn. Verandering is onvermijdelijk. Het is 
-belangrijk hoe met deze verandering wordt omgegaan. Goed gedocumenteerde en 
-tijdig gecommuniceerde uitfaseringsplanningen zijn in het algemeen voor veel 
-API gebruikers werkbaar.
-
-TODO
+Een API zal nooit helemaal stabiel zijn. Verandering is onvermijdelijk. Het is belangrijk hoe met deze verandering wordt omgegaan. 
+Goed gedocumenteerde en tijdig gecommuniceerde uitfaseringsplanningen zijn in het algemeen voor veel API gebruikers werkbaar.
+Een versie van een API standaard moet niet te kort ondersteund worden maar ook zeker niet te lang. Een leverancier moet in staat blijven mee te blijven gaan in de cadans waarin nieuwe versies worden uitgebracht en afgevoerd. Het inbouwen en uitleveren bij de gemeenten van een standaard kost immers tijd.
 
 ### Standaard release schema
 
-TODO
-
-### Uitfaseren van een major API versie
-
-TODO
+Er worden met uitzondering van bugfixes niet meer dan 2 versies per jaar uitgebracht, in januari en in juli.
+Het streven is om minimaal 1 x per jaar een nieuwe release uit te brengen maar dit wordt natuurlijk gestuurd door de behoeften van de gemeenten.
+Het aantal bugfixes is in principe onbeperkt maar dit wordt begrensd door de tijdspanne die nodig is om de bugs op te lossen.
 
 ### Ondersteuningsperiode
 
-TODO: Zie API strategie 2.6.4
+Het aantal door VNG Realisatie ondersteunde versies wordt beperkt tot 2 a 3. Dit omdat we ook altijd een voorgaande major versie willen ondersteunen. Wat betreft het aantal te ondersteunen versies geldt dat we de volgende versies ondersteunen:
+ 
+* De laatste versie
+* Eventueel de voorgaande versie van huidige major versie (hierop worden alleen patches uitgebracht)
+* De laatste versie van de voorgaande major versie (hierop worden alleen patches uitgebracht)
+
+De laatste versie van de voorgaande major versie wordt maximaal 2 jaar ondersteund.
+Dit betekent dat een versie maximaal 2 jaar ondersteund wordt tenzij er in 2 jaar geen nieuwe versie meer is uitgebracht.
+
+In de onderstaande tabel is een voorbeeld uitgewerkt waarin de bovenstaande regels zijn toegepast:
+
+| 1.0 | 1.1 | 1.2 | 1.3 | 2.0 | 2.1 | 2.2 |
+| --- | --- | --- | --- | --- | --- | --- |
+| x  |  |  |  |  |  |  |
+| x  | x |  |  |  |  |  |
+|  | x | x |  |  |  |  |
+|  |  | x | x  |  |  |  |
+|  |  |  | x | x |  |  |
+|  |  |  | x | x | x |  |
+|  |  |  | x |  | x | x |
+
+### Uitfaseren van een major/minor API versie
+
+Wanneer een nieuwe major wordt gereleased stopt de ondersteuning van de oudste major versie (tenzij de nieuwe major versie de 2e major release is). Als er een nieuwe minor wordt uitgebracht stopt de ondersteuning van de oudste minor versie van diezelfde major (tenzij de nieuwe minor versie de 2e minor release binnen de major is).
+Het uitfaseren van een API versie door VNG Realisatie betekent niet dat die versie niet meer door leveranciers ondersteund mag worden. In principe mag een leverancier alle ooit gereleasde API versies blijven ondersteunen.
 
 ## API versies
 
