@@ -14,6 +14,8 @@ In het onderstaande diagram wordt beschreven hoe wordt omgegaan met een nieuwe r
 
 De stappen in het Release Management proces vande API Testvoorziening zijn genummerd met een uniek nummer en hieronder in meer detail beschreven.
 
+| **Stap** | **Omschrijving** |
+| -------- | ---------------- |
 | **5.1** | Vanuit het Release Management API standaarden proces komen een of meer nieuwe testscrips binnen. |
 | **5.2** | De testscripts worden geconfigureerd in de API Testvoorziening.  |
 | **5.3** | De regressietest wordt opnieuw geconfigureerd. |
