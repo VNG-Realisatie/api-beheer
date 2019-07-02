@@ -28,5 +28,5 @@ De stappen in het Release Management proces vande API Testvoorziening zijn genum
 | **5.10** | Verwijder de betreffende testscripts. |
 | **5.11** | Pas de regressietest aan. |
 | **5.12** | Draai de regressietest zodat deze weer de laatste status weergeeft. |
-| **5.13** | Is de test geslaagd (keer terug naar 3.4 indien binnen gekomen via 5 (Release Management API standaarden) of beeindig het proces indien binnengekomen via 6 (Change en Problem Management API standaarden)) of niet (ga naar 5.14). |
+| **5.13** | Is de test geslaagd (keer terug naar 3.4 indien binnen gekomen via 5 (Release Management API standaarden) of beeindig het proces indien binnengekomen via 6 (Change en Problem Management API standaarden) of niet (ga naar 5.14). |
 | **5.14** | Er is een probleem met de nieuwe componenten of met de API Testvoorziening zelf. Maak een issue aan voor het API scrum team of voor API Testvoorziening Beheer. |
