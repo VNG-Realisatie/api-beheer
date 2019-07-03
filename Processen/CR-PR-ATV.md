@@ -6,7 +6,7 @@ weight: 100
 
 *Versie 0.1*
 
-## Change- en Problem Management API-Testplatformg
+## Change- en Problem Management API-Testplatform
 
 Het onderstaande diagram beschrijft hoe er wordt om gegaan met issues die in het Service Desk proces zijn binnen gekomen, van het type bug/wens zijn en als onderwerp de API Testplatform hebben.
 
