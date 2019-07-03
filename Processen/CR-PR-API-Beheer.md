@@ -10,7 +10,7 @@ weight: 100
 
 Het onderstaande diagram beschrijft hoe er wordt om gegaan met issues die in het Service Desk proces zijn binnen gekomen, van het type bug/wens zijn en als onderwerp een API standaard hebben.
 
-![Change- en Problem Management API-Beheer](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/CR-PR-API-Beheer.jpg)
+![Change- en Problem Management API-Beheer](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/CM-PM-API-Beheer.jpg)
 
 De stappen in het Change- en Problem Management proces van API-Beheer zijn genummerd met een uniek nummer en hieronder in meer detail beschreven.
 
