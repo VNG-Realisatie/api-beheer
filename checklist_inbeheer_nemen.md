@@ -11,6 +11,7 @@ De vereiste onderdelen zijn aanwezig:
 * [ ] Overzicht van de betrokken partijen en personen;
 * [ ] Testomgeving met testscripts.
 * [ ] Demo/test applicatie consumer moet aanwezig zijn.
+* [ ] Slack workspaces en en andere communicatie middelen die gebruikt worden tijdens het (door)ontwikkelen moeten overgedragen worden aan VNG.
 
 * [ ] Er moet een productowner per API standaard zijn. Hetzij extern (vanuit ontwikkelteam) hetzij intern (VNG) 
 * [ ] Afstemming met stakeholders
