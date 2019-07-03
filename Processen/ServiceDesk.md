@@ -14,10 +14,10 @@ In het onderstaande diagram is het Service Desk proces weergegeven zoals dit doo
 
 Het Service Desk proces beschrijft hoe een issue aangemeld kan worden en hoe dit dan verder verwerkt wordt door API Beheer.
 Het kent de volgende subprocessen die in de documenten in de onderliggende links worden beschreven:
-* [Change- en Problem Management API-Beheer](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/CR-PR-API-Beheer.md)
+* [Change- en Problem Management API-Beheer](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/CM-PM-API-Beheer.md)
 * [Release Management API-Beheer](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/RM-API-Beheer.md)
-* [Change- en Problem Management API Testvoorziening](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/CR-PR-ATV.md)
-* [Release Management API Testvoorziening](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/RM-ATV.md)
+* [Change- en Problem Management API Testvoorziening](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/CM-PM-ATP.md)
+* [Release Management API Testvoorziening](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/RM-ATP.md)
 * [Change- en Problem Management Haven](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/CR-PR-Haven.md)
 
 De stappen in het Service Desk proces zijn genummerd met een uniek nummer en hieronder in meer detail beschreven.
