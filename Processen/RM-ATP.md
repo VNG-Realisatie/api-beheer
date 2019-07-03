@@ -10,7 +10,7 @@ weight: 100
 
 In het onderstaande diagram wordt beschreven hoe wordt omgegaan met een nieuwe release van de API-Testplatform. Welke handelingen moeten in dat geval worden uitgevoerd.
 
-![Release Management API-Testplatform](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/RM-ATP.jpg)
+![Release Management API-Testplatform](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/Images/RM-ATP.jpg)
 
 De stappen in het Release Management proces vande API Testplatform zijn genummerd met een uniek nummer en hieronder in meer detail beschreven.
 

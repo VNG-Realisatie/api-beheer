@@ -10,7 +10,7 @@ weight: 100
 
 Het onderstaande diagram beschrijft hoe er wordt om gegaan met issues die in het Service Desk proces zijn binnen gekomen, van het type bug/wens zijn en als onderwerp de API Testplatform hebben.
 
-![Change- en Problem Management API-Testplatform](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/CM-PM-ATP.jpg)
+![Change- en Problem Management API-Testplatform](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/Images/CM-PM-ATP.jpg)
 
 De stappen in het Change- en Problem Management proces van de API-Testplatform zijn genummerd met een uniek nummer en hieronder in meer detail beschreven.
 
