@@ -10,7 +10,7 @@ weight: 100
 
 Het onderstaande diagram beschrijft hoe er wordt om gegaan met issues die in het Service Desk proces zijn binnen gekomen, van het type bug/wens zijn en als onderwerp Haven hebben.
 
-![Change- en Problem Management Haven](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/CR-PR-Haven.jpg)
+![Change- en Problem Management Haven](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/CM-PM-Haven.jpg)
 
 De stappen in het Change- en Problem Management proces van Haven zijn genummerd met een uniek nummer en hieronder in meer detail beschreven.
 
