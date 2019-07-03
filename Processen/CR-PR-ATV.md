@@ -1,18 +1,18 @@
 ---
-title: "Change- en Problem Management API-Testvoorziening"
+title: "Change- en Problem Management API-Testplatform"
 date: '17-6-2019'
 weight: 100
 ---
 
 *Versie 0.1*
 
-## Change- en Problem Management API-Testvoorziening
+## Change- en Problem Management API-Testplatformg
 
-Het onderstaande diagram beschrijft hoe er wordt om gegaan met issues die in het Service Desk proces zijn binnen gekomen, van het type bug/wens zijn en als onderwerp de API Testvoorziening hebben.
+Het onderstaande diagram beschrijft hoe er wordt om gegaan met issues die in het Service Desk proces zijn binnen gekomen, van het type bug/wens zijn en als onderwerp de API Testplatform hebben.
 
-![Change- en Problem Management API-Beheer](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/CR-PR-ATV.jpg)
+![Change- en Problem Management API-Testplatform](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/CM-PM-ATP.jpg)
 
-De stappen in het Change- en Problem Management proces van de API-Testvoorziening zijn genummerd met een uniek nummer en hieronder in meer detail beschreven.
+De stappen in het Change- en Problem Management proces van de API-Testplatform zijn genummerd met een uniek nummer en hieronder in meer detail beschreven.
 
 | **Stap** | **Omschrijving** |
 | -------- | ---------------- |
@@ -28,4 +28,4 @@ De stappen in het Change- en Problem Management proces van de API-Testvoorzienin
 | **4.10** | API-Beheer meldt aan de indiener van het probleem dat het probleem is opgelost en vraagt de indiener of dat naar wens is. |
 | **4.11** | Is het probleem naar wens opgelost (ga naar 4.12) of niet (ga naar 4.3). |
 | **4.12** | Het issue wordt gesloten. |
-| **4.13** | Het issue wordt doorverwezen naar ATV-beheer. |
+| **4.13** | Het issue wordt doorverwezen naar ATP-beheer. |
