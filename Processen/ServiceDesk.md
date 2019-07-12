@@ -10,7 +10,8 @@ weight: 100
 
 In het onderstaande diagram is het Service Desk proces weergegeven zoals dit door API Beheer wordt gehanteerd.
 
-![Service Desk](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/ServiceDesk.jpg)
+![Service Desk](https://github.com/VNG-Realisatie/api-beheer/blob/master/Processen/Images/ServiceDesk.jpg)
+
 
 Het Service Desk proces beschrijft hoe een issue aangemeld kan worden en hoe dit dan verder verwerkt wordt door API Beheer.
 Het kent de volgende subprocessen die in de documenten in de onderliggende links worden beschreven:
