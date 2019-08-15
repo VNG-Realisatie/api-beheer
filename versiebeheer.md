@@ -1,5 +1,7 @@
 # Versie beheer en release management
 
+In deze sectie wordt het versiebeheer voor de API stadaarden beschreven. Inspiratiebron daarvoor is de landelijke API strategie maar ook het BOMOS model. Versiebeheer heeft betrekking op een API standaard en niet op een samenstel van API standaarden. Het heeft dus geen betrekking op de ZGW standaarden als geheel. Er bestaat dus ook geen 1.0.0 versie van de ZGW standaarden.
+
 ## API versies
 
 Versiebeheer is gebaseerd op [Semantic Versioning](https://semver.org) en de
@@ -154,15 +156,18 @@ Dit betekent dat een versie maximaal 2 jaar ondersteund wordt tenzij er in 2 jaa
 
 In de onderstaande tabel is een voorbeeld uitgewerkt waarin de bovenstaande regels zijn toegepast:
 
-| 1.0 | 1.1 | 1.2 | 1.3 | 2.0 | 2.1 | 2.2 |
-| --- | --- | --- | --- | --- | --- | --- |
-| x  |  |  |  |  |  |  |
-| x  | x |  |  |  |  |  |
-|  | x | x |  |  |  |  |
-|  |  | x | x  |  |  |  |
-|  |  |  | x | x |  |  |
-|  |  |  | x | x | x |  |
-|  |  |  | x |  | x | x |
+| 1.0 | 1.1 | 1.2 | 1.3 | 2.0 | 2.1 | 2.2 | 3.0 | 3.1 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| x  |  |  |  |  |  |  |  |  |
+| x  | x |  |  |  |  |  |  |  |
+|  | x | x |  |  |  |  |  |  |
+|  |  | x | x  |  |  |  |  |  |
+|  |  |  | x | x |  |  |  |  |
+|  |  |  | x | x | x |  |  |  |
+|  |  |  | x |  | x | x |  |  |
+|  |  |  |  |  |  | x | x |  |
+|  |  |  |  |  |  | x | x | x |
+
 
 ### Uitfaseren van een major/minor API versie
 
