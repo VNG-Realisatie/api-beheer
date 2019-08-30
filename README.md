@@ -4,13 +4,9 @@ API-Beheer
 
 ## Doel
 
-Deze repository bevat alles wat nodig is om de GEMMA ZDS 2.0 Open API standaard in beheer te kunnen nemen en om dat beheer goed uit te kunnen voeren.
-
-> _**Nog te beantwoorden vragen:**_
-> - _Blijkbaar kun je standaarden clusteren. Moeten we daarvoor in GEMMA Online voorzieningen treffen?_
+Deze repository bevat alles wat nodig is om het beheer op de ZGW Open API standaarden goed uit te kunnen voeren.
 
 Het dient daarnaast tevens als aanzet om te komen tot een generieke methode voor het in beheer nemen en uitvoeren van dat beheer van andere (nog te ontwikkelen) Open API standaarden.
-De inhoud van deze repository zal op een later moment mogelijk worden opgenomen in een repository waarin het beheer van Open API standaarden of van standaarden in het algemeen worden beschreven.
 
 **Visie API-Beheer** 
 
@@ -27,11 +23,6 @@ Bij het beheer van een Open API standaard onderkennen we 2 fases en elke fase ke
     en houden zij dit aspect ook goed in de gaten. Dit zou dus slechts een formele slag moeten zijn.
   + Al het materiaal, documentatie en omgevingen die bij de ontwikkeling van de API standaard zijn aangemaakt wordt in deze fase overgedragen. Het gaat daarbij om een officieel 'moment' waarop de beheerders aangeven dat de standaard officieel onder hun beheer valt maar zo nodig betreft het ook het regelen van de juiste rechten.
   
- 
-
->   _**Nog te beantwoorden vragen:**_ 
->  - _Is bij de overdracht het door de leveranciers en gemeenten te gebruiken kanaal al ingericht?_
-
 * Beheerfase.<br/>
   Dit is de fase waarin (de componenten van) een standaard daadwerkelijk in beheer zijn genomen
   - aspecten die betrekking hebben op de werkzaamheden van de beheerders.
@@ -89,12 +80,10 @@ Het bestaan van 2 verschillende methodieken voor het vervaardigen van API standa
 Lees meer over hoe je vragen kunt stellen, bugs kunt melden en bij kunt dragen (met code of documentatie) in [`CONTRIBUTING.md`](CONTRIBUTING.md) (EN).
 
 ## Documentatie
-...
+Meer documentatie over het beheer van API standaarden vind je [hier](beheer.md).
 
 ## Rollen
 
 - Opdrachtgever: [@TheoVNGPeters](https://github.com/TheoVNGPeters)
 - Delivery Manager: [@wishalg](https://github.com/wishalg)
 - Product Owner: [@melsk-r](https://github.com/melsk-r)
-- Scrum Master:  [@TCIMEddy](https://github.com/TCIMEddy)
-
