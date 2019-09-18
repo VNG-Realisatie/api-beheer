@@ -73,7 +73,7 @@ _Het forum voor standaardisatie stelt als eis dat er een openbare consultatie is
   * Een UML model van het informatiemodel (de objecttypen en onderlinge relaties) zoals deze in de API gebruikt wordt.
   * Een overzicht van welke gegevens worden ontsloten in de vorm van een tabel van de resource + bijzonderheden. 
   * Installatie instructies van de RI (bijv. INSTALL.rst in de repository).
-* De documentatie (zowel de functionele als de technische) is gepubliceerd leesbaar en refereert aan de juste versie (major/minor).
+* De documentatie (zowel de functionele als de technische) is gepubliceerd leesbaar en refereert aan de juiste versie (major/minor).
 * De testomgeving met een implementatie van de RI moet probleemloos draaien. Dit betekent ook dat:
   * De testscripts voor de RI, waarmee we al het gewenst gedrag zoals beschreven in standaard testen, ook beschikbaar zijn gesteld. Beheer zal dit bij doorontwikkeling weer nodig hebben en tevens zullen zij deze beschikbaar stellen aan de leveranciers/gemeenten. 
 
