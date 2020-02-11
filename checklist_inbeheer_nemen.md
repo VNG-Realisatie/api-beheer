@@ -42,6 +42,7 @@ De vereiste onderdelen zijn aanwezig:
 * [ ] MUST Geen openstaande bugs/werkzaamheden voor de over te dragen versie
 * [ ] MUST Referentie implementatie gelijk aan de OAS3 => hoe controleren we dit? BV importeren OAS in Postman en genereren testscript om te testen tegen RI. Dan is aangetoond dat de OAS van de standaard ondersteund wordt door de RI. Amdere mogelijkheid is exporteren OAS uit RI en vergelijken met OAS van standaard.
 * [ ] MUST RI is beschikbaar als een docker container.
+* [ ] MUST RI is centraal gehost op Haven.
 
 ## Referentie implementatie consumer
 * [ ] MUST Github repositorie(s) overgedragen => Of opnemen RI in aparte beheer-repository?
@@ -88,4 +89,4 @@ De vereiste onderdelen zijn aanwezig:
 * [ ] MUST Werkgroepstructuur? Issues, RFC's etc. indienen via Github. Monitoring van de community, contactpersoon voor doorontwikkeling developers
 * [ ] MUST roadmap
 * [ ] MUST evangeliseren naar gemeentes toe
-* [ } MUST Demo's en API Labs/hackaton (virtueel?) bij een nieuwe versie
+* [ ] MUST Demo's en API Labs/hackaton (virtueel?) bij een nieuwe versie
