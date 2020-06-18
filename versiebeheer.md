@@ -1,6 +1,6 @@
 # Versie beheer en release management
 
-In deze sectie wordt het versiebeheer voor de API stadaarden beschreven. Inspiratiebron daarvoor is de landelijke API strategie maar ook het BOMOS model. Versiebeheer heeft betrekking op een API standaard en niet op een samenstel van API standaarden. Het heeft dus geen betrekking op de ZGW standaarden als geheel. Er bestaat dus ook geen 1.0.0 versie van de ZGW standaarden.
+In deze sectie wordt het versiebeheer voor de API standaarden van VNG beschreven. Inspiratiebron daarvoor is de landelijke API strategie maar ook het BOMOS model. Versiebeheer heeft betrekking op een API standaard en niet op een bundeling van API standaarden. Het heeft dus geen betrekking op de ZGW standaarden als geheel. Er bestaat dus ook geen 1.0.0 versie van de ZGW standaarden.
 
 ## API versies
 
