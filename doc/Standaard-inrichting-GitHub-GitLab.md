@@ -21,6 +21,7 @@ Denk hierbij niet alleen aan de semantische naam maar ook aan de technische naam
 * Welke gebruikers 'toegang dienen te krijgen tot de repository.
 Met per gebruiker diens GitHub gebruikersnaam;
 * Welke rol deze gebruikers toegekend moeten krijgen (Read, Triage, Write of Maintain).
+* Is het gebruik van GitFlow gewenst.
 
 ### Initiële configuratie
 
@@ -35,22 +36,22 @@ Bij VNG Realisatie nemen wij altijd zo'n bestand op;
 
 ### Gebruikers (autorisaties)
 
-Doordat de repository 'Public' is, staat deze voor de gehele wereld op. Dat betekent dat de inhoud door de gehele wereld bekeken kan worden. Dat is 
-precies zoals wij dat bij VNG Realisatie willen. Dat 
+Doordat de repository 'Public' is, staat deze voor de gehele wereld open. Dat betekent dat de inhoud door de gehele wereld bekeken kan worden. Dat is ook
+precies zoals wij dat bij VNG Realisatie willen. 
 
 1. Ga naar het tabblad 'Settings' en klik op 'Manage access';
 2. Voeg nu m.b.v. de bullet 'Invite teams or people' gebruikers toe. Je kunt hier dus kiezen voor individuele gebruikers of voor reeds aangemaakte teams. 
-Indien je dat wil kan je er ook voorkiezen om eerst een nieuw team aan te maken;
+Indien je dat wil kan je er ook voor kiezen om eerst een nieuw team aan te maken;
 3. Indien je op 'Invite teams or people' hebt geklikt kom je nu in een interface waarin je een gebruikersnaam of teamnaam in kunt geven;
 4. Definiëer vervolgens de rol die de gebruiker of het team dient te krijgen (Read, Triage, Write of Maintain);
-5. Klik vervolegns op de groene button 'Add xxxxx to the repository' waarna de gebruiker of team gebruik kan maken van de hem/hun toegekende rechten op de
+5. Klik vervolgens op de groene button 'Add xxxxx to the repository' waarna de gebruiker of team gebruik kan maken van de hem/hun toegekende rechten op de
 repository.
 
 ### Initiële content
 
 De repository is nu aangemaakt en kan nu (door de gebruikers) voorzien worden van content. 
 
-De licentie tekst is voor elke VNG Realisatie GitHub repository gelijk en wordt daarom door de administrators aangemaakt.
+De licentie tekst is voor elke VNG Realisatie GitHub repository gelijk en wordt daarom al door de administrators aangemaakt.
 1. Maak naast het README.md bestand een document aan met de naam 'LICENCE.md'.
 2. Kopiëer de inhoud van een LICENCE.md bestand uit een andere VNG-Realisatie repository, plaats deze in het nieuwe bestand en commit het bestand direct
 naar de 'main' branch.
@@ -58,7 +59,53 @@ naar de 'main' branch.
 
 ### Initiële structuur
 
-(bijv. t.b.v. GitFlow en GitHub Pages)
+We streven er binnen de VNG-Realisatie GitHub repositories naar overal een gelijke structuur te hanteren. Het gaat daarbij niet alleen over de folder structuur maar ook over de branch structuur. E.e.a. is nog wel afhankelijk van de functie van de repository. Zo wordt niet elke repository gebruikt t.b.v. een API specificatie en in dat geval is de folder 'specificatie' natuurlijk niet nodig. Wordt de repository echter wel gebruikt met als doel om een API specificatie op te leveren dan staat die specificatie wel in de folder 'specificatie'. 
+
+#### Folder structuur
+
+Hieronder een tabel met daarin de standaard folder en daarachter de conditie.
+
+| Foldernaam | Conditie |
+| --- | --- |
+| specificatie | Alleen opnemen als  het doel of een van de doelen van de repository is het opleveren van een API- of anderssoortige specificatie.|
+| docs | Deze folder is alleen noodzakelijk als het de bedoeling is om op basis van de respository ook een GitHub Pages site te genereren. Meestal is dit een repository die pas op een later moment aangemaakt zal hoeven te worden aangezien de content voor een GitHub Pages site eerst zal moeten worden vervaardigd. |
+| .github/ISSUE_TEMPLATE | Wordt alleen aangemaakt als er behoefte is aan 1 of meer templates voor het aanmaken van GitHub issues. |
+| .github/PULL_REQUEST_TEMPLATE | Wordt alleen aangemaakt als er behoefte is aan 1 of meer templates voor het aanmaken van GitHub Pull Requests. |
+| .github/workflows | Wordt alleen aangemaakt indien de repository moet worden voorzien van action scripts. |
+
+In deze tabel zijn de folders die door Action scripts worden gegenereerd niet opgenomen juist omdat ze gegenereerd worden en niet door de administrators aangemaakt hoeven te worden.
+
+#### Branch structuur
+
+Bij de branch structuur gaat het vooral om de voor de branches gehanteerde naamgeving aangezien er geen branches binnen branches kunnen voorkomen. In principe staat het iedereen vrij om die branch structuur te hanteren die men wenselijk acht. Als er men echter gebruik wil maken van de GitFlow workflow zijn er wel enkele regels die in acht genomen moeten worden. Voor meer informatie over de toepassing verwijs ik naar [de beschrijving van GitFlow in onze API Kennisbank](https://github.com/VNG-Realisatie/API-Kennisbank/blob/master/GitFlow/Gitflow_implementatie.md).
+
+In de 'master' (of 'main') branch wordt standaard bij het aanmaken van de repository al voorzien. Het aanmaken van 'Feature' branches wordt door de develeopers in de repository zelf geregeld wat betekent dat een administrator alleen een 'develop' branch hoeft aan te maken.
+
+### Issue templates
+
+De inhoud van een repository is over het algemeen het resultaat van een samenwerking van meerdere personen. Sommige personen bouwen daadwerkelijk aan de content anderen reviewen of dragen bij door wensen kenbaar te maken. Opmerkingen en wensen m.b.t. de content worden meestal kenbaar gemaakt middels zogenaamde issues. Issues kunnen veel vormen aannemen, bijv. als 'Improvement story', 'Bug report' of als een eenvoudige 'taak'. Elk van deze issuesoorten heeft zijn eigen karakter wat zich vertaald in de informatie die moet worden verstrekt. Om er voor te zorgen dat bij elk type issue de gewenste informatie ook wordt verstrekt kunnen issue templates worden aangemaakt. De naam van zo'n template verschijnt dan als keuzemogelijkheid op het moment dat een nieuw issue wordt aangemaakt.
+
+Hiertoe dient in de folder '.github' de folder 'ISSUE_TEMPLATE' aangemaakt te worden. De markdown bestanden die in deze folder worden geplaatst zullen de issue templates vormen. In de onderstaande tabel benoemen we de meest gebruikelijke templates en hun functies.
+
+| Template | Functie |
+| --- | --- |
+| Improvement_Story.md |  |
+| Scrumtaak.md |  |
+| als-----wil-ik----.md |  |
+| issue--als-----wil-ik----.md |  |
+| user-story--als-----wil-ik----.md |  |
+| bug.md |  |
+| bug_report.md |  |
+| impediment.md |  |
+| issue--impediment.md |  |
+| impediment--belemering-of-risico-.md |  |
+
+
+### Standaard labels
+
+### Standaard Actions
+
+### Geautomatiseerde functies
 
 ### Spectral rules
 
