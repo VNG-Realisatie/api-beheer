@@ -132,6 +132,21 @@ Natuurlijk vult elke repository de behoefte van zijn gebruikers zo goed mogelijk
 | Documentation | Verbeteringen of toevoegingen aan de documentatie. | #0075ca |
 | wontfix | Dit wordt niet opgelost. | #ffffff |
 
+### Geautomatiseerde functies
+
+M.b.v. geautomatiseerde functies kunnen we acties automatisch laten uitvoeren op basis van het voorkomen van een event, bijv. het wijzigen van een status.
+Bij '[Configuring automation for project boards](https://docs.github.com/en/github/managing-your-work-on-github/configuring-automation-for-project-boards)' vind je meer informatie.
+
+#### Plaats issues in kolom project board
+
+Zodra een issue de status 'closed' krijgt dient deze over het algemeen ook verplaatst te worden naar de kolom 'Done' van het project board. Dit kan je op de volgende wijze regelen:
+
+1. Op het betreffende projectboard;
+2. Klik in de kolom waarvoor je een functie wil automatiseren op '...';
+3. Klik op 'Manage automation';
+4. Selecteer een 'Preset' die je de geautomatiseerde functie geeft die je wil gebruiken;
+5. Vink de actie aan die je wil automatiseren.
+
 ### Standaard Actions
 
 Binnen Haal Centraal zijn een aantal Action scripts ontwikkeld die ook bruikbaar kunnen zijn in andere repositories. Over het algemeen zal de behoefte aan deze script pas naar voren komen zodra de repository voldoende content heeft. Hier hoeft dus niet al meteen bij het initiëel aanmaken in te worden voorzien. Hieronder kort een overzicht van de beschikbare actions en een korte beschrijving van de functionaliteit.
@@ -145,23 +160,14 @@ Binnen Haal Centraal zijn een aantal Action scripts ontwikkeld die ook bruikbaar
 
 Voor de ins & outs m.b.t. de voor VNG-R beschikbare actions en de wijze waarop deze geactiveerd kunnen worden in de respositories verwijzen we naar [de uitleg daarover in de API-Kennisbank](https://github.com/VNG-Realisatie/API-Kennisbank/tree/master/GitHub%20Actions).
 
-### Geautomatiseerde functies
+#### Spectral rules
 
-M.b.v. geautomatiseerde functies kunnen we acties automatisch laten uitvoeren op basis van het voorkomen van een event, bijv. het wijzigen van een status.
-
-#### Plaats issues in kolom project board
-
-Zodra een issue de status 'closed' krijgt dient deze over het algemeen ook verplaatst te worden naar de kolom 'Done' van het project board. Dit kan je op de volgende wijze regelen:
-
-1. Op het betreffende projectboard;
-2. Klik in de kolom waarvoor je een functie wil automatiseren op '...';
-3. Klik op 'Manage automation';
-4. Selecteer een 'Preset' die je de geautomatiseerde functie geeft die je wil gebruiken;
-5. Vink de actie aan die je wil automatiseren.
-
-### Spectral rules
+Zoals je in [lint-oas](https://github.com/VNG-Realisatie/API-Kennisbank/blob/master/GitHub%20Actions/haal-centraal.md#lint-oas) sectie kunt lezen wordt er bij het valideren de openapi specificatie gebruik gemaakt van Spectral. De gebruikte OAS rules staan dan ook gedefinieerd in het .spectral.yml bestand. Meer daarover kun je vinden in ['Valideren van de openapi.yaml en de genereervariant van de openapi.yaml bestand' in Haal Centraal npm beheer](https://github.com/VNG-Realisatie/API-Kennisbank/blob/master/GitHub%20Actions/haal-centraal-npm-beheer.md#valideren-van-de-openapiyaml-en-de-genereervariant-van-de-openapiyaml-bestand).
 
 ### GitHub Pages
+
+Zodra het product waarvoor de repository in het leven is geroepen een bepaalde status heeft kan de behoefte ontstaan om het met GitHub Pages te publiceren.
+Meer informatie over het activeren van GitHub Pages specifiek voor VNG Realisatie vind je in [de GitHub Pages sectie van de API Kennisbank](https://github.com/VNG-Realisatie/API-Kennisbank/blob/master/GitHub%20Pages/GitHub-Pages-implementatie-VNG-R.md).
 
 ## GitLab
 
