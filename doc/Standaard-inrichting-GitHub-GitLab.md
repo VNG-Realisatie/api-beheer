@@ -99,7 +99,7 @@ Hiertoe dient in de folder '.github' de folder 'ISSUE_TEMPLATE' aangemaakt te wo
 | Bug-report.md | Template om een bug in het bestaande product te kunnen melden. |
 | Impediment.md | Template waarmee een belemmering onder de aancht kan worden gebracht. |
 
-> **Let op!** Uit alle versies van deze templates die op de diverse repo's staan moet nog een generieke versie worden gemaakt die we overal kunnen plaatsen. 
+> **Let op!** Uit alle versies van deze templates die op de diverse repo's staan moet nog een generieke versie worden gemaakt die we overal kunnen plaatsen. Ook zullen we deze ergens moeten plaatsen waar we deze kunnen beheren en naar andere repo's kopieren.
 
 1. Maak, indien gewenst en als deze nog niet aanwezig is, de folder '.github/ISSUE_TEMPLATE' aan;
 2. Plaats alle templates die gewenst zijn in deze folder;
@@ -114,6 +114,21 @@ Indien gewenst kunnen er, net als voor de verschillende soorten issues, template
 3. Templates is direct bruikbaar.
 
 ### Standaard labels
+
+Een eenduidige werkwijze vertaalt zich ook naar de op de issues en PR's toe te passen labels.
+Natuurlijk vult elke repository de behoefte van zijn gebruikers zo goed mogelijk in wat kan betekenen dat er een aantal specifiek in de betreffende repository worden aangemaakt. Over het algemeen kennen de repositories echter wel een aantal labels die het gemeen heeft met andere repositories en idealiter hebben deze over de verschillende repositories eenzelfde kleur. In de onderstaande tabel zijn een aantal van deze labels opgenomen met de daarbij horende hexadecimale waarde van de kleur.
+
+| Labelnaam | Beschrijving | Kleur |
+| --- | --- | --- |
+| bug | Fout in de code.  | #d73a4a |
+| user story | Business vraag van een gemeentelijke afnemer. | #82f2cb |
+| v1.0 |  | #b030db |
+| v1.1 |  | #704bea |
+| v1.2 |  | #e5ca60 |
+| v1.3 |  | #bfd4f2 |
+| v1.4 |  | #3e83c4 |
+| Documentation | Verbeteringen of toevoegingen aan de documentatie. | #0075ca |
+| wontfix | Dit wordt niet opgelost. | #ffffff |
 
 ### Standaard Actions
 
