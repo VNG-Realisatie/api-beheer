@@ -75,11 +75,15 @@ Hieronder een tabel met daarin de standaard folder en daarachter de conditie.
 
 In deze tabel zijn de folders die door Action scripts worden gegenereerd niet opgenomen juist omdat ze gegenereerd worden en niet door de administrators aangemaakt hoeven te worden.
 
+1. Maak de folders aan die voor de repository wenselijk zijn.
+
 #### Branch structuur
 
 Bij de branch structuur gaat het vooral om de voor de branches gehanteerde naamgeving aangezien er geen branches binnen branches kunnen voorkomen. In principe staat het iedereen vrij om die branch structuur te hanteren die men wenselijk acht. Als er men echter gebruik wil maken van de GitFlow workflow zijn er wel enkele regels die in acht genomen moeten worden. Voor meer informatie over de toepassing verwijs ik naar [de beschrijving van GitFlow in onze API Kennisbank](https://github.com/VNG-Realisatie/API-Kennisbank/blob/master/GitFlow/Gitflow_implementatie.md).
 
-In de 'master' (of 'main') branch wordt standaard bij het aanmaken van de repository al voorzien. Het aanmaken van 'Feature' branches wordt door de develeopers in de repository zelf geregeld wat betekent dat een administrator alleen een 'develop' branch hoeft aan te maken.
+In de 'master' (of 'main') branch wordt standaard bij het aanmaken van de repository al voorzien. Het aanmaken van 'Feature' branches wordt door de developers in de repository zelf geregeld. Daarmee blijft de volgende door de administrator uit te voeren actie over:
+
+1. Maak, idien het werken volgens Gitflow gewenst is, de branch 'develop' aan.
 
 ### Issue templates
 
@@ -89,17 +93,25 @@ Hiertoe dient in de folder '.github' de folder 'ISSUE_TEMPLATE' aangemaakt te wo
 
 | Template | Functie |
 | --- | --- |
-| Improvement_Story.md |  |
-| Scrumtaak.md |  |
-| als-----wil-ik----.md |  |
-| issue--als-----wil-ik----.md |  |
-| user-story--als-----wil-ik----.md |  |
-| bug.md |  |
-| bug_report.md |  |
-| impediment.md |  |
-| issue--impediment.md |  |
-| impediment--belemering-of-risico-.md |  |
+| Improvement-story.md | Template waarmee alles wat in een sprint niet goed ging kan worden gemeld, dit kan dan worden aangepakt zodat het team leert hoe zichzelf te verbeteren en er in volgende Sprints niet dezelfde fouten worden gemaakt. |
+| Scrumtaak.md | Template waarmee een taak (zijnde geen user- en improvement story) kan worden opgevoerd die door het team moet worden opgepakt, bijv. het voorbereiden van een demo. |
+| User-story--als-----wil-ik----.md | Template waarmee een feature/user story dat men graag in het product opgenomen zou zien kan worden beschreven. |
+| Bug-report.md | Template om een bug in het bestaande product te kunnen melden. |
+| Impediment.md | Template waarmee een belemmering onder de aancht kan worden gebracht. |
 
+> **Let op!** Uit alle versies van deze templates die op de diverse repo's staan moet nog een generieke versie worden gemaakt die we overal kunnen plaatsen. 
+
+1. Maak, indien gewenst en als deze nog niet aanwezig is, de folder '.github/ISSUE_TEMPLATE' aan;
+2. Plaats alle templates die gewenst zijn in deze folder;
+3. Templates zijn direct bruikbaar.
+
+### Pull Request templates
+
+Indien gewenst kunnen er, net als voor de verschillende soorten issues, templates voor Pull Requests worden aangemaakt. Op dit moment kent alleen de gemma-zaken repository zo'n template (spec-wijziging.md). Daar is het handig omdat in die context voor een PR standaard informatie verstrekt moet kunnen worden, bijv. over de relatie va het PR met andere ZGW API standaarden.
+
+1. Maak, indien gewenst en als deze nog niet aanwezig is, de folder '.github/PULL_REQUEST_TEMPLATE' aan;
+2. Plaats het template in die folder (de gebruikers kunnen deze zelf aanpassen aan hun wensen);
+3. Templates is direct bruikbaar.
 
 ### Standaard labels
 
