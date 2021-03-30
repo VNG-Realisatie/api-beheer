@@ -132,6 +132,17 @@ Natuurlijk vult elke repository de behoefte van zijn gebruikers zo goed mogelijk
 
 ### Standaard Actions
 
+Binnen Haal Centraal zijn een aantal Action scripts ontwikkeld die ook bruikbaar kunnen zijn in andere repositories. Over het algemeen zal de behoefte aan deze script pas naar voren komen zodra de repository voldoende content heeft. Indien men al bij aanvang van het project over actions wil kunnen beschikken zal aangegeven moeten worden welke. Hieronder kort een overzicht van de beschikbare actions en een korte beschrijving van de functionaliteit.
+
+| Actionnaam | Beschrijving |
+| --- | --- |
+| lint-oas | Valideert de OAS specificatie en genereert indicatoren die gebruikt kunnen worden om het resultaat van de analyse visueel te maken. |
+| generate-sdks | Genereert op basis van OAS specificatie SDK packages en genereert indicatoren die gebruikt kunnen worden om het resultaat van de generatie visueel te maken. |
+| generate-postman-collection | Genereert op basis van OAS specificatie postman scripts en genereert indicatoren die gebruikt kunnen worden om het resultaat van de generatie visueel te maken. |
+| generate-user-stories-md | Genereert t.b.v. de GitHub Pages site markdown bestanden met daarin de user stories die al ingevuld zijn met een in productie versie en user stories die ingevuld worden in de in ontwikkeling versie. Om de juiste issues te kunnen tonen zal het script steeds aangepast moeten worden na het uitkomen van een nieuwe in productie versie en/of in ontwikkeling versie. |
+
+Voor de ins & outs m.b.t. de voor VNG-R beschikbare actions en de wijze waarop deze geactiveerd kunnen worden in de respositories verwijzen we naar [de uitleg daarover in de API-Kennisbank](https://github.com/VNG-Realisatie/API-Kennisbank/tree/master/GitHub%20Actions).
+
 ### Geautomatiseerde functies
 
 ### Spectral rules
