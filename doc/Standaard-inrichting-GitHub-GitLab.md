@@ -1,13 +1,11 @@
 # Standaard inrichting GitHub/GitLab
 
 GitHub en GitLab repositories zijn langzamerhand de ruggegraat van ons werkproces. Voor bijna elk project is een GitHub en/of GitLab repository noodzakelijk.
-Het aantal VNG Realisatie repositories kent inmiddels een behoorlijke omvang en is nog steeds groeiende. Met grote regelmaat wordt ons nl. gevraagd een nieuwe 
-VNG Realisatie GitHub of GitLab repository te creëren. Het is dan ook niet verbazingwekkend dat er behoefte is aan een beschrijving van de wijze waarop zo'n 
-VNG Realisatie repository moet worden aangemaakt. Dat zorgt er immers voor dat niets in de configuratie vergeten wordt maar kan er ook voor zorgen dat de 
-VNG Realisatie repositories gelijkvormig zijn wat het  werken met deze repositories weer handiger maakt. Iemand die de ene VNG Realisatie repositorie kent kan 
-zich in een andere repository immers ook al snel redden.
+Het aantal VNG Realisatie repositories kent inmiddels een behoorlijke omvang en is nog steeds groeiende. Met regelmaat wordt ons gevraagd een nieuwe 
+VNG Realisatie GitHub of GitLab repository te creëren. Er is daarom behoefte aan een beschrijving van de wijze waarop zo'n 
+VNG Realisatie repository moet worden aangemaakt of voorzien van extra functionaliteit. Dat zorgt er immers voor dat niets in de initiële configuratie vergeten wordt en dat de VNG Realisatie repositories gelijkvormig zijn wat het  werken met deze repositories weer handiger maakt. Iemand die de ene VNG Realisatie repositorie kent kan zich in een andere repository immers ook al snel redden.
 
-In dit document beschrijven we de wijze waarop GitHub en GitLab repositories moeten worden aangemaakt en geconfigureerd.
+In dit document beschrijven we de wijze waarop GitHub en GitLab repositories moeten worden aangemaakt, geconfigureerd en van extra functionaliteit kunnen worden voorzien.
 
 Alle VNG Realisatie GitHub repositories kunnen gevonden worden onder deze url: https://github.com/VNG-Realisatie.
 Alle VNG Realisatie GitLab repositories kunnen gevonden worden onder deze url: https://gitlab.com/vng-realisatie.
@@ -21,7 +19,11 @@ Denk hierbij niet alleen aan de semantische naam maar ook aan de technische naam
 * Welke gebruikers 'toegang dienen te krijgen tot de repository.
 Met per gebruiker diens GitHub gebruikersnaam;
 * Welke rol deze gebruikers toegekend moeten krijgen (Read, Triage, Write of Maintain).
-* Is het gebruik van GitFlow gewenst.
+* Of er op basis van de repository (later) ook een GitHub Pages site moet worden gegenereerd.
+* Of het gebruik van GitFlow gewenst is.
+* Of er voorzien moet worden in standaard issue templates en zo ja welke.
+* Of er voorzien moet worden in een standaard PR template.
+* 
 
 ### Initiële configuratie
 
@@ -132,7 +134,7 @@ Natuurlijk vult elke repository de behoefte van zijn gebruikers zo goed mogelijk
 
 ### Standaard Actions
 
-Binnen Haal Centraal zijn een aantal Action scripts ontwikkeld die ook bruikbaar kunnen zijn in andere repositories. Over het algemeen zal de behoefte aan deze script pas naar voren komen zodra de repository voldoende content heeft. Indien men al bij aanvang van het project over actions wil kunnen beschikken zal aangegeven moeten worden welke. Hieronder kort een overzicht van de beschikbare actions en een korte beschrijving van de functionaliteit.
+Binnen Haal Centraal zijn een aantal Action scripts ontwikkeld die ook bruikbaar kunnen zijn in andere repositories. Over het algemeen zal de behoefte aan deze script pas naar voren komen zodra de repository voldoende content heeft. Hier hoeft dus niet al meteen bij het initiëel aanmaken in te worden voorzien. Hieronder kort een overzicht van de beschikbare actions en een korte beschrijving van de functionaliteit.
 
 | Actionnaam | Beschrijving |
 | --- | --- |
@@ -144,6 +146,18 @@ Binnen Haal Centraal zijn een aantal Action scripts ontwikkeld die ook bruikbaar
 Voor de ins & outs m.b.t. de voor VNG-R beschikbare actions en de wijze waarop deze geactiveerd kunnen worden in de respositories verwijzen we naar [de uitleg daarover in de API-Kennisbank](https://github.com/VNG-Realisatie/API-Kennisbank/tree/master/GitHub%20Actions).
 
 ### Geautomatiseerde functies
+
+M.b.v. geautomatiseerde functies kunnen we acties automatisch laten uitvoeren op basis van het voorkomen van een event, bijv. het wijzigen van een status.
+
+#### Plaats issues in kolom project board
+
+Zodra een issue de status 'closed' krijgt dient deze over het algemeen ook verplaatst te worden naar de kolom 'Done' van het project board. Dit kan je op de volgende wijze regelen:
+
+1. Op het betreffende projectboard;
+2. Klik in de kolom waarvoor je een functie wil automatiseren op '...';
+3. Klik op 'Manage automation';
+4. Selecteer een 'Preset' die je de geautomatiseerde functie geeft die je wil gebruiken;
+5. Vink de actie aan die je wil automatiseren.
 
 ### Spectral rules
 
