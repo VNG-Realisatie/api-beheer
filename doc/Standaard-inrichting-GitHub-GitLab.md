@@ -1,6 +1,6 @@
 # Standaard inrichting GitHub/GitLab
 
-GitHub en GitLab repositories zijn langzamerhand de ruggegraat van ons werkproces. Voor bijna elk project is een GitHub en/of GitLab repository noodzakelijk.
+GitHub en GitLab repositories zijn langzamerhand de ruggewervel van ons werkproces. Voor bijna elk project is een GitHub en/of GitLab repository noodzakelijk.
 Het aantal VNG Realisatie repositories kent inmiddels een behoorlijke omvang en is nog steeds groeiende. Met regelmaat wordt ons gevraagd een nieuwe 
 VNG Realisatie GitHub of GitLab repository te creëren. Er is daarom behoefte aan een beschrijving van de wijze waarop zo'n 
 VNG Realisatie repository moet worden aangemaakt of voorzien van extra functionaliteit. Dat zorgt er immers voor dat niets in de initiële configuratie vergeten wordt en dat de VNG Realisatie repositories gelijkvormig zijn wat het  werken met deze repositories weer handiger maakt. Iemand die de ene VNG Realisatie repositorie kent kan zich in een andere repository immers ook al snel redden.
@@ -16,38 +16,45 @@ Een aanvraag voor een nieuwe VNG Realisatie GitHub repository wordt altijd per m
 * Dat het om een GitHub repository gaat;
 * De naam van de repository.
 Denk hierbij niet alleen aan de semantische naam maar ook aan de technische naam (de naam zonder spaties) aangezien die in de url terug komt;
+* Of de repository public of private moet zijn
+* Of er al een andere repository bestaat die overgezet moet worden naar de nieuwe
 * Welke gebruikers 'toegang dienen te krijgen tot de repository.
-Met per gebruiker diens GitHub gebruikersnaam;
+Met per gebruiker diens GitHub gebruikersnaam; NB. Gebruikers dienen zelf een (gratis) account op github aan te maken via http://github.com/join en de gebruikersnaam door te geven. 
 * Welke rol deze gebruikers toegekend moeten krijgen (Read, Triage, Write of Maintain).
 * Of er op basis van de repository (later) ook een GitHub Pages site moet worden gegenereerd.
 * Of het gebruik van GitFlow gewenst is.
 * Of er voorzien moet worden in standaard issue templates en zo ja welke.
 * Of er voorzien moet worden in een standaard PR template.
-* 
+
 
 ### Initiële configuratie
 
 1. Open het [VNG Realisatie GitHub domein](https://github.com/VNG-Realisatie);
 2. Klik op de groene 'New' button;
 3. Geef in het veld 'Repository name' de gewenste repository naam in;
-4. Stel de repository als 'Public' in;
-5. selecteer de optie 'Add a README file'. Er wordt dan een standaard README.md bestand aangemaakt waarvan de content later kan worden aangebracht;
-Bij VNG Realisatie nemen wij altijd zo'n bestand op;
+4. Stel de repository als 'Public' in wanneer deze public moet zijn;
+5. Wanneer het een nieuwe repository betreft en er nog geen inhoud is: selecteer de optie 'Add a README file'. Er wordt dan een standaard README.md bestand aangemaakt waarvan de content later kan worden aangebracht;
+Bij VNG Realisatie nemen wij altijd zo'n bestand op bij een lege repository; 
+Bestaat er al een repository die moet worden overgezet maak je geen README aan. Deze bestaande repository wordt dan geïmporteerd in de nieuwe.
 6. We creëren niet standaard een licentie bestand en ook geen .gitignore;
 7. Klik op 'Create repository'.
 
 ### Gebruikers (autorisaties)
 
-Doordat de repository 'Public' is, staat deze voor de gehele wereld open. Dat betekent dat de inhoud door de gehele wereld bekeken kan worden. Dat is ook
-precies zoals wij dat bij VNG Realisatie willen. 
+Wanneer de repository 'Public' is, staat deze voor de gehele wereld open. Dat betekent dat de inhoud door de gehele wereld bekeken kan worden. Het is dan niet nodig om gebruikers expliciet leesrechten te geven, die heeft immers iedereen al.
+Er zijn ook gevallen waarbij informatie juist niet voor de hele wereld open moet staan, bijvoorbeeld omdat deze misbruikt zou kunnen worden voor oneigenlijke doeleinden. In die gevallen maken we een private repository. In zo'n geval moeten gebruikers wel expliciet leesrechten krijgen om de inhoud te kunnen lezen.
+
 
 1. Ga naar het tabblad 'Settings' en klik op 'Manage access';
 2. Voeg nu m.b.v. de bullet 'Invite teams or people' gebruikers toe. Je kunt hier dus kiezen voor individuele gebruikers of voor reeds aangemaakte teams. 
 Indien je dat wil kan je er ook voor kiezen om eerst een nieuw team aan te maken;
 3. Indien je op 'Invite teams or people' hebt geklikt kom je nu in een interface waarin je een gebruikersnaam of teamnaam in kunt geven;
 4. Definiëer vervolgens de rol die de gebruiker of het team dient te krijgen (Read, Triage, Write of Maintain);
-5. Klik vervolgens op de groene button 'Add xxxxx to the repository' waarna de gebruiker of team gebruik kan maken van de hem/hun toegekende rechten op de
+6. Klik vervolgens op de groene button 'Add xxxxx to the repository' waarna de gebruiker of team gebruik kan maken van de hem/hun toegekende rechten op de
 repository.
+7. De beheerders van de organisatie VNG Realisatie zijn altijd administrator bij elke repository. Je kunt dit eventueel transparant maken voor alle gebruikers door hen ook expliciet die rechten toe te kennen. 
+
+VRAAG/OPMERKING: Het project is (mede)eigenaar van de repository. Binnen een project is iemand verantwoordelijk voor het beheer van de repository. Ook om te voorkomen dat de beheerders van de VNG github omgeving alle projectne in de gaten moeten houden om te zien wie wel/niet meer toegang zou moeten hebben etc. Het project weet dat zelf veel beter. Er is dus altijd iemand vanuit het project als maintainer verantwoordelijk voor het bijhouden van "de administratie".
 
 ### Initiële content
 
@@ -58,10 +65,13 @@ De licentie tekst is voor elke VNG Realisatie GitHub repository gelijk en wordt 
 2. Kopiëer de inhoud van een LICENCE.md bestand uit een andere VNG-Realisatie repository, plaats deze in het nieuwe bestand en commit het bestand direct
 naar de 'main' branch.
 
+VRAAG: Hebben we voor alles dezelfde licentie? Wie is verantwoordelijk voor de licentie? De beheerders van de github omgeving of de PO van de standaard?
 
 ### Initiële structuur
 
 We streven er binnen de VNG-Realisatie GitHub repositories naar overal een gelijke structuur te hanteren. Het gaat daarbij niet alleen over de folder structuur maar ook over de branch structuur. E.e.a. is nog wel afhankelijk van de functie van de repository. Zo wordt niet elke repository gebruikt t.b.v. een API specificatie en in dat geval is de folder 'specificatie' natuurlijk niet nodig. Wordt de repository echter wel gebruikt met als doel om een API specificatie op te leveren dan staat die specificatie wel in de folder 'specificatie'. 
+
+VRAAG: wat staat er precies in de folder 'specificatie'? Ik zou hier de foldernaam 'standaard' voor gebruiken. Dan kunnen daaronder folders voor documentatie, tutorials, yaml etc. komen. Bevat de repository voor een API standaard ook de code van de referentie implementatie? 
 
 #### Folder structuur
 
@@ -79,13 +89,15 @@ In deze tabel zijn de folders die door Action scripts worden gegenereerd niet op
 
 1. Maak de folders aan die voor de repository wenselijk zijn.
 
+VRAAG: Wanneer is een eigen template wenselijk? De templates zijn volgens mij aleen nodig wanneer je afwijkt van de standaard functionaliteit van github. 
+
 #### Branch structuur
 
 Bij de branch structuur gaat het vooral om de voor de branches gehanteerde naamgeving aangezien er geen branches binnen branches kunnen voorkomen. In principe staat het iedereen vrij om die branch structuur te hanteren die men wenselijk acht. Als er men echter gebruik wil maken van de GitFlow workflow zijn er wel enkele regels die in acht genomen moeten worden. Voor meer informatie over de toepassing verwijs ik naar [de beschrijving van GitFlow in onze API Kennisbank](https://github.com/VNG-Realisatie/API-Kennisbank/blob/master/GitFlow/Gitflow_implementatie.md).
 
 In de 'master' (of 'main') branch wordt standaard bij het aanmaken van de repository al voorzien. Het aanmaken van 'Feature' branches wordt door de developers in de repository zelf geregeld. Daarmee blijft de volgende door de administrator uit te voeren actie over:
 
-1. Maak, idien het werken volgens Gitflow gewenst is, de branch 'develop' aan.
+1. Maak, indien het werken volgens Gitflow gewenst is, de branch 'develop' aan.
 
 ### Issue templates
 
@@ -111,6 +123,8 @@ Hiertoe dient in de folder '.github' de folder 'ISSUE_TEMPLATE' aangemaakt te wo
 
 Indien gewenst kunnen er, net als voor de verschillende soorten issues, templates voor Pull Requests worden aangemaakt. Op dit moment kent alleen de gemma-zaken repository zo'n template (spec-wijziging.md). Daar is het handig omdat in die context voor een PR standaard informatie verstrekt moet kunnen worden, bijv. over de relatie va het PR met andere ZGW API standaarden.
 
+
+
 1. Maak, indien gewenst en als deze nog niet aanwezig is, de folder '.github/PULL_REQUEST_TEMPLATE' aan;
 2. Plaats het template in die folder (de gebruikers kunnen deze zelf aanpassen aan hun wensen);
 3. Templates is direct bruikbaar.
@@ -119,6 +133,8 @@ Indien gewenst kunnen er, net als voor de verschillende soorten issues, template
 
 Een eenduidige werkwijze vertaalt zich ook naar de op de issues en PR's toe te passen labels.
 Natuurlijk vult elke repository de behoefte van zijn gebruikers zo goed mogelijk in wat kan betekenen dat er een aantal specifiek in de betreffende repository worden aangemaakt. Over het algemeen kennen de repositories echter wel een aantal labels die het gemeen heeft met andere repositories en idealiter hebben deze over de verschillende repositories eenzelfde kleur. In de onderstaande tabel zijn een aantal van deze labels opgenomen met de daarbij horende hexadecimale waarde van de kleur.
+
+OPMERKING: Dit is hoe er in de HaalCentraal omgeving wordt gewerkt. Standaard github en versiebeheer methode is het werken met releases en tags. Bij het Zaakgerichten werken project worden tags juist gebruikt om onderwerpen/thema's/epics aan te geven. Onderstaande tabel zou ik niet overnemen als standaard werkwijze.
 
 | Labelnaam | Beschrijving | Kleur |
 | --- | --- | --- |
@@ -170,6 +186,7 @@ Zodra het product waarvoor de repository in het leven is geroepen een bepaalde s
 Meer informatie over het activeren van GitHub Pages specifiek voor VNG Realisatie vind je in [de GitHub Pages sectie van de API Kennisbank](https://github.com/VNG-Realisatie/API-Kennisbank/blob/master/GitHub%20Pages/GitHub-Pages-implementatie-VNG-R.md).
 
 ## GitLab
+OPMERKING: Gitlab kende indertijd een beter CI/CD integratie en de mogelijkheid met private repositories te werken. Inmiddels kent Github ook private repos en wellicht is de CI/CD aansluiting ook verbeterd. De vraag is dus in hoeverre we nog meerdere git omgevingen willen ondersteunen? Het maakt het wel weer minder overzichtelijk en transparant.
 
 ### Initiële configuratie
 
@@ -181,5 +198,5 @@ Meer informatie over het activeren van GitHub Pages specifiek voor VNG Realisati
 
 ### Spectral rules???
 
-### GitHub Pages???
+### GitLab Pages???
 
