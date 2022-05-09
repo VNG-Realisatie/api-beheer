@@ -61,12 +61,11 @@ Een repository wordt vervaardigd in het kader van een project. Om te voorkomen d
 
 De repository is nu aangemaakt en kan nu (door de gebruikers) voorzien worden van content. 
 
-De licentie tekst is voor elke VNG Realisatie GitHub repository gelijk en wordt daarom al door de administrators aangemaakt.
+De licentie tekst is in principe voor elke VNG Realisatie GitHub repository gelijk en wordt daarom al door de administrators aangemaakt. Mocht er voor een specifiek project een afwijkende licentie noodzakelijk zijn dient het project deze zelf aan te passen.
 1. Maak naast het README.md bestand een document aan met de naam 'LICENCE.md'.
 2. Kopiëer de inhoud van een LICENCE.md bestand uit een andere VNG-Realisatie repository, plaats deze in het nieuwe bestand en commit het bestand direct
 naar de 'main' branch.
 
-VRAAG: Hebben we voor alles dezelfde licentie? Wie is verantwoordelijk voor de licentie? De beheerders van de github omgeving of de PO van de standaard?
 
 ### Initiële structuur
 
