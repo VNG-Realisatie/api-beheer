@@ -1,6 +1,6 @@
 # Standaard inrichting GitHub/GitLab
 
-GitHub en GitLab repositories zijn langzamerhand de ruggewervel van ons werkproces. Voor bijna elk project is een GitHub en/of GitLab repository noodzakelijk.
+GitHub en GitLab repositories zijn langzamerhand de ruggegraat van ons werkproces. Voor bijna elk project is een GitHub en/of GitLab repository noodzakelijk.
 Het aantal VNG Realisatie repositories kent inmiddels een behoorlijke omvang en is nog steeds groeiende. Met regelmaat wordt ons gevraagd een nieuwe 
 VNG Realisatie GitHub of GitLab repository te creëren. Er is daarom behoefte aan een beschrijving van de wijze waarop zo'n 
 VNG Realisatie repository moet worden aangemaakt of voorzien van extra functionaliteit. Dat zorgt er immers voor dat niets in de initiële configuratie vergeten wordt en dat de VNG Realisatie repositories gelijkvormig zijn wat het  werken met deze repositories weer handiger maakt. Iemand die de ene VNG Realisatie repositorie kent kan zich in een andere repository immers ook al snel redden.
@@ -18,8 +18,8 @@ Een aanvraag voor een nieuwe VNG Realisatie GitHub repository wordt altijd per m
 Denk hierbij niet alleen aan de semantische naam maar ook aan de technische naam (de naam zonder spaties) aangezien die in de url terug komt;
 * Of de repository public of private moet zijn
 * Of er al een andere repository bestaat die overgezet moet worden naar de nieuwe
-* Welke gebruikers 'toegang dienen te krijgen tot de repository.
-Met per gebruiker diens GitHub gebruikersnaam; NB. Gebruikers dienen zelf een (gratis) account op github aan te maken via http://github.com/join en de gebruikersnaam door te geven. 
+* Welke gebruikers toegang dienen te krijgen tot de repository.
+Met per gebruiker diens GitHub gebruikersnaam; NB. Gebruikers dienen zelf een (gratis) account op github aan te maken via http://github.com/join.
 * Welke rol deze gebruikers toegekend moeten krijgen (Read, Triage, Write of Maintain).
 * Of er op basis van de repository (later) ook een GitHub Pages site moet worden gegenereerd.
 * Of het gebruik van GitFlow gewenst is.
@@ -54,7 +54,8 @@ Indien je dat wil kan je er ook voor kiezen om eerst een nieuw team aan te maken
 repository.
 7. De beheerders van de organisatie VNG Realisatie zijn altijd administrator bij elke repository. Je kunt dit eventueel transparant maken voor alle gebruikers door hen ook expliciet die rechten toe te kennen. 
 
-VRAAG/OPMERKING: Het project is (mede)eigenaar van de repository. Binnen een project is iemand verantwoordelijk voor het beheer van de repository. Ook om te voorkomen dat de beheerders van de VNG github omgeving alle projectne in de gaten moeten houden om te zien wie wel/niet meer toegang zou moeten hebben etc. Het project weet dat zelf veel beter. Er is dus altijd iemand vanuit het project als maintainer verantwoordelijk voor het bijhouden van "de administratie".
+Een repository wordt vervaardigd in het kader van een project. Om te voorkomen dat de beheerders van de VNG Realisatie github omgeving alle projecten in de gaten moeten houden wordt er altijd iemand van het projectteam als maintainer verantwoordelijk gemaakt voor het bijhouden van "de administratie". Het projectteam weet dat immers zelf het beste wie wel/niet meer toegang zou moeten hebben
+
 
 ### Initiële content
 
