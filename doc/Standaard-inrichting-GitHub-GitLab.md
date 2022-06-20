@@ -123,18 +123,18 @@ Hiertoe dient in de folder '.github' de folder 'ISSUE_TEMPLATE' aangemaakt te wo
 
 Indien gewenst kunnen er, net als voor de verschillende soorten issues, templates voor Pull Requests worden aangemaakt. Op dit moment kent alleen de gemma-zaken repository zo'n template (spec-wijziging.md). Daar is het handig omdat in die context voor een PR standaard informatie verstrekt moet kunnen worden, bijv. over de relatie va het PR met andere ZGW API standaarden.
 
-
-
 1. Maak, indien gewenst en als deze nog niet aanwezig is, de folder '.github/PULL_REQUEST_TEMPLATE' aan;
 2. Plaats het template in die folder (de gebruikers kunnen deze zelf aanpassen aan hun wensen);
 3. Templates is direct bruikbaar.
 
+### Milestones
+
+ToDo
+
 ### Standaard labels
 
-Een eenduidige werkwijze vertaalt zich ook naar de op de issues en PR's toe te passen labels.
+Indien geen gebruik gemaakt wordt van milestones dan vertaalt zich een eenduidige werkwijze ook naar de op de issues en PR's toe te passen labels.
 Natuurlijk vult elke repository de behoefte van zijn gebruikers zo goed mogelijk in wat kan betekenen dat er een aantal specifiek in de betreffende repository worden aangemaakt. Over het algemeen kennen de repositories echter wel een aantal labels die het gemeen heeft met andere repositories en idealiter hebben deze over de verschillende repositories eenzelfde kleur. In de onderstaande tabel zijn een aantal van deze labels opgenomen met de daarbij horende hexadecimale waarde van de kleur.
-
-OPMERKING: Dit is hoe er in de HaalCentraal omgeving wordt gewerkt. Standaard github en versiebeheer methode is het werken met releases en tags. Bij het Zaakgerichten werken project worden tags juist gebruikt om onderwerpen/thema's/epics aan te geven. Onderstaande tabel zou ik niet overnemen als standaard werkwijze.
 
 | Labelnaam | Beschrijving | Kleur |
 | --- | --- | --- |
