@@ -109,7 +109,7 @@ Hiertoe dient in de folder '.github' de folder 'ISSUE_TEMPLATE' aangemaakt te wo
 
 ### Pull Request templates
 
-Indien gewenst kunnen er, net als voor de verschillende soorten issues, templates voor Pull Requests worden aangemaakt. Op dit moment kent alleen de gemma-zaken repository zo'n template (spec-wijziging.md). Daar is het handig omdat in die context voor een PR standaard informatie verstrekt moet kunnen worden, bijv. over de relatie va het PR met andere ZGW API standaarden.
+Indien gewenst kunnen er, net als voor de verschillende soorten issues, templates voor Pull Requests worden aangemaakt. Op dit moment kent alleen de gemma-zaken repository zo'n template (spec-wijziging.md), zie daarvoor de [gemma-zaken repository](https://github.com/VNG-Realisatie/gemma-zaken/tree/master/.github/PULL_REQUEST_TEMPLATE). Daar is het handig omdat in die context voor een PR standaard informatie verstrekt moet kunnen worden, bijv. over de relatie va het PR met andere ZGW API standaarden.
 
 1. Maak, indien gewenst en als deze nog niet aanwezig is, de folder '.github/PULL_REQUEST_TEMPLATE' aan;
 2. Plaats het template in die folder (de gebruikers kunnen deze zelf aanpassen aan hun wensen);
