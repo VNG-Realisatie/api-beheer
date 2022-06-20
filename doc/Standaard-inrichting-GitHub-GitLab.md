@@ -23,7 +23,6 @@ Met per gebruiker diens GitHub gebruikersnaam;
 * Of het gebruik van GitFlow gewenst is.
 * Of er voorzien moet worden in standaard issue templates en zo ja welke.
 * Of er voorzien moet worden in een standaard PR template.
-* 
 
 ### Initiële configuratie
 
@@ -131,6 +130,16 @@ Natuurlijk vult elke repository de behoefte van zijn gebruikers zo goed mogelijk
 | v1.4 |  | #3e83c4 |
 | Documentation | Verbeteringen of toevoegingen aan de documentatie. | #0075ca |
 | wontfix | Dit wordt niet opgelost. | #ffffff |
+
+### Initiële opzet project structuur
+
+Als administrator voorzien we niet in een standaard project structuur. Zo'n structuur zal door (een van) de administrators van de repository moeten worden opgebouwd.
+Voor voorbeelden van zo'n structuur verwijzen we naar de andere repositories in de GitHub organisatie [VNG-Realisatie](https://github.com/VNG-Realisatie).
+
+Over het algemeen wordt echter altijd wel voorzien in de volgende kolommen:
+* Backlog
+* In progress
+* Done
 
 ### Geautomatiseerde functies
 
