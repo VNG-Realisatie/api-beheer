@@ -91,17 +91,17 @@ In de 'master' (of 'main') branch wordt standaard bij het aanmaken van de reposi
 
 De inhoud van een repository is over het algemeen het resultaat van een samenwerking van meerdere personen. Sommige personen bouwen daadwerkelijk aan de content anderen reviewen of dragen bij door wensen kenbaar te maken. Opmerkingen en wensen m.b.t. de content worden meestal kenbaar gemaakt middels zogenaamde issues. Issues kunnen veel vormen aannemen, bijv. als 'Improvement story', 'Bug report' of als een eenvoudige 'taak'. Elk van deze issuesoorten heeft zijn eigen karakter wat zich vertaald in de informatie die moet worden verstrekt. Om er voor te zorgen dat bij elk type issue de gewenste informatie ook wordt verstrekt kunnen issue templates worden aangemaakt. De naam van zo'n template verschijnt dan als keuzemogelijkheid op het moment dat een nieuw issue wordt aangemaakt.
 
-Hiertoe dient in de folder '.github' de folder 'ISSUE_TEMPLATE' aangemaakt te worden. De markdown bestanden die in deze folder worden geplaatst zullen de issue templates vormen. In de onderstaande tabel benoemen we de meest gebruikelijke templates en hun functies.
+Hiertoe dient in de folder '.github' de folder 'ISSUE_TEMPLATE' aangemaakt te worden. De markdown bestanden die in deze folder worden geplaatst zullen de issue templates vormen. In de onderstaande tabel benoemen we de meest gebruikelijke templates en hun functies. De betreffende bestanden kun je [hier](https://github.com/VNG-Realisatie/api-beheer/tree/master/doc/issue-templates) vinden.
 
 | Template | Functie |
 | --- | --- |
+| Bug-report.md | Template om een bug in het bestaande product te kunnen melden. |
+| Enhancement.md | Template om een voorstel tot verbetering van het materiaal in de repository te kunnen doen. |
+| Impediment.md | Template waarmee een belemmering onder de aancht kan worden gebracht. |
 | Improvement-story.md | Template waarmee alles wat in een sprint niet goed ging kan worden gemeld, dit kan dan worden aangepakt zodat het team leert hoe zichzelf te verbeteren en er in volgende Sprints niet dezelfde fouten worden gemaakt. |
 | Scrumtaak.md | Template waarmee een taak (zijnde geen user- en improvement story) kan worden opgevoerd die door het team moet worden opgepakt, bijv. het voorbereiden van een demo. |
 | User-story--als-----wil-ik----.md | Template waarmee een feature/user story dat men graag in het product opgenomen zou zien kan worden beschreven. |
-| Bug-report.md | Template om een bug in het bestaande product te kunnen melden. |
-| Impediment.md | Template waarmee een belemmering onder de aancht kan worden gebracht. |
-
-> **Let op!** Uit alle versies van deze templates die op de diverse repo's staan moet nog een generieke versie worden gemaakt die we overal kunnen plaatsen. Ook zullen we deze ergens moeten plaatsen waar we deze kunnen beheren en naar andere repo's kopieren.
+| Vraag.md | Template voor het stellen van vragen over onderwerpen die verband houden met het materiaal in de onderliggende repository. |
 
 1. Maak, indien gewenst en als deze nog niet aanwezig is, de folder '.github/ISSUE_TEMPLATE' aan;
 2. Plaats alle templates die gewenst zijn in deze folder;
