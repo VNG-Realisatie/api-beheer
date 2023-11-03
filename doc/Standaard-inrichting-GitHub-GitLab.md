@@ -128,7 +128,7 @@ Natuurlijk vult elke repository de behoefte van zijn gebruikers zo goed mogelijk
 | v1.2 |  | #e5ca60 |
 | v1.3 |  | #bfd4f2 |
 | v1.4 |  | #3e83c4 |
-| Documentation | Verbeteringen of toevoegingen aan de documentatie. | #0075ca |
+| documentation | Verbeteringen of toevoegingen aan de documentatie. | #0075ca |
 | wontfix | Dit wordt niet opgelost. | #ffffff |
 
 ### Initiële opzet project structuur
