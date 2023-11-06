@@ -16,9 +16,15 @@ Een aanvraag voor een nieuwe VNG Realisatie GitHub repository wordt altijd per m
 * Dat het om een GitHub repository gaat;
 * De naam van de repository.
 Denk hierbij niet alleen aan de semantische naam maar ook aan de technische naam (de naam zonder spaties) aangezien die in de url terug komt;
+* Of het een private of een public repository moet zijn;
 * Welke gebruikers 'toegang dienen te krijgen tot de repository.
 Met per gebruiker diens GitHub gebruikersnaam;
-* Welke rol deze gebruikers toegekend moeten krijgen (Read, Triage, Write of Maintain).
+* Welke rol deze gebruikers toegekend moeten krijgen:
+  * **Read**<br/>aanbevolen voor gebruikers die de code slechts willen bekijken en willen deelnemen aan de discussies.
+  * **Triage**<br/>aanbevolen voor gebruikers die issues, discussies en pull request willen beheren zonder schrijfrechten.
+  * **Write**<br/>aanbevolen voor gebruikers die actief willen bijdragen aan een project.
+  * **Maintain**<br/>aanbevolen voor project managers die het beheer over een repository willen uitvoeren zonder daarbijtoegang te hebben tot gevoelige of zelfs destructieve acties.
+  * **Admin**<br/>aanbevolen voor gebruikers die volledige toegang moeten hebben tot een project inclusief gevoelige of zelfs destructieve acties zoals het beheren van de beveiliging en het verwijderen van een repository.
 * Of er op basis van de repository (later) ook een GitHub Pages site moet worden gegenereerd.
 * Of het gebruik van GitFlow gewenst is.
 * Of er voorzien moet worden in standaard issue templates en zo ja welke.
