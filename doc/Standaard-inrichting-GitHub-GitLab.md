@@ -17,7 +17,7 @@ Een aanvraag voor een nieuwe VNG Realisatie GitHub repository wordt altijd per m
 * De naam van de repository.
 Denk hierbij niet alleen aan de semantische naam maar ook aan de technische naam (de naam zonder spaties) aangezien die in de url terug komt;
 * Of het een private of een public repository moet zijn;
-* Welke gebruikers 'toegang dienen te krijgen tot de repository.
+* Welke gebruikers toegang dienen te krijgen tot de repository.
 Met per gebruiker diens GitHub gebruikersnaam;
 * Welke rol deze gebruikers toegekend moeten krijgen:
   * **Read**<br/>aanbevolen voor gebruikers die de code slechts willen bekijken en willen deelnemen aan de discussies.
