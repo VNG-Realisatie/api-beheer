@@ -129,6 +129,7 @@ Natuurlijk vult elke repository de behoefte van zijn gebruikers zo goed mogelijk
 | --- | --- | --- |
 | bug | Fout in de code.  | #d73a4a |
 | user story | Business vraag van een gemeentelijke afnemer. | #82f2cb |
+| vraag |  | #d876e3 |
 | v1.0 |  | #b030db |
 | v1.1 |  | #704bea |
 | v1.2 |  | #e5ca60 |
