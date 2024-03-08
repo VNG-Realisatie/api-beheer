@@ -3,7 +3,7 @@
 GitHub en GitLab repositories zijn langzamerhand de ruggegraat van ons werkproces. Voor bijna elk project is een GitHub en/of GitLab repository noodzakelijk.
 Het aantal VNG Realisatie repositories kent inmiddels een behoorlijke omvang en is nog steeds groeiende. Met regelmaat wordt ons gevraagd een nieuwe 
 VNG Realisatie GitHub of GitLab repository te creëren. Er is daarom behoefte aan een beschrijving van de wijze waarop zo'n 
-VNG Realisatie repository moet worden aangemaakt of voorzien van extra functionaliteit. Dat zorgt er immers voor dat niets in de initiële configuratie vergeten wordt en dat de VNG Realisatie repositories gelijkvormig zijn wat het  werken met deze repositories weer handiger maakt. Iemand die de ene VNG Realisatie repositorie kent kan zich in een andere repository immers ook al snel redden.
+VNG Realisatie repository moet worden aangemaakt of voorzien van extra functionaliteit. Dat zorgt er immers voor dat niets in de initiële configuratie vergeten wordt en dat de VNG Realisatie repositories gelijkvormig zijn wat het werken met deze repositories weer handiger maakt. Iemand die de ene VNG Realisatie repository kent kan zich in een andere repository immers ook al snel redden.
 
 In dit document beschrijven we de wijze waarop GitHub en GitLab repositories moeten worden aangemaakt, geconfigureerd en van extra functionaliteit kunnen worden voorzien.
 
