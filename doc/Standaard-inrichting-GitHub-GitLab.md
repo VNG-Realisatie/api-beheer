@@ -17,6 +17,7 @@ Een aanvraag voor een nieuwe VNG Realisatie GitHub repository wordt altijd per m
 * De naam van de repository.
 Denk hierbij niet alleen aan de semantische naam maar ook aan de technische naam (de naam zonder spaties) aangezien die in de url terug komt;
 * Of het een private of een public repository moet zijn;
+* Het doel van de repository. Wordt de repository gebruikt voor het ontwikkelen van een API-specificaties, voor het vervaardigen van Respec documentatie of nog anders;
 * Welke gebruikers toegang dienen te krijgen tot de repository.
 Met per gebruiker diens GitHub gebruikersnaam;
 * Welke rol deze gebruikers toegekend moeten krijgen:
@@ -32,14 +33,12 @@ Met per gebruiker diens GitHub gebruikersnaam;
 
 ### Initiële configuratie
 
-1. Open het [VNG Realisatie GitHub domein](https://github.com/VNG-Realisatie);
-2. Klik op de groene 'New' button;
-3. Geef in het veld 'Repository name' de gewenste repository naam in;
-4. Stel de repository als 'Public' in;
-5. selecteer de optie 'Add a README file'. Er wordt dan een standaard README.md bestand aangemaakt waarvan de content later kan worden aangebracht;
-Bij VNG Realisatie nemen wij altijd zo'n bestand op;
-6. We creëren niet standaard een licentie bestand en ook geen .gitignore;
-7. Klik op 'Create repository'.
+1. Het aanmaken van een nieuwe repository doen we op basis van een template repository. Welk template gebruikt moet worden is afhankelijk van het doel van de repository.
+Willen we een API specificatie ontwikkelen dan openen we de [API-specificatie-template-repository](https://github.com/VNG-Realisatie/API-specificatie-template-repository) repository. Willen we Respec documentatie vervaardigen dan openen we de [VNG-R-Respec-Template](https://github.com/VNG-Realisatie/VNG-R-Respec-Template) repository.
+3. Daar aangekomen scroll je naar beneden en klik je op '_Use this template_' zodra dat zichtbaar wordt;
+4. In het menu waarin je nu terecht komt geef in het veld 'Repository name' de gewenste repository naam in;
+5. Stel de repository als 'Public' in;
+6. Klik vervolgens op 'Create repository'.
 
 ### Gebruikers (autorisaties)
 
@@ -56,47 +55,59 @@ repository.
 
 ### Initiële content
 
-De repository is nu aangemaakt en kan nu (door de gebruikers) voorzien worden van content. 
-
-De licentie tekst is voor elke VNG Realisatie GitHub repository gelijk en wordt daarom al door de administrators aangemaakt.
-1. Maak naast het README.md bestand een document aan met de naam 'LICENCE.md'.
-2. Kopiëer de inhoud van een LICENCE.md bestand uit een andere VNG-Realisatie repository, plaats deze in het nieuwe bestand en commit het bestand direct
-naar de 'main' branch.
-
+De repository is nu aangemaakt en bevat al enige standaard content die het heeft geërfd van het template. Zo heeft het de bestanden 'LICENSE.md' en 'README.md'. 
+De licentie tekst is voor elke VNG Realisatie GitHub repository gelijk en hoeft niet te worden aangepast.
+De README.md bevat nog instructies voor het creëren van een nieuwe repository. Deze is voor de nieuwe repository niet van toepassing. Vervang de inhoud daarom 
+door '# Readme'. De eigenaar van de repository mag dit document later zelf van meer content voorzien.
 
 ### Initiële structuur
 
-We streven er binnen de VNG-Realisatie GitHub repositories naar overal een gelijke structuur te hanteren. Het gaat daarbij niet alleen over de folder structuur maar ook over de branch structuur. E.e.a. is nog wel afhankelijk van de functie van de repository. Zo wordt niet elke repository gebruikt t.b.v. een API specificatie en in dat geval is de folder 'specificatie' natuurlijk niet nodig. Wordt de repository echter wel gebruikt met als doel om een API specificatie op te leveren dan staat die specificatie wel in de folder 'specificatie'. 
+We streven er binnen de VNG-Realisatie GitHub repositories naar overal een gelijke structuur te hanteren. Het gaat daarbij niet alleen over de folder structuur 
+maar ook over de branch structuur. E.e.a. is nog wel afhankelijk van het doel van de repository en van de eerder gekozen template repository. Zo wordt niet 
+elke repository gebruikt t.b.v. een API specificatie en in dat geval is de folder 'specificatie' natuurlijk niet nodig. Wordt de repository echter wel gebruikt 
+met als doel om een API specificatie op te leveren dan staat die specificatie wel in de folder 'specificatie'.
+Heb je gekozen voor het 'VNG-R-Respec-Template' template dan zal de 'specificatie' folder al meteen ontbreken evenals de 'docs', 'feature' en 'test' folder.
 
 #### Folder structuur
 
-Hieronder een tabel met daarin de standaard folder en daarachter de conditie.
+Hieronder een tabel met daarin de standaard aanwezige folders en daarachter de conditie.
 
-| Foldernaam | Conditie |
-| --- | --- |
-| specificatie | Alleen opnemen als  het doel of een van de doelen van de repository is het opleveren van een API- of anderssoortige specificatie.|
-| docs | Deze folder is alleen noodzakelijk als het de bedoeling is om op basis van de respository ook een GitHub Pages site te genereren. Meestal is dit een repository die pas op een later moment aangemaakt zal hoeven te worden aangezien de content voor een GitHub Pages site eerst zal moeten worden vervaardigd. |
-| .github/ISSUE_TEMPLATE | Wordt alleen aangemaakt als er behoefte is aan 1 of meer templates voor het aanmaken van GitHub issues. |
-| .github/PULL_REQUEST_TEMPLATE | Wordt alleen aangemaakt als er behoefte is aan 1 of meer templates voor het aanmaken van GitHub Pull Requests. |
-| .github/workflows | Wordt alleen aangemaakt indien de repository moet worden voorzien van action scripts. |
+| Foldernaam | Template | Conditie |
+| --- | --- | --- |
+| specificatie | API-specificatie-template-repository | Alleen noodzakelijk als het doel of een van de doelen van de repository is het opleveren van een API- of anderssoortige specificatie. |
+| docs | API-specificatie-template-repository | Deze folder is alleen noodzakelijk als het de bedoeling is om op basis van de respository ook een GitHub Pages site te genereren. Meestal is dit een repository die pas op een later moment aangemaakt zal hoeven te worden aangezien de content voor een GitHub Pages site eerst zal moeten worden vervaardigd. |
+| features | API-specificatie-template-repository | Alleen nodig als het doel of een van de doelen van de repository is het opleveren van een API- of anderssoortige specificatie en je Gherkin specificaties wil opnemen. |
+| test | API-specificatie-template-repository | Alleen nodig als het doel of een van de doelen van de repository is het opleveren van een API- of anderssoortige specificatie en je test bestanden gaat creëren. |
+| js | VNG-R-Respec-Template | Vereist in een repsository voor het vervaardigen van Respec documentatie. |
+| media | VNG-R-Respec-Template | Gewenst in een repsository voor het vervaardigen van Respec documentatie voor het opslaan van illustratieve documenten. |
+| .github/ISSUE_TEMPLATE | - | Nodig als er behoefte is aan 1 of meer templates voor het aanmaken van GitHub issues. |
+| .github/PULL_REQUEST_TEMPLATE | - | Nodig als er behoefte is aan 1 of meer templates voor het aanmaken van GitHub Pull Requests. |
+| .github/workflows | - | Nodig indien de repository moet worden voorzien van action scripts. |
 
-In deze tabel zijn de folders die door Action scripts worden gegenereerd niet opgenomen juist omdat ze gegenereerd worden en niet door de administrators aangemaakt hoeven te worden.
-
-1. Maak de folders aan die voor de repository wenselijk zijn.
+Verwijder de folders die je niet nodig denkt te hebben.
 
 #### Branch structuur
 
-Bij de branch structuur gaat het vooral om de voor de branches gehanteerde naamgeving aangezien er geen branches binnen branches kunnen voorkomen. In principe staat het iedereen vrij om die branch structuur te hanteren die men wenselijk acht. Als er men echter gebruik wil maken van de GitFlow workflow zijn er wel enkele regels die in acht genomen moeten worden. Voor meer informatie over de toepassing verwijs ik naar [de beschrijving van GitFlow in onze API Kennisbank](https://github.com/VNG-Realisatie/API-Kennisbank/blob/master/GitFlow/Gitflow_implementatie.md).
+Bij de branch structuur gaat het vooral om de voor de branches gehanteerde naamgeving aangezien er geen branches binnen branches kunnen voorkomen. In principe 
+staat het iedereen vrij om die branch structuur te hanteren die men wenselijk acht. Als er men echter gebruik wil maken van de GitFlow workflow zijn er wel 
+enkele regels die in acht genomen moeten worden. Voor meer informatie over de toepassing verwijs ik naar 
+[de beschrijving van GitFlow in onze API Kennisbank](https://github.com/VNG-Realisatie/API-Kennisbank/blob/master/GitFlow/Gitflow_implementatie.md).
 
-In de 'master' (of 'main') branch wordt standaard bij het aanmaken van de repository al voorzien. Het aanmaken van 'Feature' branches wordt door de developers in de repository zelf geregeld. Daarmee blijft de volgende door de administrator uit te voeren actie over:
+In de 'main' branch wordt standaard bij het aanmaken van de repository al voorzien. Het aanmaken van 'Feature' branches wordt door de developers in de repository 
+zelf geregeld. Daarmee blijft de volgende door de administrator uit te voeren actie over:
 
 1. Maak, idien het werken volgens Gitflow gewenst is, de branch 'develop' aan.
 
 ### Issue templates
 
-De inhoud van een repository is over het algemeen het resultaat van een samenwerking van meerdere personen. Sommige personen bouwen daadwerkelijk aan de content anderen reviewen of dragen bij door wensen kenbaar te maken. Opmerkingen en wensen m.b.t. de content worden meestal kenbaar gemaakt middels zogenaamde issues. Issues kunnen veel vormen aannemen, bijv. als 'Improvement story', 'Bug report' of als een eenvoudige 'taak'. Elk van deze issuesoorten heeft zijn eigen karakter wat zich vertaald in de informatie die moet worden verstrekt. Om er voor te zorgen dat bij elk type issue de gewenste informatie ook wordt verstrekt kunnen issue templates worden aangemaakt. De naam van zo'n template verschijnt dan als keuzemogelijkheid op het moment dat een nieuw issue wordt aangemaakt.
+De inhoud van een repository is over het algemeen het resultaat van een samenwerking van meerdere personen. Sommige personen bouwen daadwerkelijk aan de content 
+anderen reviewen of dragen bij door wensen kenbaar te maken. Opmerkingen en wensen m.b.t. de content worden meestal kenbaar gemaakt middels zogenaamde issues. 
+Issues kunnen veel vormen aannemen, bijv. als 'Improvement story', 'Bug report' of als een eenvoudige 'taak'. Elk van deze issuesoorten heeft zijn eigen karakter 
+wat zich vertaald in de informatie die moet worden verstrekt. Om er voor te zorgen dat bij elk type issue de gewenste informatie ook wordt verstrekt kunnen issue 
+templates worden aangemaakt. De naam van zo'n template verschijnt dan als keuzemogelijkheid op het moment dat een nieuw issue wordt aangemaakt.
 
-Hiertoe dient in de folder '.github' de folder 'ISSUE_TEMPLATE' aangemaakt te worden. De markdown bestanden die in deze folder worden geplaatst zullen de issue templates vormen. In de onderstaande tabel benoemen we de meest gebruikelijke templates en hun functies. De betreffende bestanden kun je [hier](https://github.com/VNG-Realisatie/api-beheer/tree/master/doc/issue-templates) vinden.
+In de folder '.github' van de zojuist aangemaakte repositories vind je de folder 'ISSUE_TEMPLATE'. De markdown bestanden die in deze folder staan (of worden geplaatst)
+zijn de issue templates. In de onderstaande tabel benoemen we de meest gebruikelijke templates en hun functies.
 
 | Template | Functie |
 | --- | --- |
@@ -108,28 +119,31 @@ Hiertoe dient in de folder '.github' de folder 'ISSUE_TEMPLATE' aangemaakt te wo
 | User-story--als-----wil-ik----.md | Template waarmee een feature/user story dat men graag in het product opgenomen zou zien kan worden beschreven. |
 | Vraag.md | Template voor het stellen van vragen over onderwerpen die verband houden met het materiaal in de onderliggende repository. |
 
-1. Maak, indien gewenst en als deze nog niet aanwezig is, de folder '.github/ISSUE_TEMPLATE' aan;
-2. Plaats alle templates die gewenst zijn in deze folder;
-3. Templates zijn direct bruikbaar.
+Verwijder alle templates die niet gewenst zijn.
 
 ### Pull Request templates
 
-Indien gewenst kunnen er, net als voor de verschillende soorten issues, templates voor Pull Requests worden aangemaakt. Op dit moment kent alleen de gemma-zaken repository zo'n template (spec-wijziging.md), zie daarvoor de [gemma-zaken repository](https://github.com/VNG-Realisatie/gemma-zaken/tree/master/.github/PULL_REQUEST_TEMPLATE). Daar is het handig omdat in die context voor een PR standaard informatie verstrekt moet kunnen worden, bijv. over de relatie van het PR met andere ZGW API standaarden.
+Indien gewenst kunnen er, net als voor de verschillende soorten issues, templates voor Pull Requests worden aangemaakt. We hebben er voor gekozen om in ditgeval niet al
+enkele standaard templates op te nemen. Op dit moment kent alleen de gemma-zaken repository zo'n template (spec-wijziging.md), zie daarvoor de 
+[gemma-zaken repository](https://github.com/VNG-Realisatie/gemma-zaken/tree/master/.github/PULL_REQUEST_TEMPLATE). Daar is het handig omdat in die context voor een PR 
+standaard informatie verstrekt moet kunnen worden, bijv. over de relatie van het PR met andere ZGW API standaarden.
 
 1. Maak, indien gewenst en als deze nog niet aanwezig is, de folder '.github/PULL_REQUEST_TEMPLATE' aan;
 2. Plaats het template in die folder (de gebruikers kunnen deze zelf aanpassen aan hun wensen);
-3. Templates is direct bruikbaar.
+3. Het template is direct bruikbaar.
 
 ### Standaard labels
 
 Een eenduidige werkwijze vertaalt zich ook naar de op de issues en PR's toe te passen labels.
-Natuurlijk vult elke repository de behoefte van zijn gebruikers zo goed mogelijk in wat kan betekenen dat er een aantal specifiek in de betreffende repository worden aangemaakt. Over het algemeen kennen de repositories echter wel een aantal labels die het gemeen heeft met andere repositories en idealiter hebben deze over de verschillende repositories eenzelfde kleur. In de onderstaande tabel zijn een aantal van deze labels opgenomen met de daarbij horende hexadecimale waarde van de kleur.
+Natuurlijk vult elke repository de behoefte van zijn gebruikers zo goed mogelijk in wat kan betekenen dat er een aantal specifiek in de betreffende repository worden aangemaakt. 
+Over het algemeen kennen de repositories echter wel een aantal labels die het gemeen heeft met andere repositories en idealiter hebben deze over de verschillende repositories 
+eenzelfde kleur. In de onderstaande tabel zijn een aantal van deze labels opgenomen met de daarbij horende hexadecimale waarde van de kleur.
 
 | Labelnaam | Beschrijving | Kleur |
 | --- | --- | --- |
 | bug | Fout in de code.  | #d73a4a |
 | user story | Business vraag van een gemeentelijke afnemer. | #82f2cb |
-| vraag |  | #d876e3 |
+| question |  | #d876e3 |
 | v1.0 |  | #b030db |
 | v1.1 |  | #704bea |
 | v1.2 |  | #e5ca60 |
@@ -138,6 +152,8 @@ Natuurlijk vult elke repository de behoefte van zijn gebruikers zo goed mogelijk
 | v2.0 |  | #3e83c4 |
 | documentation | Verbeteringen of toevoegingen aan de documentatie. | #0075ca |
 | wontfix | Dit wordt niet opgelost. | #ffffff |
+
+Verwijder de labels die niet nodig zijn.
 
 ### Initiële opzet project structuur
 
@@ -166,7 +182,9 @@ Zodra een issue de status 'closed' krijgt dient deze over het algemeen ook verpl
 
 ### Standaard Actions
 
-Binnen Haal Centraal zijn een aantal Action scripts ontwikkeld die ook bruikbaar kunnen zijn in andere repositories. Over het algemeen zal de behoefte aan deze script pas naar voren komen zodra de repository voldoende content heeft. Hier hoeft dus niet al meteen bij het initiëel aanmaken in te worden voorzien. Hieronder kort een overzicht van de beschikbare actions en een korte beschrijving van de functionaliteit.
+Binnen Haal Centraal zijn een aantal Action scripts ontwikkeld die ook bruikbaar kunnen zijn in andere repositories. Over het algemeen zal de behoefte aan deze script pas naar voren komen 
+zodra de repository voldoende content heeft. Hier hebben we dus niet al meteen bij het initiëel aanmaken in voorzien met uitzondering van het 'build' script in de 'VNG-R-Respec-Template' 
+template repository. Hieronder kort een overzicht van de beschikbare actions en een korte beschrijving van de functionaliteit.
 
 | Actionnaam | Beschrijving |
 | --- | --- |
@@ -175,7 +193,8 @@ Binnen Haal Centraal zijn een aantal Action scripts ontwikkeld die ook bruikbaar
 | generate-postman-collection | Genereert op basis van OAS specificatie postman scripts en genereert indicatoren die gebruikt kunnen worden om het resultaat van de generatie visueel te maken. |
 | generate-user-stories-md | Genereert t.b.v. de GitHub Pages site markdown bestanden met daarin de user stories die al ingevuld zijn met een in productie versie en user stories die ingevuld worden in de in ontwikkeling versie. Om de juiste issues te kunnen tonen zal het script steeds aangepast moeten worden na het uitkomen van een nieuwe in productie versie en/of in ontwikkeling versie. |
 
-Voor de ins & outs m.b.t. de voor VNG-R beschikbare actions en de wijze waarop deze geactiveerd kunnen worden in de respositories verwijzen we naar [de uitleg daarover in de API-Kennisbank](https://github.com/VNG-Realisatie/API-Kennisbank/tree/master/GitHub%20Actions).
+Voor de ins & outs m.b.t. de voor VNG-R beschikbare actions en de wijze waarop deze geactiveerd kunnen worden in de respositories verwijzen we naar 
+[de uitleg daarover in de API-Kennisbank](https://github.com/VNG-Realisatie/API-Kennisbank/tree/master/GitHub%20Actions).
 
 #### Spectral rules
 
